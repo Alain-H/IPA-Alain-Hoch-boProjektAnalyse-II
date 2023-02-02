@@ -1,0 +1,67 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+blueoffice.ERP.Adressen
+</name>
+</assembly>
+<members>
+<member name="T:blueoffice.ERP.Adressen.My.Resources.Resources">
+<summary>
+  Eine stark typisierte Ressourcenklasse zum Suchen von lokalisierten Zeichenfolgen usw.
+</summary>
+</member>
+<member name="P:blueoffice.ERP.Adressen.My.Resources.Resources.ResourceManager">
+<summary>
+  Gibt die zwischengespeicherte ResourceManager-Instanz zurück, die von dieser Klasse verwendet wird.
+</summary>
+</member>
+<member name="P:blueoffice.ERP.Adressen.My.Resources.Resources.Culture">
+<summary>
+  Überschreibt die CurrentUICulture-Eigenschaft des aktuellen Threads für alle
+  Ressourcenzuordnungen, die diese stark typisierte Ressourcenklasse verwenden.
+</summary>
+</member>
+<member name="P:blueoffice.ERP.Adressen.My.Resources.Resources.Design_AAS_Default">
+<summary>
+  Sucht eine lokalisierte Zeichenfolge, die &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;
+&lt;Tabs Version=&quot;1&quot;&gt;
+    &lt;TabPage Text=&quot;Allgemein&quot; TextCode=&quot;1266&quot; PanelWidth=&quot;1221&quot; PanelHeight=&quot;646&quot;&gt;
+        &lt;Controls&gt;
+            &lt;Control Name=&quot;AAS_Code&quot; Dock=&quot;0&quot; Anchor=&quot;5&quot; Left=&quot;488&quot; Top=&quot;88&quot; Width=&quot;306&quot; Height=&quot;314&quot; TabIndex=&quot;2&quot; /&gt;
+            &lt;Control Name=&quot;AAS_EShop&quot; Dock=&quot;0&quot; Anchor=&quot;5&quot; Left=&quot;480&quot; Top=&quot;0&quot; Width=&quot;340&quot; Height=&quot;81&quot; TabIndex=&quot;1&quot; /&gt;
+            &lt;Control Name=&quot;AAS_AdressZuordnung&quot; Dock=&quot;0&quot; Anchor=&quot;5&quot; Left=&quot;0&quot; Top=&quot;0&quot; Width=&quot;465&quot; Height=&quot;56&quot; T [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+</summary>
+</member>
+<member name="P:blueoffice.ERP.Adressen.My.Resources.Resources.Design_ADR_Default">
+<summary>
+  Sucht eine lokalisierte Zeichenfolge, die &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;
+&lt;Tabs Version=&quot;1&quot;&gt;
+    &lt;TabPage Text=&quot;Allgemein&quot; TextCode=&quot;1162&quot; PanelWidth=&quot;1221&quot; PanelHeight=&quot;646&quot;&gt;
+        &lt;Controls&gt;
+            &lt;Control Name=&quot;ADR_Inaktiv&quot; Dock=&quot;0&quot; Anchor=&quot;13&quot; Left=&quot;0&quot; Top=&quot;0&quot; Width=&quot;1219&quot; Height=&quot;30&quot; TabIndex=&quot;7&quot; /&gt;
+            &lt;Control Name=&quot;ADR_MSB&quot; Dock=&quot;0&quot; Anchor=&quot;7&quot; Left=&quot;472&quot; Top=&quot;480&quot; Width=&quot;249&quot; Height=&quot;161&quot; TabIndex=&quot;5&quot; /&gt;
+            &lt;Control Name=&quot;ADR_ASB&quot; Dock=&quot;0&quot; Anchor=&quot;7&quot; Left=&quot;728&quot; Top=&quot;480&quot; Width=&quot;249&quot; Height=&quot;161&quot; TabInd [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+</summary>
+</member>
+<member name="P:blueoffice.ERP.Adressen.My.Resources.Resources.Design_ADR_Default_Small">
+<summary>
+  Sucht eine lokalisierte Zeichenfolge, die &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;
+&lt;Tabs Version=&quot;1&quot;&gt;
+    &lt;TabPage Text=&quot;Allgemein&quot; TextCode=&quot;1162&quot; PanelMinHeight=&quot;566&quot; PanelMinWidth=&quot;934&quot; PanelWidth=&quot;934&quot; PanelHeight=&quot;566&quot;&gt;
+        &lt;Controls&gt;
+            &lt;Control Name=&quot;ADR_Inaktiv&quot; Dock=&quot;0&quot; Anchor=&quot;13&quot; Left=&quot;0&quot; Top=&quot;0&quot; Width=&quot;932&quot; Height=&quot;30&quot; TabIndex=&quot;5&quot; /&gt;
+            &lt;Control Name=&quot;ADR_AAS&quot; Dock=&quot;0&quot; Anchor=&quot;7&quot; Left=&quot;0&quot; Top=&quot;376&quot; Width=&quot;461&quot; Height=&quot;186&quot; TabIndex=&quot;1&quot; /&gt;
+            &lt;Control Name=&quot;ADR_Code&quot; Dock=&quot;0&quot; Anchor=&quot;5&quot; Left=&quot;472&quot; Top [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+</summary>
+</member>
+<member name="M:blueoffice.ERP.Adressen.General.ShowAdressWarnung(System.Windows.Forms.IWin32Window,System.Int32,System.Boolean)">
+ <summary>
+ Zeigt den Adresswarnungs Dialog, falls eine Memowarnung hinterlegt ist
+ </summary>
+ <param name="owner"></param>
+ <param name="ADR_ID">Adress ID</param>
+ <remarks>Rückgabewert ist True wenn der Benutzer akzeptieren klickt oder keine Memowarnung vorhanden zurück</remarks>
+</member>
+</members>
+</doc>

@@ -1,0 +1,2476 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+blueoffice.ERP
+</name>
+</assembly>
+<members>
+<member name="T:blueoffice.ERP.My.Resources.Resources">
+<summary>
+  Eine stark typisierte Ressourcenklasse zum Suchen von lokalisierten Zeichenfolgen usw.
+</summary>
+</member>
+<member name="P:blueoffice.ERP.My.Resources.Resources.ResourceManager">
+<summary>
+  Gibt die zwischengespeicherte ResourceManager-Instanz zurück, die von dieser Klasse verwendet wird.
+</summary>
+</member>
+<member name="P:blueoffice.ERP.My.Resources.Resources.Culture">
+<summary>
+  Überschreibt die CurrentUICulture-Eigenschaft des aktuellen Threads für alle
+  Ressourcenzuordnungen, die diese stark typisierte Ressourcenklasse verwenden.
+</summary>
+</member>
+<member name="P:blueoffice.ERP.My.Resources.Resources.FD_AAS_1600x900">
+<summary>
+  Sucht eine lokalisierte Zeichenfolge, die &lt;?xml version=&quot;1.0&quot; standalone=&quot;yes&quot;?&gt;
+&lt;dsDesign xmlns=&quot;http://tempuri.org/dsDesign.xsd&quot;&gt;
+  &lt;Header&gt;
+    &lt;Version&gt;0&lt;/Version&gt;
+    &lt;Typ&gt;AAS&lt;/Typ&gt;
+  &lt;/Header&gt;
+  &lt;Control&gt;
+    &lt;TabPageIndex&gt;0&lt;/TabPageIndex&gt;
+    &lt;ControlName&gt;AAS_Code&lt;/ControlName&gt;
+    &lt;Dock&gt;0&lt;/Dock&gt;
+    &lt;Anchor&gt;5&lt;/Anchor&gt;
+    &lt;Left&gt;488&lt;/Left&gt;
+    &lt;Top&gt;88&lt;/Top&gt;
+    &lt;Width&gt;306&lt;/Width&gt;
+    &lt;Height&gt;314&lt;/Height&gt;
+    &lt;TabIndex&gt;3&lt;/TabIndex&gt;
+    &lt;MaxWidth&gt;0&lt;/MaxWidth&gt;
+    &lt;MaxHeight&gt;0&lt;/MaxHeight&gt;
+    &lt;MinWidth&gt;0&lt;/MinWidth&gt;
+    &lt;MinHe [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+</summary>
+</member>
+<member name="P:blueoffice.ERP.My.Resources.Resources.FD_AAS_1920x1080">
+<summary>
+  Sucht eine lokalisierte Zeichenfolge, die &lt;?xml version=&quot;1.0&quot; standalone=&quot;yes&quot;?&gt;
+&lt;dsDesign xmlns=&quot;http://tempuri.org/dsDesign.xsd&quot;&gt;
+  &lt;Header&gt;
+    &lt;Version&gt;0&lt;/Version&gt;
+    &lt;Typ&gt;AAS&lt;/Typ&gt;
+  &lt;/Header&gt;
+  &lt;Control&gt;
+    &lt;TabPageIndex&gt;0&lt;/TabPageIndex&gt;
+    &lt;ControlName&gt;AAS_AdressZuordnung&lt;/ControlName&gt;
+    &lt;Dock&gt;0&lt;/Dock&gt;
+    &lt;Anchor&gt;5&lt;/Anchor&gt;
+    &lt;Left&gt;0&lt;/Left&gt;
+    &lt;Top&gt;0&lt;/Top&gt;
+    &lt;Width&gt;465&lt;/Width&gt;
+    &lt;Height&gt;56&lt;/Height&gt;
+    &lt;TabIndex&gt;0&lt;/TabIndex&gt;
+    &lt;MaxWidth&gt;0&lt;/MaxWidth&gt;
+    &lt;MaxHeight&gt;0&lt;/MaxHeight&gt;
+    &lt;MinWidth&gt;0&lt;/MinWidth&gt;
+    [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+</summary>
+</member>
+<member name="P:blueoffice.ERP.My.Resources.Resources.FD_ADR_1600x900">
+<summary>
+  Sucht eine lokalisierte Zeichenfolge, die &lt;?xml version=&quot;1.0&quot; standalone=&quot;yes&quot;?&gt;
+&lt;dsDesign xmlns=&quot;http://tempuri.org/dsDesign.xsd&quot;&gt;
+  &lt;Header&gt;
+    &lt;Version&gt;0&lt;/Version&gt;
+    &lt;Typ&gt;ADR&lt;/Typ&gt;
+  &lt;/Header&gt;
+  &lt;Control&gt;
+    &lt;TabPageIndex&gt;0&lt;/TabPageIndex&gt;
+    &lt;ControlName&gt;ADR_RgAdresse&lt;/ControlName&gt;
+    &lt;Dock&gt;0&lt;/Dock&gt;
+    &lt;Anchor&gt;5&lt;/Anchor&gt;
+    &lt;Left&gt;472&lt;/Left&gt;
+    &lt;Top&gt;320&lt;/Top&gt;
+    &lt;Width&gt;444&lt;/Width&gt;
+    &lt;Height&gt;130&lt;/Height&gt;
+    &lt;TabIndex&gt;3&lt;/TabIndex&gt;
+    &lt;MaxWidth&gt;0&lt;/MaxWidth&gt;
+    &lt;MaxHeight&gt;0&lt;/MaxHeight&gt;
+    &lt;MinWidth&gt;0&lt;/MinWidth&gt;
+     [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+</summary>
+</member>
+<member name="P:blueoffice.ERP.My.Resources.Resources.FD_ADR_1920x1080">
+<summary>
+  Sucht eine lokalisierte Zeichenfolge, die &lt;?xml version=&quot;1.0&quot; standalone=&quot;yes&quot;?&gt;
+&lt;dsDesign xmlns=&quot;http://tempuri.org/dsDesign.xsd&quot;&gt;
+  &lt;Header&gt;
+    &lt;Version&gt;0&lt;/Version&gt;
+    &lt;Typ&gt;ADR&lt;/Typ&gt;
+  &lt;/Header&gt;
+  &lt;Control&gt;
+    &lt;TabPageIndex&gt;0&lt;/TabPageIndex&gt;
+    &lt;ControlName&gt;ADR_Inaktiv&lt;/ControlName&gt;
+    &lt;Dock&gt;0&lt;/Dock&gt;
+    &lt;Anchor&gt;13&lt;/Anchor&gt;
+    &lt;Left&gt;0&lt;/Left&gt;
+    &lt;Top&gt;0&lt;/Top&gt;
+    &lt;Width&gt;1632&lt;/Width&gt;
+    &lt;Height&gt;30&lt;/Height&gt;
+    &lt;TabIndex&gt;7&lt;/TabIndex&gt;
+    &lt;MaxWidth&gt;0&lt;/MaxWidth&gt;
+    &lt;MaxHeight&gt;0&lt;/MaxHeight&gt;
+    &lt;MinWidth&gt;0&lt;/MinWidth&gt;
+    &lt;MinH [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+</summary>
+</member>
+<member name="P:blueoffice.ERP.My.Resources.Resources.FD_BLG_1600x900">
+<summary>
+  Sucht eine lokalisierte Zeichenfolge, die &lt;?xml version=&quot;1.0&quot; standalone=&quot;yes&quot;?&gt;
+&lt;dsDesign xmlns=&quot;http://tempuri.org/dsDesign.xsd&quot;&gt;
+  &lt;Header&gt;
+    &lt;Version&gt;0&lt;/Version&gt;
+    &lt;Typ&gt;BLG_Kopf&lt;/Typ&gt;
+  &lt;/Header&gt;
+  &lt;Control&gt;
+    &lt;TabPageIndex&gt;0&lt;/TabPageIndex&gt;
+    &lt;ControlName&gt;BLG_Auftragzuordnung&lt;/ControlName&gt;
+    &lt;Dock&gt;0&lt;/Dock&gt;
+    &lt;Anchor&gt;5&lt;/Anchor&gt;
+    &lt;Left&gt;0&lt;/Left&gt;
+    &lt;Top&gt;0&lt;/Top&gt;
+    &lt;Width&gt;497&lt;/Width&gt;
+    &lt;Height&gt;135&lt;/Height&gt;
+    &lt;TabIndex&gt;0&lt;/TabIndex&gt;
+  &lt;/Control&gt;
+  &lt;Control&gt;
+    &lt;TabPageIndex&gt;0&lt;/TabPageIndex&gt;
+    &lt;ControlName&gt;BL [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+</summary>
+</member>
+<member name="P:blueoffice.ERP.My.Resources.Resources.FD_BLG_1920x1080">
+<summary>
+  Sucht eine lokalisierte Zeichenfolge, die &lt;?xml version=&quot;1.0&quot; standalone=&quot;yes&quot;?&gt;
+&lt;dsDesign xmlns=&quot;http://tempuri.org/dsDesign.xsd&quot;&gt;
+  &lt;Header&gt;
+    &lt;Version&gt;0&lt;/Version&gt;
+    &lt;Typ&gt;BLG_Kopf&lt;/Typ&gt;
+  &lt;/Header&gt;
+  &lt;Control&gt;
+    &lt;TabPageIndex&gt;0&lt;/TabPageIndex&gt;
+    &lt;ControlName&gt;BLG_Auftragzuordnung&lt;/ControlName&gt;
+    &lt;Dock&gt;0&lt;/Dock&gt;
+    &lt;Anchor&gt;5&lt;/Anchor&gt;
+    &lt;Left&gt;0&lt;/Left&gt;
+    &lt;Top&gt;0&lt;/Top&gt;
+    &lt;Width&gt;497&lt;/Width&gt;
+    &lt;Height&gt;135&lt;/Height&gt;
+    &lt;TabIndex&gt;0&lt;/TabIndex&gt;
+  &lt;/Control&gt;
+  &lt;Control&gt;
+    &lt;TabPageIndex&gt;0&lt;/TabPageIndex&gt;
+    &lt;ControlName&gt;BL [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+</summary>
+</member>
+<member name="P:blueoffice.ERP.My.Resources.Resources.FD_CM">
+<summary>
+  Sucht eine lokalisierte Zeichenfolge, die &lt;?xml version=&quot;1.0&quot; standalone=&quot;yes&quot;?&gt;
+&lt;dsDesign xmlns=&quot;http://tempuri.org/dsDesign.xsd&quot;&gt;
+  &lt;Header&gt;
+    &lt;Version&gt;0&lt;/Version&gt;
+    &lt;Typ&gt;CM&lt;/Typ&gt;
+  &lt;/Header&gt;
+  &lt;Control&gt;
+    &lt;TabPageIndex&gt;0&lt;/TabPageIndex&gt;
+    &lt;ControlName&gt;SSV_PAEdit&lt;/ControlName&gt;
+    &lt;Dock&gt;0&lt;/Dock&gt;
+    &lt;Anchor&gt;15&lt;/Anchor&gt;
+    &lt;Left&gt;0&lt;/Left&gt;
+    &lt;Top&gt;208&lt;/Top&gt;
+    &lt;Width&gt;1252&lt;/Width&gt;
+    &lt;Height&gt;354&lt;/Height&gt;
+    &lt;TabIndex&gt;1&lt;/TabIndex&gt;
+    &lt;MaxWidth&gt;0&lt;/MaxWidth&gt;
+    &lt;MaxHeight&gt;0&lt;/MaxHeight&gt;
+    &lt;MinWidth&gt;0&lt;/MinWidth&gt;
+    &lt;Min [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+</summary>
+</member>
+<member name="P:blueoffice.ERP.My.Resources.Resources.FD_MAF_1600x900">
+<summary>
+  Sucht eine lokalisierte Zeichenfolge, die &lt;?xml version=&quot;1.0&quot; standalone=&quot;yes&quot;?&gt;
+&lt;dsDesign xmlns=&quot;http://tempuri.org/dsDesign.xsd&quot;&gt;
+  &lt;Header&gt;
+    &lt;Version&gt;0&lt;/Version&gt;
+    &lt;Typ&gt;MAF&lt;/Typ&gt;
+  &lt;/Header&gt;
+  &lt;Control&gt;
+    &lt;TabPageIndex&gt;0&lt;/TabPageIndex&gt;
+    &lt;ControlName&gt;MAF_Parameter&lt;/ControlName&gt;
+    &lt;Dock&gt;0&lt;/Dock&gt;
+    &lt;Anchor&gt;5&lt;/Anchor&gt;
+    &lt;Left&gt;8&lt;/Left&gt;
+    &lt;Top&gt;256&lt;/Top&gt;
+    &lt;Width&gt;430&lt;/Width&gt;
+    &lt;Height&gt;81&lt;/Height&gt;
+    &lt;TabIndex&gt;0&lt;/TabIndex&gt;
+    &lt;MaxWidth&gt;0&lt;/MaxWidth&gt;
+    &lt;MaxHeight&gt;0&lt;/MaxHeight&gt;
+    &lt;MinWidth&gt;0&lt;/MinWidth&gt;
+    &lt;Mi [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+</summary>
+</member>
+<member name="P:blueoffice.ERP.My.Resources.Resources.FD_MAF_1920x1080">
+<summary>
+  Sucht eine lokalisierte Zeichenfolge, die &lt;?xml version=&quot;1.0&quot; standalone=&quot;yes&quot;?&gt;
+&lt;dsDesign xmlns=&quot;http://tempuri.org/dsDesign.xsd&quot;&gt;
+  &lt;Header&gt;
+    &lt;Version&gt;0&lt;/Version&gt;
+    &lt;Typ&gt;MAF&lt;/Typ&gt;
+  &lt;/Header&gt;
+  &lt;Control&gt;
+    &lt;TabPageIndex&gt;0&lt;/TabPageIndex&gt;
+    &lt;ControlName&gt;MAF_Listen1&lt;/ControlName&gt;
+    &lt;Dock&gt;0&lt;/Dock&gt;
+    &lt;Anchor&gt;15&lt;/Anchor&gt;
+    &lt;Left&gt;8&lt;/Left&gt;
+    &lt;Top&gt;348&lt;/Top&gt;
+    &lt;Width&gt;1394&lt;/Width&gt;
+    &lt;Height&gt;334&lt;/Height&gt;
+    &lt;TabIndex&gt;0&lt;/TabIndex&gt;
+    &lt;MaxWidth&gt;0&lt;/MaxWidth&gt;
+    &lt;MaxHeight&gt;0&lt;/MaxHeight&gt;
+    &lt;MinWidth&gt;0&lt;/MinWidth&gt;
+    &lt;M [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+</summary>
+</member>
+<member name="P:blueoffice.ERP.My.Resources.Resources.FD_MAT_1600x900">
+<summary>
+  Sucht eine lokalisierte Zeichenfolge, die &lt;?xml version=&quot;1.0&quot; standalone=&quot;yes&quot;?&gt;
+&lt;dsDesign xmlns=&quot;http://tempuri.org/dsDesign.xsd&quot;&gt;
+  &lt;Header&gt;
+    &lt;Version&gt;0&lt;/Version&gt;
+    &lt;Typ&gt;MAT&lt;/Typ&gt;
+  &lt;/Header&gt;
+  &lt;Control&gt;
+    &lt;TabPageIndex&gt;0&lt;/TabPageIndex&gt;
+    &lt;ControlName&gt;MAT_Preise&lt;/ControlName&gt;
+    &lt;Dock&gt;0&lt;/Dock&gt;
+    &lt;Anchor&gt;5&lt;/Anchor&gt;
+    &lt;Left&gt;448&lt;/Left&gt;
+    &lt;Top&gt;8&lt;/Top&gt;
+    &lt;Width&gt;486&lt;/Width&gt;
+    &lt;Height&gt;332&lt;/Height&gt;
+    &lt;TabIndex&gt;3&lt;/TabIndex&gt;
+  &lt;/Control&gt;
+  &lt;Control&gt;
+    &lt;TabPageIndex&gt;0&lt;/TabPageIndex&gt;
+    &lt;ControlName&gt;MAT_Listen2&lt;/Co [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+</summary>
+</member>
+<member name="P:blueoffice.ERP.My.Resources.Resources.FD_MAT_1920x1080">
+<summary>
+  Sucht eine lokalisierte Zeichenfolge, die &lt;?xml version=&quot;1.0&quot; standalone=&quot;yes&quot;?&gt;
+&lt;dsDesign xmlns=&quot;http://tempuri.org/dsDesign.xsd&quot;&gt;
+  &lt;Header&gt;
+    &lt;Version&gt;0&lt;/Version&gt;
+    &lt;Typ&gt;MAT&lt;/Typ&gt;
+  &lt;/Header&gt;
+  &lt;Control&gt;
+    &lt;TabPageIndex&gt;0&lt;/TabPageIndex&gt;
+    &lt;ControlName&gt;MAT_Gruppen&lt;/ControlName&gt;
+    &lt;Dock&gt;0&lt;/Dock&gt;
+    &lt;Anchor&gt;13&lt;/Anchor&gt;
+    &lt;Left&gt;953&lt;/Left&gt;
+    &lt;Top&gt;256&lt;/Top&gt;
+    &lt;Width&gt;261&lt;/Width&gt;
+    &lt;Height&gt;79&lt;/Height&gt;
+    &lt;TabIndex&gt;5&lt;/TabIndex&gt;
+  &lt;/Control&gt;
+  &lt;Control&gt;
+    &lt;TabPageIndex&gt;0&lt;/TabPageIndex&gt;
+    &lt;ControlName&gt;MAT_Artikel&lt; [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+</summary>
+</member>
+<member name="P:blueoffice.ERP.My.Resources.Resources.FD_MGR_1600x900">
+<summary>
+  Sucht eine lokalisierte Zeichenfolge, die &lt;?xml version=&quot;1.0&quot; standalone=&quot;yes&quot;?&gt;
+&lt;dsDesign xmlns=&quot;http://tempuri.org/dsDesign.xsd&quot;&gt;
+  &lt;Header&gt;
+    &lt;Version&gt;0&lt;/Version&gt;
+    &lt;Typ&gt;MGR&lt;/Typ&gt;
+  &lt;/Header&gt;
+  &lt;Control&gt;
+    &lt;TabPageIndex&gt;0&lt;/TabPageIndex&gt;
+    &lt;ControlName&gt;MAT_Bilder&lt;/ControlName&gt;
+    &lt;Dock&gt;0&lt;/Dock&gt;
+    &lt;Anchor&gt;15&lt;/Anchor&gt;
+    &lt;Left&gt;8&lt;/Left&gt;
+    &lt;Top&gt;128&lt;/Top&gt;
+    &lt;Width&gt;1145&lt;/Width&gt;
+    &lt;Height&gt;681&lt;/Height&gt;
+    &lt;TabIndex&gt;0&lt;/TabIndex&gt;
+  &lt;/Control&gt;
+  &lt;Control&gt;
+    &lt;TabPageIndex&gt;0&lt;/TabPageIndex&gt;
+    &lt;ControlName&gt;MGR_Gruppe&lt;/C [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+</summary>
+</member>
+<member name="P:blueoffice.ERP.My.Resources.Resources.FD_MGR_1920x1080">
+<summary>
+  Sucht eine lokalisierte Zeichenfolge, die &lt;?xml version=&quot;1.0&quot; standalone=&quot;yes&quot;?&gt;
+&lt;dsDesign xmlns=&quot;http://tempuri.org/dsDesign.xsd&quot;&gt;
+  &lt;Header&gt;
+    &lt;Version&gt;0&lt;/Version&gt;
+    &lt;Typ&gt;MGR&lt;/Typ&gt;
+  &lt;/Header&gt;
+  &lt;Control&gt;
+    &lt;TabPageIndex&gt;0&lt;/TabPageIndex&gt;
+    &lt;ControlName&gt;MAT_Bilder&lt;/ControlName&gt;
+    &lt;Dock&gt;0&lt;/Dock&gt;
+    &lt;Anchor&gt;15&lt;/Anchor&gt;
+    &lt;Left&gt;8&lt;/Left&gt;
+    &lt;Top&gt;128&lt;/Top&gt;
+    &lt;Width&gt;1145&lt;/Width&gt;
+    &lt;Height&gt;681&lt;/Height&gt;
+    &lt;TabIndex&gt;0&lt;/TabIndex&gt;
+  &lt;/Control&gt;
+  &lt;Control&gt;
+    &lt;TabPageIndex&gt;0&lt;/TabPageIndex&gt;
+    &lt;ControlName&gt;MGR_Gruppe&lt;/C [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+</summary>
+</member>
+<member name="P:blueoffice.ERP.My.Resources.Resources.FD_PRO_1600x900">
+<summary>
+  Sucht eine lokalisierte Zeichenfolge, die &lt;?xml version=&quot;1.0&quot; standalone=&quot;yes&quot;?&gt;
+&lt;dsDesign xmlns=&quot;http://tempuri.org/dsDesign.xsd&quot;&gt;
+  &lt;Header&gt;
+    &lt;Version&gt;0&lt;/Version&gt;
+    &lt;Typ&gt;PRO&lt;/Typ&gt;
+  &lt;/Header&gt;
+  &lt;Control&gt;
+    &lt;TabPageIndex&gt;0&lt;/TabPageIndex&gt;
+    &lt;ControlName&gt;PRO_Projekt&lt;/ControlName&gt;
+    &lt;Dock&gt;0&lt;/Dock&gt;
+    &lt;Anchor&gt;5&lt;/Anchor&gt;
+    &lt;Left&gt;8&lt;/Left&gt;
+    &lt;Top&gt;0&lt;/Top&gt;
+    &lt;Width&gt;485&lt;/Width&gt;
+    &lt;Height&gt;136&lt;/Height&gt;
+    &lt;TabIndex&gt;0&lt;/TabIndex&gt;
+  &lt;/Control&gt;
+  &lt;Control&gt;
+    &lt;TabPageIndex&gt;0&lt;/TabPageIndex&gt;
+    &lt;ControlName&gt;ctlPRO_Beschreib [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+</summary>
+</member>
+<member name="P:blueoffice.ERP.My.Resources.Resources.FD_PRO_1920x1080">
+<summary>
+  Sucht eine lokalisierte Zeichenfolge, die &lt;?xml version=&quot;1.0&quot; standalone=&quot;yes&quot;?&gt;
+&lt;dsDesign xmlns=&quot;http://tempuri.org/dsDesign.xsd&quot;&gt;
+  &lt;Header&gt;
+    &lt;Version&gt;0&lt;/Version&gt;
+    &lt;Typ&gt;PRO&lt;/Typ&gt;
+  &lt;/Header&gt;
+  &lt;Control&gt;
+    &lt;TabPageIndex&gt;0&lt;/TabPageIndex&gt;
+    &lt;ControlName&gt;PRO_Projekt&lt;/ControlName&gt;
+    &lt;Dock&gt;0&lt;/Dock&gt;
+    &lt;Anchor&gt;5&lt;/Anchor&gt;
+    &lt;Left&gt;8&lt;/Left&gt;
+    &lt;Top&gt;0&lt;/Top&gt;
+    &lt;Width&gt;485&lt;/Width&gt;
+    &lt;Height&gt;136&lt;/Height&gt;
+    &lt;TabIndex&gt;0&lt;/TabIndex&gt;
+  &lt;/Control&gt;
+  &lt;Control&gt;
+    &lt;TabPageIndex&gt;0&lt;/TabPageIndex&gt;
+    &lt;ControlName&gt;ctlPRO_Beschreib [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+</summary>
+</member>
+<member name="P:blueoffice.ERP.My.Resources.Resources.FD_SR">
+<summary>
+  Sucht eine lokalisierte Zeichenfolge, die &lt;?xml version=&quot;1.0&quot; standalone=&quot;yes&quot;?&gt;
+&lt;dsDesign xmlns=&quot;http://tempuri.org/dsDesign.xsd&quot;&gt;
+  &lt;Header&gt;
+    &lt;Version&gt;0&lt;/Version&gt;
+    &lt;Typ&gt;SR&lt;/Typ&gt;
+  &lt;/Header&gt;
+  &lt;Control&gt;
+    &lt;TabPageIndex&gt;0&lt;/TabPageIndex&gt;
+    &lt;ControlName&gt;SSV_ZS&lt;/ControlName&gt;
+    &lt;Dock&gt;0&lt;/Dock&gt;
+    &lt;Anchor&gt;5&lt;/Anchor&gt;
+    &lt;Left&gt;376&lt;/Left&gt;
+    &lt;Top&gt;30&lt;/Top&gt;
+    &lt;Width&gt;483&lt;/Width&gt;
+    &lt;Height&gt;28&lt;/Height&gt;
+    &lt;TabIndex&gt;2&lt;/TabIndex&gt;
+    &lt;MaxWidth&gt;0&lt;/MaxWidth&gt;
+    &lt;MaxHeight&gt;0&lt;/MaxHeight&gt;
+    &lt;MinWidth&gt;0&lt;/MinWidth&gt;
+    &lt;MinHeight [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+</summary>
+</member>
+<member name="P:blueoffice.ERP.My.Resources.Resources.Script_bo_EORI">
+<summary>
+  Sucht eine lokalisierte Zeichenfolge, die 
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE VIEW [dbo].[bo_EORI]
+AS
+SELECT     AOP_ADR_ID, AOP_Text
+FROM         dbo.A_OPTIONEN
+WHERE     (AOP_Kennung = 100)
+GO
+ ähnelt.
+</summary>
+</member>
+<member name="P:blueoffice.ERP.My.Resources.Resources.Script_E_EINFUHR_DE">
+<summary>
+  Sucht eine lokalisierte Zeichenfolge, die 
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[E_EINFUHR_DE](
+	[EEF_ID] [int] IDENTITY(1,1) NOT NULL,
+	[EEF_Nr] [int] NOT NULL,
+	[EEF_Datum] [datetime] NULL,
+	[EEF_GesendetAm] [datetime] NULL,
+	[EEF_Sammel_ADR_ID] [int] NOT NULL,
+ CONSTRAINT [E_EINFUHR_DE_EEF_ID] PRIMARY KEY CLUSTERED 
+(
+	[EEF_ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+ALTER TABLE [ [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+</summary>
+</member>
+<member name="P:blueoffice.ERP.My.Resources.Resources.Script_E_EINFUHR_DE_K">
+<summary>
+  Sucht eine lokalisierte Zeichenfolge, die 
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [dbo].[E_EINFUHR_DE_K](
+	[EEK_ID] [int] IDENTITY(1,1) NOT NULL,
+	[EEK_EEF_ID] [int] NOT NULL,
+	[EEK_BelegTyp] [varchar](1) NOT NULL,
+	[EEK_RKA_ID] [int] NOT NULL,
+	[EEK_Betrag] [float] NOT NULL,
+	[EEK_AddBeleg] [varchar](30) NOT NULL,
+ CONSTRAINT [E_EINFUHR_DE_K_EEK_ID] PRIMARY KEY CLUSTERED 
+(
+	[EEK_ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = O [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+</summary>
+</member>
+<member name="P:blueoffice.ERP.My.Resources.Resources.Script_E_EINFUHR_DE_K_AddBeleg">
+<summary>
+  Sucht eine lokalisierte Zeichenfolge, die 
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ARITHABORT ON
+GO
+SET NUMERIC_ROUNDABORT OFF
+GO
+SET CONCAT_NULL_YIELDS_NULL ON
+GO
+SET ANSI_NULLS ON
+GO
+SET ANSI_PADDING ON
+GO
+SET ANSI_WARNINGS ON
+GO
+ALTER TABLE dbo.E_EINFUHR_DE_K ADD
+	EEK_AddBeleg varchar(30) NOT NULL CONSTRAINT DF_E_EINFUHR_DE_K_EEK_AddBeleg_1 DEFAULT (&apos;&apos;)
+GO
+ALTER TABLE dbo.E_EINFUHR_DE_K SET (LOCK_ESCALATION = TABLE)
+GO
+ ähnelt.
+</summary>
+</member>
+<member name="P:blueoffice.ERP.My.Resources.Resources.Script_E_EINFUHR_DE_P">
+<summary>
+  Sucht eine lokalisierte Zeichenfolge, die 
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [dbo].[E_EINFUHR_DE_P](
+	[EEP_ID] [int] IDENTITY(1,1) NOT NULL,
+	[EEP_EEK_ID] [int] NOT NULL,
+	[EEP_BelegTyp] [varchar](1) NOT NULL,
+	[EEP_RKA_ID] [int] NOT NULL,
+	[EEP_RDA_ID] [int] NOT NULL,
+	[EEP_ZollTarifNr] [varchar](50) NOT NULL,
+	[EEP_UrsprungsLand] [varchar](3) NOT NULL,
+	[EEP_UrsprungsRegion] [varchar](3) NOT NULL,
+	[EEP_Anzahl] [float] NOT NULL,
+	[EEP_Gewicht] [float] NOT NULL,
+	[EEP_Gewicht [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+</summary>
+</member>
+<member name="P:blueoffice.ERP.My.Resources.Resources.Script_E_EINFUHR_DE_Paket">
+<summary>
+  Sucht eine lokalisierte Zeichenfolge, die 
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [dbo].[E_EINFUHR_DE_Paket](
+	[EEX_ID] [int] IDENTITY(1,1) NOT NULL,
+	[EEX_BelegTyp] [varchar](1) NOT NULL,
+	[EEX_RKA_ID] [int] NOT NULL,
+	[EEX_Paketnummer] [varchar](20) NOT NULL,
+	[EEX_Gewicht] [float] NOT NULL,
+ CONSTRAINT [E_EINFUHR_DE_Paket_EEX_ID] PRIMARY KEY CLUSTERED 
+(
+	[EEX_ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+</summary>
+</member>
+<member name="P:blueoffice.ERP.My.Resources.Resources.Script_E_EINFUHR_DE_UT">
+<summary>
+  Sucht eine lokalisierte Zeichenfolge, die 
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [dbo].[E_EINFUHR_DE_UT](
+	[EEU_ID] [int] IDENTITY(1,1) NOT NULL,
+	[EEU_UrsprungsLand] [varchar](3) NOT NULL,
+	[EEU_UrsprungsText] [varchar](max) NULL,
+ CONSTRAINT [E_EINFUHR_DE_UT_EEU_ID] PRIMARY KEY CLUSTERED 
+(
+	[EEU_ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+SET [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+</summary>
+</member>
+<member name="T:blueoffice.ERP.Adressen.KundenPreise">
+ <summary>
+ Ermöglicht den Zugriff auf Kundenpreise. Anfügen von Artikel und Warengruppen. Löschen und aktualisieren der Einträge
+ </summary>
+</member>
+<member name="M:blueoffice.ERP.Adressen.KundenPreise.Add(System.Int32,System.Int32,System.Int32,System.String,blueoffice.ERP.General.ObjektPreisEintrag)">
+ <summary>
+ Fügt einen Artikel oder eine neue Warengruppe in die  Kundenpreis ein
+ </summary>
+ <param name="ADR_ID">Adress ID</param>
+ <param name="MAT_ID">Material ID</param>
+ <param name="AusfuehrungID">Ausführungs Nr</param>
+ <param name="WarengruppeNr">Warengruppen-Nr.</param>
+ <returns>true, wenn der Vorgang erfolgreich war, andernfalls false.</returns>
+</member>
+<member name="M:blueoffice.ERP.Adressen.KundenPreise.AddWarengruppe(System.Int32,System.String,blueoffice.ERP.General.ObjektPreisEintrag)">
+ <summary>
+ Fügt eine neue Warengruppein die  Kundenpreis ein
+ </summary>
+ <param name="ADR_ID">Adress ID</param>
+ <param name="WarengruppeNr">Warengruppen-Nr.</param>
+ <returns>true, wenn der Vorgang erfolgreich war, andernfalls false.</returns>
+</member>
+<member name="M:blueoffice.ERP.Adressen.KundenPreise.AddArtikel(System.Int32,System.Int32,System.Int32,blueoffice.ERP.General.ObjektPreisEintrag)">
+ <summary>
+ Fügt einen neuen Artikel in die  Kundenpreis ein
+ </summary>
+ <param name="ADR_ID">Adress ID</param>
+ <param name="MAT_ID">Material ID</param>
+ <param name="AusfuehrungID">Ausführungs Nr</param>
+ <returns>true, wenn der Vorgang erfolgreich war, andernfalls false.</returns>
+</member>
+<member name="M:blueoffice.ERP.Adressen.KundenPreise.Update(System.Int32,System.Int32,System.Int32,System.String,blueoffice.ERP.General.ObjektPreisEintrag)">
+ <summary>
+ Aktualisiert einen vorhanden Artikel oder eine Warengruppe
+ </summary>
+ <param name="ADR_ID">Adress ID</param>
+ <param name="MAT_ID">Material ID</param>
+ <param name="AusfuehrungID">Ausführungs Nr</param>
+ <param name="WarengruppeNr">Warengruppen-Nr.</param>
+ <returns>true, wenn der Vorgang erfolgreich war, andernfalls false.</returns>
+</member>
+<member name="M:blueoffice.ERP.Adressen.KundenPreise.UpdateWaehrung(System.Int32,System.Int32)">
+ <summary>
+ Aktualisiert alle Zeilen mit der Währungs-ID
+ </summary>
+ <param name="ADR_ID">Adress ID</param>
+ <param name="FW_ID">Währungs ID</param>
+ <returns>true, wenn der Vorgang erfolgreich war, andernfalls false.</returns>
+</member>
+<member name="M:blueoffice.ERP.Adressen.KundenPreise.UpdateWarengruppe(System.Int32,System.String,blueoffice.ERP.General.ObjektPreisEintrag)">
+ <summary>
+ Aktualisiert eine vorhanden Warengruppe
+ </summary>
+ <param name="ADR_ID">Adress ID</param>
+ <param name="WarengruppeNr">Warengruppen-Nr.</param>
+ <returns>true, wenn der Vorgang erfolgreich war, andernfalls false.</returns>
+</member>
+<member name="M:blueoffice.ERP.Adressen.KundenPreise.UpdateArtikel(System.Int32,System.Int32,System.Int32,blueoffice.ERP.General.ObjektPreisEintrag)">
+ <summary>
+ Aktualisiert einen vorhanden Artikel
+ </summary>
+ <param name="ADR_ID">Adress ID</param>
+ <param name="MAT_ID">Material ID</param>
+ <param name="AusfuehrungID">Ausführungs Nr</param>
+ <returns>true, wenn der Vorgang erfolgreich war, andernfalls false.</returns>
+</member>
+<member name="M:blueoffice.ERP.Adressen.KundenPreise.Delete(System.Int32,System.Int32,System.Int32,System.String)">
+ <summary>
+ Löscht den Eintrag des Artikels oder der Warengruppe
+ </summary>
+ <param name="ADR_ID">Adress ID</param>
+ <param name="MAT_ID">Material ID</param>
+ <param name="AusfuehrungID">Ausführungs Nr</param>
+ <param name="WarengruppeNr">Warengruppen-Nr.</param>
+ <returns>true, wenn der Vorgang erfolgreich war, andernfalls false.</returns>
+</member>
+<member name="M:blueoffice.ERP.Adressen.KundenPreise.DeleteWarengruppe(System.Int32,System.String)">
+ <summary>
+ Löscht den Eintrag der Warengruppe
+ </summary>
+ <param name="ADR_ID">Adress ID</param>
+ <param name="WarengruppeNr">Warengruppen-Nr.</param>
+ <returns>true, wenn der Vorgang erfolgreich war, andernfalls false.</returns>
+</member>
+<member name="M:blueoffice.ERP.Adressen.KundenPreise.DeleteArtikel(System.Int32,System.Int32,System.Int32)">
+ <summary>
+ Löscht den Eintrag des Artikels
+ </summary>
+ <param name="ADR_ID">Adress ID</param>
+ <param name="MAT_ID">Artikel ID</param>
+ <param name="AusfuehrungID">Ausführungs Nr</param>
+ <returns>true, wenn der Vorgang erfolgreich war, andernfalls false.</returns>
+</member>
+<member name="M:blueoffice.ERP.Adressen.KundenPreise.DeleteAll(System.Int32)">
+ <summary>
+ Löscht alle Einträge der gewählten Adresse
+ </summary>
+ <param name="ADR_ID">Adress ID</param>
+ <returns>true, wenn der Vorgang erfolgreich war, andernfalls false.</returns>
+</member>
+<member name="M:blueoffice.ERP.Adressen.KundenPreise.GetDataTable(System.Int32)">
+ <summary>
+ Gibt die Kundenpreise als DataTable zurück
+ </summary>
+ <param name="ADR_ID">Adress ID</param>
+</member>
+<member name="M:blueoffice.ERP.Adressen.KundenPreise.GetDataRows(System.Int32)">
+ <summary>
+ Gibt die Kundenpreise als DataRows zurück
+ </summary>
+ <param name="ADR_ID">Adress ID</param>
+</member>
+<member name="M:blueoffice.ERP.Adressen.KundenPreise.Exist(System.Int32)">
+ <summary>
+ Prüft ob die Adresse Kundenpreise hat
+ </summary>
+ <param name="ADR_ID">Adress ID</param>
+ <returns>true, wenn Kundenpreise vorhanden sind, andernfalls false.</returns>
+</member>
+<member name="M:blueoffice.ERP.Adressen.KundenPreise.Exist(System.Int32,System.Int32,System.Int32,System.String)">
+ <summary>
+ Prüft ob der Artikel oder die Warengruppe auf der Adresse existiert
+ </summary>
+ <param name="ADR_ID">Adress ID</param>
+ <param name="MAT_ID">Material ID</param>
+ <param name="AusfuehrungID">Ausführungs Nr</param>
+ <param name="WarengruppeNr">Warengruppen-Nr.</param>
+ <returns>true, wenn der Artikel oder die Warengruppe vorhanden ist, andernfalls false.</returns>
+</member>
+<member name="M:blueoffice.ERP.Adressen.KundenPreise.CopyFromObject(System.Int32,System.Int32)">
+ <summary>
+ Fügt die Kundenpreise einer andern Adresse ein
+ </summary>
+ <remarks></remarks>
+ <param name="ADR_ID">Adress ID in die die Preise eingefügt werden</param>
+ <param name="SourceADR_ID">Adress ID  woher die Preise kopiert werden</param>
+</member>
+<member name="T:blueoffice.ERP.dsLead">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:blueoffice.ERP.dsLead.AbsenderDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:blueoffice.ERP.dsLead.LeadDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:blueoffice.ERP.dsLead.InteressentDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:blueoffice.ERP.dsLead.MitbewerberDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:blueoffice.ERP.dsLead._Lead_InformationenDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:blueoffice.ERP.dsLead.PositionenDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:blueoffice.ERP.dsLead.ZeileDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:blueoffice.ERP.dsLead.AbsenderRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:blueoffice.ERP.dsLead.LeadRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:blueoffice.ERP.dsLead.InteressentRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:blueoffice.ERP.dsLead.MitbewerberRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:blueoffice.ERP.dsLead._Lead_InformationenRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:blueoffice.ERP.dsLead.PositionenRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:blueoffice.ERP.dsLead.ZeileRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:blueoffice.ERP.dsLead.AbsenderRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:blueoffice.ERP.dsLead.LeadRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:blueoffice.ERP.dsLead.InteressentRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:blueoffice.ERP.dsLead.MitbewerberRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:blueoffice.ERP.dsLead._Lead_InformationenRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:blueoffice.ERP.dsLead.PositionenRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:blueoffice.ERP.dsLead.ZeileRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:blueoffice.ERP.Export.ZolLEinfuhrCH_DE.NewDataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:blueoffice.ERP.Export.ZolLEinfuhrCH_DE.NewDataSet.ZavDataSetDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:blueoffice.ERP.Export.ZolLEinfuhrCH_DE.NewDataSet.ZavKopfListeDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:blueoffice.ERP.Export.ZolLEinfuhrCH_DE.NewDataSet.im05KopfDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:blueoffice.ERP.Export.ZolLEinfuhrCH_DE.NewDataSet.PaketListeDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:blueoffice.ERP.Export.ZolLEinfuhrCH_DE.NewDataSet.im18PackstueckDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:blueoffice.ERP.Export.ZolLEinfuhrCH_DE.NewDataSet.ZavPosListeDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:blueoffice.ERP.Export.ZolLEinfuhrCH_DE.NewDataSet.im10PosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:blueoffice.ERP.Export.ZolLEinfuhrCH_DE.NewDataSet.UnterlagenListeDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:blueoffice.ERP.Export.ZolLEinfuhrCH_DE.NewDataSet.im12UnterlagenPosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:blueoffice.ERP.Export.ZolLEinfuhrCH_DE.NewDataSet.ZavDataSetRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:blueoffice.ERP.Export.ZolLEinfuhrCH_DE.NewDataSet.ZavKopfListeRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:blueoffice.ERP.Export.ZolLEinfuhrCH_DE.NewDataSet.im05KopfRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:blueoffice.ERP.Export.ZolLEinfuhrCH_DE.NewDataSet.PaketListeRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:blueoffice.ERP.Export.ZolLEinfuhrCH_DE.NewDataSet.im18PackstueckRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:blueoffice.ERP.Export.ZolLEinfuhrCH_DE.NewDataSet.ZavPosListeRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:blueoffice.ERP.Export.ZolLEinfuhrCH_DE.NewDataSet.im10PosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:blueoffice.ERP.Export.ZolLEinfuhrCH_DE.NewDataSet.UnterlagenListeRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:blueoffice.ERP.Export.ZolLEinfuhrCH_DE.NewDataSet.im12UnterlagenPosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:blueoffice.ERP.Export.ZolLEinfuhrCH_DE.NewDataSet.ZavDataSetRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:blueoffice.ERP.Export.ZolLEinfuhrCH_DE.NewDataSet.ZavKopfListeRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:blueoffice.ERP.Export.ZolLEinfuhrCH_DE.NewDataSet.im05KopfRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:blueoffice.ERP.Export.ZolLEinfuhrCH_DE.NewDataSet.PaketListeRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:blueoffice.ERP.Export.ZolLEinfuhrCH_DE.NewDataSet.im18PackstueckRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:blueoffice.ERP.Export.ZolLEinfuhrCH_DE.NewDataSet.ZavPosListeRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:blueoffice.ERP.Export.ZolLEinfuhrCH_DE.NewDataSet.im10PosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:blueoffice.ERP.Export.ZolLEinfuhrCH_DE.NewDataSet.UnterlagenListeRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:blueoffice.ERP.Export.ZolLEinfuhrCH_DE.NewDataSet.im12UnterlagenPosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:blueoffice.ERP.General.ComboBoxes">
+ <summary>
+ Hilfsklasse zum füllen von Auswahllisten (Combobox)
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.ComboBoxNamedType.Material_GruppenNrSort">
+ <summary>
+ Materialgruppen sortiert nach Nr
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.ComboBoxNamedType.Material_GruppenBezSort">
+ <summary>
+ Materialgruppen sortiert nach Bezeichnug
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.ComboBoxNamedType.MontageGruppen">
+ <summary>
+ Montagegruppen mit MMG_Nummer als ValueMember
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.ComboBoxNamedType.MontageGruppenID">
+ <summary>
+ Montagegruppen mit MMG_ID als ValueMember
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.ComboBoxNamedType.MietGruppen">
+ <summary>
+ Mietgruppen mit MTG_Gruppe als ValueMember
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.ComboBoxNamedType.MietGruppenID">
+ <summary>
+ Mietgruppen mit MTG_ID als ValueMember
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.ComboBoxNamedType.Lagerstamm">
+ <summary>
+ Lagerstamm mit MLS_LagerNr als ValueMember
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.ComboBoxNamedType.LagerstammID">
+ <summary>
+ Lagerstamm mit MLS_ID als ValueMember
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.ComboBoxNamedType.Konto">
+ <summary>
+ Konto mit KTO_Nr als ValueMember
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.ComboBoxNamedType.Kostenstellen">
+ <summary>
+ Kostenstellen mit ZKS_Nr als ValueMember
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.ComboBoxNamedType.MWST">
+ <summary>
+ MWSt mit MWSTID als ValueMember
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.ComboBoxNamedType.KostenstellenGruppen">
+ <summary>
+ Kostenstellen Gruppen ZKS_KEY als ValueMember
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.ComboBoxNamedType.KostenstellenSchema">
+ <summary>
+ Kostenschema Gruppen ZSK_Nummer als ValueMember
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.ComboBoxNamedType.Projekt_GruppenNrSort">
+ <summary>
+ Projektgruppen sortiert nach Nr. PGR_Gruppe als ValueMember
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.ComboBoxNamedType.Projekt_GruppenBezSort">
+ <summary>
+ Projektgruppen sortiert nach Bezeichnug. PGR_Gruppe als ValueMember
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.ComboBoxNamedType.Kostenarten">
+ <summary>
+ Kostenart mit ZKA_Nr als ValueMember
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.ComboBoxNamedType.Adress_VertreterID">
+ <summary>
+ Adress-Vertreter mit LPE_ID als ValueMember
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.ComboBoxNamedType.Adress_VertreterNr">
+ <summary>
+ Adress-Vertreter mit LPE_Nr als ValueMember
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.ComboBoxNamedType.PersonalListe_Nr">
+ <summary>
+ Personal mit LPE_Nr als ValueMember
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.ComboBoxNamedType.PersonalListe_ID">
+ <summary>
+ Personal mit LPE_ID als ValueMember
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.ComboBoxNamedType.Benutzer">
+ <summary>
+ Personal mit LPE_ID als ValueMember
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.ComboBoxNamedType.ZKD">
+ <summary>
+ Zahlungskonditionen
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.ComboBoxNamedType.AnsprechpartnerVN">
+ <summary>
+ Ansprechpartner Vorname und Nachname, AAS_ID als ValueMember. Als Filter sollte AAS_ADR_ID = {ID der Adresse} übergeben werden
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.ComboBoxNamedType.AnsprechpartnerNV">
+ <summary>
+ Ansprechpartner Nachname und Vorname  , AAS_ID als ValueMember. Als Filter sollte AAS_ADR_ID = {ID der Adresse} übergeben werden
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.ComboBoxNamedType.AnsprechpartnerVN_MitAnrede">
+ <summary>
+ Ansprechpartner mit Anrede Vorname und Nachname, AAS_ID als ValueMember. Als Filter sollte AAS_ADR_ID = {ID der Adresse} übergeben werden
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.ComboBoxNamedType.AnsprechpartnerNV_MitAnrede">
+ <summary>
+ Ansprechpartner mit Anrede Nachname und Vorname, AAS_ID als ValueMember. Als Filter sollte AAS_ADR_ID = {ID der Adresse} übergeben werden
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.ComboBoxNamedType.Lead_Ursprung">
+ <summary>
+ Leadursprung
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.ComboBoxNamedType.Lead_Vertiebsphase">
+ <summary>
+ Vertiebsphase
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.ComboBoxNamedType.Lead_Klassifikation">
+ <summary>
+ Vertiebsphase
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.ComboBoxNamedType.Mahnvarianten">
+ <summary>
+ Mahnvarianten, MTX_Variante_Nr als ValueMember
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.ComboBoxNamedType.Nummernkreise_ReWe">
+ <summary>
+ Nummernkreise von ReWe SNR_Text als ValueMember
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.ComboBoxNamedType.Journale_ReWe">
+ <summary>
+ Journale von ReWe Typ + _ + FST_Nr als ValueMember
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.ComboBoxNamedType.Support_Prioritaeten_ID">
+ <summary>
+ Prioritäten aus Support-Tool. SSE_ID als ValueMember
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.ComboBoxNamedType.Support_Prioritaeten_GUID">
+ <summary>
+ Prioritäten aus Support-Tool. SSE_GUID als ValueMember
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.ComboBoxNamedType.Support_SchluesselWort_ID">
+ <summary>
+ Schlüsselwörter aus Support-Tool. SSE_ID als ValueMember
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.ComboBoxNamedType.Support_SchluesselWort_GUID">
+ <summary>
+ Schlüsselwörter aus Support-Tool. SSE_GUID als ValueMember
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.ComboBoxNamedType.Support_Version_ID">
+ <summary>
+ SVersio aus Support-Tool. SSE_ID als ValueMember
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.ComboBoxNamedType.Support_Version_GUID">
+ <summary>
+ Versio aus Support-Tool. SSE_GUID als ValueMember
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.ComboBoxNamedType.Support_Auswirkung_ID">
+ <summary>
+ SVersio aus Support-Tool. SSE_ID als ValueMember
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.ComboBoxNamedType.Support_Auswirkung_GUID">
+ <summary>
+ Versio aus Support-Tool. SSE_GUID als ValueMember
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.ComboBoxNamedType.Berechnungen">
+ <summary>
+ Berechnungsarten
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.ComboBoxNamedType.Versandart">
+ <summary>
+ Versandarten
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.ComboBoxNamedType.VersandartUserSP">
+ <summary>
+ Versandarten in der Sprache des angemeldeten Benutzers
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.ComboBoxNamedType.IhreBestellung">
+ <summary>
+ Ihre Bestellung (Beleg Kopfdaten)
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.ComboBoxNamedType.WaehrungenAktivISO_ID">
+ <summary>
+ Aktive Währung ISO Code mit FWA_ID als ValueMember
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.ComboBoxNamedType.WaehrungenAktivText_ISO">
+ <summary>
+ Aktive Währung ausgeschrieben mit FWA_ISO als ValueMember
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.ComboBoxNamedType.WaehrungenAktivText_ID">
+ <summary>
+ Aktive Währung ausgeschrieben mit FWA_ID als ValueMember
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.ComboBoxNamedType.WaehrungenISO_ID">
+ <summary>
+ Alle Währungen ISO Code mit FWA_ID als ValueMember
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.ComboBoxNamedType.WaehrungenText_ISO">
+ <summary>
+ Alle Währungen ausgeschrieben mit FWA_ISO als ValueMember
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.ComboBoxNamedType.WaehrungenText_ID">
+ <summary>
+ Alle Währungen ausgeschrieben mit FWA_ID als ValueMember
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.ComboBoxNamedType.BankKonto">
+ <summary>
+ Bankkonten
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.ComboBoxNamedType.Ursprungslaender">
+ <summary>
+ Ursprungsländer mit LAN_ISO als ValueMember . (Beispiel: CH - Schweiz, DE - Deutschland usw...)
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.MultiComboBoxNamedType.BankKonto">
+ <summary>
+ Bankkonten
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.MultiComboBoxNamedType.Waherungen">
+ <summary>
+ Währungen
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.MultiComboBoxNamedType.Konto">
+ <summary>
+ Konto
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.MultiComboBoxNamedType.Kostenstelle">
+ <summary>
+ Kostenstellen
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.MultiComboBoxNamedType.MaterialLagerDetailiert">
+ <summary>
+ Lagerm Lagerort, Lagerplatz und Ausführungen (Bitte Filter mitgeben. MLA_MAT = (MAT_ID))
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.MultiComboBoxNamedType.MWST">
+ <summary>
+ MWST-Sätze
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.MultiComboBoxNamedType.ZKD">
+ <summary>
+ Zahlungskonditionen
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.MultiComboBoxNamedType.Kostenarten">
+ <summary>
+ Kostenarten
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.MultiComboBoxNamedType.PersonalAlle">
+ <summary>
+ Alle Mitarbeiter
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.MultiComboBoxNamedType.PersonalVerkauf">
+ <summary>
+ Mitarbeiter Verkäufer
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.MultiComboBoxNamedType.PersonalSachbearbeiter">
+ <summary>
+ Mitarbeiter Sachbearbeiter
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.MultiComboBoxNamedType.PersonalTermine">
+ <summary>
+ Mitarbeiter Termine
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.MultiComboBoxNamedType.PersonalAlleKurzzeichen">
+ <summary>
+ Kurzzeichen Alle Mitarbeiter
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.MultiComboBoxNamedType.PersonalAlle_MitNr">
+ <summary>
+ Alle Mitarbeiter
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.MultiComboBoxNamedType.PersonalVerkauf_MitNr">
+ <summary>
+ Mitarbeiter Verkäufer (Value Member LPE_Nr)
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.MultiComboBoxNamedType.PersonalSachbearbeiter_MitNr">
+ <summary>
+ Mitarbeiter Sachbearbeiter (Value Member LPE_Nr)
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.MultiComboBoxNamedType.PersonalTermine_MitNr">
+ <summary>
+ Mitarbeiter Termine (Value Member LPE_Nr)
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.MultiComboBoxNamedType.ArtikelBerechnungsarten">
+ <summary>
+ Berechnungsarten
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.MultiComboBoxNamedType.Verkaufspreise">
+ <summary>
+ Verkaufspreise
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.MultiComboBoxNamedType.Laender_ISO">
+ <summary>
+ Länder (Value Member LAN_ISO)
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.MultiComboBoxNamedType.Lagerstamm">
+ <summary>
+ Lagerstamm mit MLS_LagerNr als ValueMember
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.MultiComboBoxNamedType.LagerstammID">
+ <summary>
+ Lagerstamm mit MLS_ID als ValueMember
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.MultiComboBoxNamedType.LagerOrt">
+ <summary>
+ Lagerorte
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.ComboBoxes.MultiComboBoxNamedType.LagerPlatz">
+ <summary>
+ Lagerplätze
+ </summary>
+</member>
+<member name="M:blueoffice.ERP.General.ComboBoxes.FillWithIntegerID(System.Windows.Forms.ComboBox@,System.String,System.Int32,System.String,System.Boolean)">
+ <summary>
+ Füllt die Combobox anhand eines SQL's mit einen Integer-ID Wert in ValueMember
+ </summary>
+ <remarks>Die Erste Spalte des SQL's muss einen Integer Wert für ValueMember darstellen, die zweite Spalte einen String Wert DisplayMember</remarks>
+ <param name="tCombo">Combobox</param>
+ <param name="SQL">SQL</param>
+ <param name="EmptyEntryID">Einen Integer Wert für den ersten Eintrag in der Combobox. Dieser Wert wird in ValueMember der Combobox übertragen</param>
+ <param name="EmptyEntryString">Einen String Wert für den ersten Eintrag in der Combobox. Dieser Wert wird in DisplayMember der Combobox übertragen</param>
+</member>
+<member name="M:blueoffice.ERP.General.ComboBoxes.GetListWithIntegerID(System.String,System.Int32,System.String,System.Boolean)">
+ <summary>
+ Gibt eine List von blueoffice.common.settings.Objects.ListItem zurück
+ </summary>
+ <remarks>Die Erste Spalte des SQL's muss einen Integer Wert für ListItem.IntID darstellen, die zweite Spalte einen String Wert ListItem.Text</remarks>
+ <param name="SQL">SQL</param>
+ <param name="EmptyEntryID">Einen Integer Wert für den ersten Eintrag in der List. Dieser Wert wird in ListItem.IntID übertragen</param>
+ <param name="EmptyEntryString">Einen String Wert für den ersten Eintrag in der List. Dieser Wert wird in ListItem.Text übertragen</param>
+</member>
+<member name="M:blueoffice.ERP.General.ComboBoxes.FillWithStringID(System.Windows.Forms.ComboBox@,System.String,System.String,System.String,System.Boolean)">
+ <summary>
+ Füllt die Combobox anhand eines SQL's mit einem String-ID Wert in ValueMember
+ </summary>
+ <remarks>Die Erste Spalte des SQL's muss einen String Wert für ValueMember darstellen, die zweite Spalte einen String Wert DisplayMember</remarks>
+ <param name="tCombo">Combobox</param>
+ <param name="SQL">SQL</param>
+ <param name="EmptyEntryID">Einen String Wert für den ersten Eintrag in der Combobox. Dieser Wert wird in ValueMember der Combobox übertragen</param>
+ <param name="EmptyEntryString">Einen String Wert für den ersten Eintrag in der Combobox. Dieser Wert wird in DisplayMember der Combobox übertragen</param>
+</member>
+<member name="M:blueoffice.ERP.General.ComboBoxes.GetListWithStringID(System.String,System.String,System.String,System.Boolean)">
+ <summary>
+ Gibt eine List von blueoffice.common.settings.Objects.ListItem zurück
+ </summary>
+ <remarks>Die Erste Spalte des SQL's muss einen String Wert für ListItem.StrID darstellen, die zweite Spalte einen String Wert ListItem.Text</remarks>
+ <param name="SQL">SQL</param>
+ <param name="EmptyEntryID">Einen String Wert für den ersten Eintrag in der Liste. Dieser Wert wird in ListItem.StrID übertragen</param>
+ <param name="EmptyEntryString">Einen String Wert für den ersten Eintrag in der Liste. Dieser Wert wird in ListItem.Text  übertragen</param>
+</member>
+<member name="M:blueoffice.ERP.General.ComboBoxes.FillString(System.Windows.Forms.ComboBox@,System.String,System.String,System.Boolean)">
+ <summary>
+ Füllt die Combobox anhand eines SQL's
+ </summary>
+ <param name="tCombo">Combobox</param>
+ <param name="SQL">SQL</param>
+ <param name="EmptyEntryString">Einen String Wert für den ersten Eintrag in der Combobox. Dieser Wert wird in DisplayMember der Combobox übertragen</param>
+</member>
+<member name="M:blueoffice.ERP.General.ComboBoxes.FillNamed(System.Windows.Forms.ComboBox@,blueoffice.ERP.General.ComboBoxes.ComboBoxNamedType,System.String,System.Object,System.String)">
+ <summary>
+ Füllt die Combobox anhand des Typs (ComboBoxNamedType)
+ </summary>
+ <param name="tCombo">Combobox</param>
+ <param name="NamedType">Typ</param>
+ <param name="sFilter">
+ Eine SQL Bedingung.
+ Beispiel: PLZ_LAND = 'CH'
+ </param>
+ <param name="EmptyEntryID">Einen Integer oder String Wert für den ersten Eintrag in der Combobox. Dieser Wert wird in ValueMember der Combobox übertragen</param>
+ <param name="EmptyEntryString">Einen String Wert für den ersten Eintrag in der Combobox. Dieser Wert wird in DisplayMember der Combobox übertragen</param>
+</member>
+<member name="M:blueoffice.ERP.General.ComboBoxes.GetListFillNamed_Konto(blueoffice.ERP.General.ComboBoxes.KontoTyp,System.String,System.Object,System.String)">
+ <summary>
+ Füllt ein Liste vom Typ blueoffice.common.settings.Objects.ListItem mit den Konten
+ </summary>
+ <param name="Konto_Typ">Konto Typ (Alle, Debitor, Kreditor, Aufwand oder Ertrag)</param>
+ <param name="sFilter">
+ Eine SQL Bedingung.
+ </param>
+ <param name="EmptyEntryID">Einen Integer Wert für den ersten Eintrag in der Combobox. Dieser Wert wird in ValueMember der Combobox übertragen</param>
+ <param name="EmptyEntryString">Einen String Wert für den ersten Eintrag in der Combobox. Dieser Wert wird in DisplayMember der Combobox übertragen</param>
+</member>
+<member name="M:blueoffice.ERP.General.ComboBoxes.GetListFillNamed_Konto(blueoffice.ERP.General.ComboBoxes.KontoTyp,System.DateTime,System.String,System.Object,System.String)">
+ <summary>
+ Füllt ein Liste vom Typ blueoffice.common.settings.Objects.ListItem mit den Konten
+ </summary>
+ <param name="Konto_Typ">Konto Typ (Alle, Debitor, Kreditor, Aufwand oder Ertrag)</param>
+ <param name="PeriodenDatum">Das Datum des Kontoplan Periode.</param>
+ <param name="sFilter">
+ Eine SQL Bedingung.
+ </param>
+ <param name="EmptyEntryID">Einen Integer Wert für den ersten Eintrag in der Combobox. Dieser Wert wird in ValueMember der Combobox übertragen</param>
+ <param name="EmptyEntryString">Einen String Wert für den ersten Eintrag in der Combobox. Dieser Wert wird in DisplayMember der Combobox übertragen</param>
+</member>
+<member name="M:blueoffice.ERP.General.ComboBoxes.GetListFillNamed_Konto(blueoffice.ERP.General.ComboBoxes.KontoTyp,System.Int32,System.String,System.Object,System.String)">
+ <summary>
+ Füllt ein Liste vom Typ blueoffice.common.settings.Objects.ListItem mit den Konten
+ </summary>
+ <param name="Konto_Typ">Konto Typ (Alle, Debitor, Kreditor, Aufwand oder Ertrag)</param>
+ <param name="Periode">Perioden Index</param>
+ <param name="sFilter">
+ Eine SQL Bedingung.
+ </param>
+ <param name="EmptyEntryID">Einen Integer Wert für den ersten Eintrag in der Combobox. Dieser Wert wird in ValueMember der Combobox übertragen</param>
+ <param name="EmptyEntryString">Einen String Wert für den ersten Eintrag in der Combobox. Dieser Wert wird in DisplayMember der Combobox übertragen</param>
+</member>
+<member name="M:blueoffice.ERP.General.ComboBoxes.GetListFillNamed_MWST(System.Nullable{System.DateTime},System.String,System.Object,System.String)">
+ <summary>
+ Füllt ein Liste vom Typ blueoffice.common.settings.Objects.ListItem mit MWST Sätzen
+ </summary>
+ <param name="PeriodenDatum">Das Datum der MWSt Periode</param>
+ <param name="sFilter">
+ Eine SQL Bedingung.
+ Beispiel für die Auflistung der Umsatzsteuersätze: UmsatzVorst = 0
+ </param>
+ <param name="EmptyEntryID">Einen Integer oder String Wert für den ersten Eintrag in der Combobox. Dieser Wert wird in ValueMember der Combobox übertragen</param>
+ <param name="EmptyEntryString">Einen String Wert für den ersten Eintrag in der Combobox. Dieser Wert wird in DisplayMember der Combobox übertragen</param>
+</member>
+<member name="M:blueoffice.ERP.General.ComboBoxes.GetListFillNamed(blueoffice.ERP.General.ComboBoxes.ComboBoxNamedType,System.String,System.Object,System.String)">
+ <summary>
+ Füllt ein Liste vom Typ blueoffice.common.settings.Objects.ListItem anhand des Typs (ComboBoxNamedType)
+ </summary>
+ <param name="NamedType">Typ</param>
+ <param name="sFilter">
+ Eine SQL Bedingung.
+ Beispiel: PLZ_LAND = 'CH'
+ </param>
+ <param name="EmptyEntryID">Einen Integer oder String Wert für den ersten Eintrag in der Combobox. Dieser Wert wird in ValueMember der Combobox übertragen</param>
+ <param name="EmptyEntryString">Einen String Wert für den ersten Eintrag in der Combobox. Dieser Wert wird in DisplayMember der Combobox übertragen</param>
+</member>
+<member name="M:blueoffice.ERP.General.ComboBoxes.FillNamed_MultiCol(C1.Win.C1List.C1Combo@,blueoffice.ERP.General.ComboBoxes.MultiComboBoxNamedType,System.String)">
+ <summary>
+ Füllt eine C1 (ComponentOne) Combobox anhand von ComboBoxNamedType
+ </summary>
+ <remarks>Die Combobox wird Mehrspaltig gefüllt und formatiert</remarks>
+ <param name="tCombo">C1.Combobox</param>
+ <param name="ComboBoxNamedType">Typ</param>
+ <param name="sFilter">
+ Eine SQL Bedingung.
+ Beispiel: PLZ_LAND = 'CH'
+ </param>
+</member>
+<member name="M:blueoffice.ERP.General.ComboBoxes.FillNamed_MultiCol_Waehrung(C1.Win.C1List.C1Combo@,System.String,System.Nullable{System.Int32},System.String,System.String)">
+ <summary>
+ Füllt eine C1 (ComponentOne) Combobox mit den MWSt Sätzen
+ </summary>
+ <remarks>Die Combobox wird Mehrspaltig gefüllt und formatiert</remarks>
+ <param name="tCombo">C1.Combobox</param>
+ <param name="sFilter">
+ Eine SQL Bedingung.
+ Beispiel für die Auflistung der Umsatzsteuersätze: UmsatzVorst = 0
+ </param>
+</member>
+<member name="M:blueoffice.ERP.General.ComboBoxes.FillNamed_MultiCol_MWST(C1.Win.C1List.C1Combo@,System.Nullable{System.DateTime},System.String)">
+ <summary>
+ Füllt eine C1 (ComponentOne) Combobox mit den MWSt Sätzen
+ </summary>
+ <remarks>Die Combobox wird Mehrspaltig gefüllt und formatiert</remarks>
+ <param name="tCombo">C1.Combobox</param>
+  <param name="PeriodenDatum">Das Datum der MWSt Periode</param>
+ <param name="sFilter">
+ Eine SQL Bedingung.
+ Beispiel für die Auflistung der Umsatzsteuersätze: UmsatzVorst = 0
+ </param>
+</member>
+<member name="M:blueoffice.ERP.General.ComboBoxes.FillNamed_MultiCol_Konto(C1.Win.C1List.C1Combo@,blueoffice.ERP.General.ComboBoxes.KontoTyp,System.String)">
+ <summary>
+ Füllt eine C1 (ComponentOne) Combobox mit den Konten
+ </summary>
+ <remarks>Die Combobox wird Mehrspaltig gefüllt und formatiert</remarks>
+ <param name="tCombo">C1.Combobox</param>
+  <param name="Konto_Typ">Konto Typ (Alle, Debitor, Kreditor, Aufwand oder Ertrag)</param>
+ <param name="sFilter">
+ Eine SQL Bedingung.
+ Beispiel für die Auflistung der Umsatzsteuersätze: UmsatzVorst = 0
+ </param>
+</member>
+<member name="M:blueoffice.ERP.General.ComboBoxes.FillNamed_MultiCol_Konto(C1.Win.C1List.C1Combo@,blueoffice.ERP.General.ComboBoxes.KontoTyp,System.Int32,System.String)">
+ <summary>
+ Füllt eine C1 (ComponentOne) Combobox mit den Konten
+ </summary>
+ <remarks>Die Combobox wird Mehrspaltig gefüllt und formatiert</remarks>
+ <param name="tCombo">C1.Combobox</param>
+ <param name="Konto_Typ">Konto Typ (Alle, Debitor, Kreditor, Aufwand oder Ertrag)</param>
+ <param name="Periode">Perioden Index</param>
+ <param name="sFilter">
+ Eine SQL Bedingung.
+ Beispiel für die Auflistung der Umsatzsteuersätze: UmsatzVorst = 0
+ </param>
+</member>
+<member name="M:blueoffice.ERP.General.ComboBoxes.FillNamed_MultiCol_Konto(C1.Win.C1List.C1Combo@,blueoffice.ERP.General.ComboBoxes.KontoTyp,System.DateTime,System.String)">
+ <summary>
+ Füllt eine C1 (ComponentOne) Combobox mit den Konten
+ </summary>
+ <remarks>Die Combobox wird Mehrspaltig gefüllt und formatiert</remarks>
+ <param name="tCombo">C1.Combobox</param>
+  <param name="Konto_Typ">Konto Typ (Alle, Debitor, Kreditor, Aufwand oder Ertrag)</param>
+ <param name="PeriodenDatum">Das Datum des Kontoplan Periode.</param>
+ <param name="sFilter">
+ Eine SQL Bedingung.
+ Beispiel für die Auflistung der Umsatzsteuersätze: UmsatzVorst = 0
+ </param>
+</member>
+<member name="M:blueoffice.ERP.General.ComboBoxes.FillNamed_BL_Kanton(System.Windows.Forms.ComboBox@,System.String,System.String)">
+ <summary>
+ Füllt die Combobox mit den Bundesländern/Kanton des jeweiligen Landes (Optional)
+ </summary>
+ <param name="tCombo">Combobox</param>
+ <param name="ISOLand">ISO Land (CH, DE, AT... usw.)</param>
+ <param name="EmptyEntryString">Einen String Wert für den ersten Eintrag in der Combobox. Dieser Wert wird in DisplayMember der Combobox übertragen</param>
+</member>
+<member name="M:blueoffice.ERP.General.ComboBoxes.FillNamed_Mengeneinheiten(System.Windows.Forms.ComboBox@,blueoffice.ERP.General.ComboBoxes.MengenEinheitTyp,System.Int32,System.String,System.String)">
+ <summary>
+ Füllt die Combobox mit den Bundesländern/Kanton des jeweiligen Landes (Optional)
+ </summary>
+ <param name="tCombo">Combobox</param>
+  <param name="NamedType">Allgemein, Gewicht oder Mass Einheiten</param>
+ <param name="SprachCode">Sprach Code</param>
+ <param name="EmptyEntryString">Einen String Wert für den ersten Eintrag in der Combobox. Dieser Wert wird in DisplayMember der Combobox übertragen</param>
+ <param name="sFilter">Eine SQL Bedingung.</param>
+</member>
+<member name="M:blueoffice.ERP.General.ComboBoxes.GetListFillNamed_Mengeneinheiten(blueoffice.ERP.General.ComboBoxes.MengenEinheitTyp,System.Int32,System.String,System.String)">
+ <summary>
+ Füllt ein Liste vom Typ blueoffice.common.settings.Objects.ListItem anhand des Typs (ComboBoxNamedType)
+ </summary>
+ <param name="NamedType">Typ</param>
+ <param name="SprachCode">Sprach Code</param>
+ <param name="EmptyEntryString">Einen String Wert für den ersten Eintrag in der Combobox. Dieser Wert wird in DisplayMember der Combobox übertragen</param>
+ <param name="sFilter">Eine SQL Bedingung.</param>
+</member>
+<member name="M:blueoffice.ERP.General.ComboBoxes.FillNamed_MWST(System.Windows.Forms.ComboBox@,System.Nullable{System.DateTime},System.String,System.Object,System.String)">
+ <summary>
+ Füllt die Combobox mit den MWSt Sätzen
+ </summary>
+ <param name="tCombo">Combobox</param>
+ <param name="PeriodenDatum">Das Datum der MWSt Periode</param>
+ <param name="sFilter">
+ Eine SQL Bedingung.
+ Beispiel für die Auflistung der Umsatzsteuersätze: UmsatzVorst = 0
+ </param>
+ <param name="EmptyEntryID">Einen Integer Wert für den ersten Eintrag in der Combobox. Dieser Wert wird in ValueMember der Combobox übertragen</param>
+ <param name="EmptyEntryString">Einen String Wert für den ersten Eintrag in der Combobox. Dieser Wert wird in DisplayMember der Combobox übertragen</param>
+</member>
+<member name="M:blueoffice.ERP.General.ComboBoxes.FillNamed_Konto(System.Windows.Forms.ComboBox@,blueoffice.ERP.General.ComboBoxes.KontoTyp,System.String,System.Object,System.String)">
+ <summary>
+ Füllt die Combobox mit den Konten
+ </summary>
+ <param name="tCombo">Combobox</param>
+ <param name="Konto_Typ">Konto Typ (Alle, Debitor, Kreditor, Aufwand oder Ertrag)</param>
+ <param name="sFilter">
+ Eine SQL Bedingung.
+ </param>
+ <param name="EmptyEntryID">Einen Integer Wert für den ersten Eintrag in der Combobox. Dieser Wert wird in ValueMember der Combobox übertragen</param>
+ <param name="EmptyEntryString">Einen String Wert für den ersten Eintrag in der Combobox. Dieser Wert wird in DisplayMember der Combobox übertragen</param>
+</member>
+<member name="M:blueoffice.ERP.General.ComboBoxes.FillNamed_Konto(System.Windows.Forms.ComboBox@,blueoffice.ERP.General.ComboBoxes.KontoTyp,System.Int32,System.String,System.Object,System.String)">
+ <summary>
+ Füllt die Combobox mit den Konten
+ </summary>
+ <param name="tCombo">Combobox</param>
+ <param name="Konto_Typ">Konto Typ (Alle, Debitor, Kreditor, Aufwand oder Ertrag)</param>
+ <param name="Periode">Perioden Index</param>
+ <param name="sFilter">
+ Eine SQL Bedingung.
+ </param>
+ <param name="EmptyEntryID">Einen Integer Wert für den ersten Eintrag in der Combobox. Dieser Wert wird in ValueMember der Combobox übertragen</param>
+ <param name="EmptyEntryString">Einen String Wert für den ersten Eintrag in der Combobox. Dieser Wert wird in DisplayMember der Combobox übertragen</param>
+</member>
+<member name="M:blueoffice.ERP.General.ComboBoxes.FillNamed_Konto(System.Windows.Forms.ComboBox@,blueoffice.ERP.General.ComboBoxes.KontoTyp,System.DateTime,System.String,System.Object,System.String)">
+ <summary>
+ Füllt die Combobox mit den Konten
+ </summary>
+ <param name="tCombo">Combobox</param>
+ <param name="Konto_Typ">Konto Typ (Alle, Debitor, Kreditor, Aufwand oder Ertrag)</param>
+ <param name="PeriodenDatum">Das Datum des Kontoplan Periode.</param>
+ <param name="sFilter">
+ Eine SQL Bedingung.
+ </param>
+ <param name="EmptyEntryID">Einen Integer Wert für den ersten Eintrag in der Combobox. Dieser Wert wird in ValueMember der Combobox übertragen</param>
+ <param name="EmptyEntryString">Einen String Wert für den ersten Eintrag in der Combobox. Dieser Wert wird in DisplayMember der Combobox übertragen</param>
+</member>
+<member name="M:blueoffice.ERP.General.ComboBoxes.FillNamed_Ansprechpartner(System.Windows.Forms.ComboBox@,System.Int32,System.Object,System.String,System.Boolean,System.Boolean,System.Int32,System.Boolean)">
+ <summary>
+ Füllt die Combobox mit den Ansprechpartner der gewählten Adresse (ADR_ID)
+ </summary>
+ <param name="tCombo">Combobox</param>
+ <param name="ADR_ID">Adress ID</param>
+ <param name="EmptyEntryID">Einen Integer Wert für den ersten Eintrag in der Combobox. Dieser Wert wird in ValueMember der Combobox übertragen</param>
+ <param name="EmptyEntryString">Einen String Wert für den ersten Eintrag in der Combobox. Dieser Wert wird in DisplayMember der Combobox übertragen</param>
+ <param name="NameVorname">True = Eintrag wird mit Name und dann Vorname. Beispiel: 'Muster Hans' False = 'Hans Muster'</param>
+ <param name="MitAnrede">True = Die Anrede wird vor den Namen gestellt. Beispiel: 'Herr Muster Hans' oder 'Herr Hans Muster' </param>
+ <param name="AAS_ID">Wenn Wert > 0 wird der Ansprechpartner mit dieser ID auch aufgelistet, auch wenn der Ansprechpartner Inaktiv ist</param>
+ <param name="ShowInaktiv">True = Zeigt auch Inaktive Ansprechpartner</param>
+</member>
+<member name="M:blueoffice.ERP.General.ComboBoxes.FillNamed_Nummernkreise_ReWe(System.Windows.Forms.ComboBox@,System.String,System.Object,System.String)">
+ <summary>
+ Füllt die Combobox mit den ReWe-Nummerkreisen
+ </summary>
+ <param name="tCombo">Combobox</param>
+ <param name="sFilter">
+ Eine SQL Bedingung.
+ </param>
+ <param name="EmptyEntryID">Einen Integer Wert für den ersten Eintrag in der Combobox. Dieser Wert wird in ValueMember der Combobox übertragen</param>
+ <param name="EmptyEntryString">Einen String Wert für den ersten Eintrag in der Combobox. Dieser Wert wird in DisplayMember der Combobox übertragen</param>
+</member>
+<member name="M:blueoffice.ERP.General.ComboBoxes.FillNamed_Nummernkreise_ReWe(System.Windows.Forms.ComboBox@,System.Int32,System.String,System.Object,System.String)">
+ <summary>
+ Füllt die Combobox mit den ReWe-Nummerkreisen
+ </summary>
+ <param name="tCombo">Combobox</param>
+ <param name="Periode">Perioden Index</param>
+ <param name="sFilter">
+ Eine SQL Bedingung.
+ </param>
+ <param name="EmptyEntryID">Einen Integer Wert für den ersten Eintrag in der Combobox. Dieser Wert wird in ValueMember der Combobox übertragen</param>
+ <param name="EmptyEntryString">Einen String Wert für den ersten Eintrag in der Combobox. Dieser Wert wird in DisplayMember der Combobox übertragen</param>
+</member>
+<member name="M:blueoffice.ERP.General.ComboBoxes.FillNamed_Nummernkreise_ReWe(System.Windows.Forms.ComboBox@,System.DateTime,System.String,System.Object,System.String)">
+ <summary>
+ Füllt die Combobox mit den ReWe-Nummerkreisen
+ </summary>
+ <param name="tCombo">Combobox</param>
+ <param name="PeriodenDatum">Das Datum des Kontoplan Periode.</param>
+ <param name="sFilter">
+ Eine SQL Bedingung.
+ </param>
+ <param name="EmptyEntryID">Einen Integer Wert für den ersten Eintrag in der Combobox. Dieser Wert wird in ValueMember der Combobox übertragen</param>
+ <param name="EmptyEntryString">Einen String Wert für den ersten Eintrag in der Combobox. Dieser Wert wird in DisplayMember der Combobox übertragen</param>
+</member>
+<member name="M:blueoffice.ERP.General.ComboBoxes.FillNamed_Journale_ReWe(System.Windows.Forms.ComboBox@,System.String,System.Object,System.String)">
+ <summary>
+ Füllt die Combobox mit den ReWe-Nummerkreisen
+ </summary>
+ <param name="tCombo">Combobox</param>
+ <param name="sFilter">
+ Eine SQL Bedingung.
+ </param>
+ <param name="EmptyEntryID">Einen Integer Wert für den ersten Eintrag in der Combobox. Dieser Wert wird in ValueMember der Combobox übertragen</param>
+ <param name="EmptyEntryString">Einen String Wert für den ersten Eintrag in der Combobox. Dieser Wert wird in DisplayMember der Combobox übertragen</param>
+</member>
+<member name="M:blueoffice.ERP.General.ComboBoxes.FillNamed_Journale_ReWe(System.Windows.Forms.ComboBox@,System.Int32,System.String,System.Object,System.String)">
+ <summary>
+ Füllt die Combobox mit den ReWe-Nummerkreisen
+ </summary>
+ <param name="tCombo">Combobox</param>
+ <param name="Periode">Perioden Index</param>
+ <param name="sFilter">
+ Eine SQL Bedingung.
+ </param>
+ <param name="EmptyEntryID">Einen Integer Wert für den ersten Eintrag in der Combobox. Dieser Wert wird in ValueMember der Combobox übertragen</param>
+ <param name="EmptyEntryString">Einen String Wert für den ersten Eintrag in der Combobox. Dieser Wert wird in DisplayMember der Combobox übertragen</param>
+</member>
+<member name="M:blueoffice.ERP.General.ComboBoxes.FillNamed_Journale_ReWe(System.Windows.Forms.ComboBox@,System.DateTime,System.String,System.Object,System.String)">
+ <summary>
+ Füllt die Combobox mit den ReWe-Nummerkreisen
+ </summary>
+ <param name="tCombo">Combobox</param>
+ <param name="PeriodenDatum">Das Datum des Kontoplan Periode.</param>
+ <param name="sFilter">
+ Eine SQL Bedingung.
+ </param>
+ <param name="EmptyEntryID">Einen Integer Wert für den ersten Eintrag in der Combobox. Dieser Wert wird in ValueMember der Combobox übertragen</param>
+ <param name="EmptyEntryString">Einen String Wert für den ersten Eintrag in der Combobox. Dieser Wert wird in DisplayMember der Combobox übertragen</param>
+</member>
+<member name="M:blueoffice.ERP.General.ComboBoxes.Auswahltexte(System.Windows.Forms.ComboBox@,System.Int32,System.String,System.String,System.String)">
+ <summary>
+ Füllt die Combobox mit den Auswahltexten aus der Tabelle S_AUSWAHLTEXTE. Beispiel zum füllen der Beleg Bezeichnung: Auswahltexte(Combobox,1, "BLG", "BEZ", "")
+ Zum befüllen einer List(Of String) kann die Sub ERP.General.Texte.AuswahltexteList verwendet werden.
+ </summary>
+ <param name="tCombo">Combobox</param>
+ <param name="Sprache">Sprachcode, falls erforderlich</param>
+ <param name="Key_01">Kriterium 1 entspricht dem Datenbankfeld SAT_Key_01, falls erforderlich</param>
+ <param name="Key_02">Kriterium 2 entspricht dem Datenbankfeld SAT_Key_02, falls erforderlich</param>
+ <param name="Key_03">Kriterium 3 entspricht dem Datenbankfeld SAT_Key_03, falls erforderlich</param>
+</member>
+<member name="M:blueoffice.ERP.General.ComboBoxes.Internal_FillComboDB_SQL(blueoffice.ERP.General.ComboBoxes.ComboBoxNamedType,System.String,System.Boolean@,System.Boolean@,System.Boolean@)">
+ <param name="sFilter">
+ Eine SQL Bedingung.
+ Beispiel: PLZ_LAND = 'CH'
+ </param>
+</member>
+<member name="T:blueoffice.ERP.General.Nummernkreise">
+ <summary>
+ Stellt die Nummernkreise (Tabelle: S_NUMMERN) bereit und ermöglicht das aktualisieren und lesen der Nummernkreise
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.Nummernkreise.NummernkreisTyp.Adresse">
+ <summary>
+ Adress Nummernkreis
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.Nummernkreise.NummernkreisTyp.Personal">
+ <summary>
+ Personal Nummernkreis
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.Nummernkreise.NummernkreisTyp.Projekt">
+ <summary>
+ Projekt Nummernkreis
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.Nummernkreise.NummernkreisTyp.Material">
+ <summary>
+ Material/Artikel Nummernkreis
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.Nummernkreise.NummernkreisTyp.Rapport">
+ <summary>
+ Rapport Nummernkreis
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.Nummernkreise.NummernkreisTyp.Inventur">
+ <summary>
+ Inventur Nummernkreis
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.Nummernkreise.NummernkreisTyp.Operationsplan">
+ <summary>
+ Operationsplan Nummernkreis
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.Nummernkreise.NummernkreisTyp.Kostenart">
+ <summary>
+ Kostenart Nummernkreis
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.Nummernkreise.NummernkreisTyp.Kostenstelle">
+ <summary>
+ Kostenstelle Nummernkreis
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.Nummernkreise.NummernkreisTyp.Maschinen">
+ <summary>
+ Maschinen  Nummernkreis
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.Nummernkreise.NummernkreisTyp.SSCCZaheler">
+ <summary>
+ SSCC Nummernkreis
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.Nummernkreise.NummernkreisTyp.PROD_Stueckliste">
+ <summary>
+ Produktionsstücklisten Nummernkreis
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.Nummernkreise.NummernkreisTyp.PROD_AuftragNr">
+ <summary>
+ Produktions Auftrag Nummernkreis
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.Nummernkreise.NummernkreisTyp.Rahmenauftrag">
+ <summary>
+ Rahmenauftrag Nummernkreis
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.Nummernkreise.NummernkreisTyp.Reparatur">
+ <summary>
+ Reparatur Nummernkreis
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.Nummernkreise.NummernkreisTyp.AdresslinkKey">
+ <summary>
+ Adresslink Nummernkreis
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.Nummernkreise.NummernkreisTyp.BLG_Offerte">
+ <summary>
+ Offert Nummernkreis
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.Nummernkreise.NummernkreisTyp.BLG_Auftrag">
+ <summary>
+ Auftrags Nummernkreis
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.Nummernkreise.NummernkreisTyp.BLG_Lieferschein">
+ <summary>
+ Lieferschein Nummernkreis
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.Nummernkreise.NummernkreisTyp.BLG_Rechnung">
+ <summary>
+ Rechnungs Nummernkreis
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.Nummernkreise.NummernkreisTyp.BLG_Werkauftrag">
+ <summary>
+ Werkauftrag Nummernkreis
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.Nummernkreise.NummernkreisTyp.BLG_Retouren">
+ <summary>
+ Retouren Nummernkreis
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.Nummernkreise.NummernkreisTyp.BLG_Gutschrift">
+ <summary>
+ Gutschrift Nummernkreis
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.Nummernkreise.NummernkreisTyp.BLG_Miete">
+ <summary>
+ Vermietung Nummernkreis
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.Nummernkreise.NummernkreisTyp.BLG_XBeleg">
+ <summary>
+ Freie Beleg Nummernkreis
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.Nummernkreise.NummernkreisTyp.BLG_Kassabon">
+ <summary>
+ Kassabon Nummernkreis
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.Nummernkreise.NummernkreisTyp.BLG_BestellAnfrage">
+ <summary>
+ Bestell Anfrage Nummernkreis
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.Nummernkreise.NummernkreisTyp.BLG_Bestellung">
+ <summary>
+ Bestellung Nummernkreis
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.Nummernkreise.NummernkreisTyp.BLG_EingangsRechnung">
+ <summary>
+ Eingangsrechnung Nummernkreis
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.Nummernkreise.NummernkreisTyp.BLG_KreditorRetoure">
+ <summary>
+ Kreditoren Retouren Nummernkreis
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.Nummernkreise.NummernkreisTyp.BLG_KreditorGutschrift">
+ <summary>
+ Kreditoren Gutschrift Nummernkreis
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.Nummernkreise.NummernkreisTyp.BLG_InterneAuftragsNr">
+ <summary>
+ Interne Auftragsnummer Nummernkreis
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.Nummernkreise.NummernkreisTyp.BLG_Debitor">
+ <summary>
+ Nummernkreis für Debitoren Belege
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.Nummernkreise.NummernkreisTyp.BLG_Kreditor">
+ <summary>
+ Nummernkreis für Kreditoren Belege
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.Nummernkreise.NummernkreisTyp.SupportTool_SR">
+ <summary>
+ Nummernkreis für Support Tool - Service Anfrage
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.Nummernkreise.NummernkreisTyp.SupportTool_KB">
+ <summary>
+ Nummernkreis für Support Tool - KnowledgeBase
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.Nummernkreise.NummernkreisTyp.SupportTool_FAQ">
+ <summary>
+ Nummernkreis für Support Tool - FAQ
+ </summary>
+</member>
+<member name="F:blueoffice.ERP.General.Nummernkreise.NummernkreisTyp.SupportTool_CM">
+ <summary>
+ Nummernkreis für Support Tool - Change Management
+ </summary>
+</member>
+<member name="M:blueoffice.ERP.General.Nummernkreise.GetTitel(blueoffice.ERP.General.Nummernkreise.NummernkreisTyp)">
+ <summary>
+ Nummernkreis Titel
+ </summary>
+ <returns>Gibt den Titeltext zurück</returns>
+</member>
+<member name="M:blueoffice.ERP.General.Nummernkreise.GetKey(blueoffice.ERP.General.Nummernkreise.NummernkreisTyp)">
+ <summary>
+ Nummernkreis Schlüssel
+ </summary>
+ <returns>Gibt den Key zurück. Dieser entspricht dem Eintrag in der Tabelle [S_NUMMER.SNR_Text]</returns>
+</member>
+<member name="M:blueoffice.ERP.General.Nummernkreise.GetNummer(blueoffice.ERP.General.Nummernkreise.NummernkreisTyp)">
+ <summary>
+ Aktuelle Nummer des Nummernkreis-Typs
+ </summary>
+ <param name="NKTyp">Nummernkreis-Typ</param>
+ <returns>Die gespeicherte Nummer</returns>
+</member>
+<member name="M:blueoffice.ERP.General.Nummernkreise.GetNummer(System.String)">
+ <summary>
+ Aktuelle Nummer des Nummernkreis Schlüssel
+ </summary>
+ <param name="NummernKey">Der Schlüssen der Nummer</param>
+ <returns>Die gespeicherte Nummer</returns>
+</member>
+<member name="M:blueoffice.ERP.General.Nummernkreise.SetNummer(blueoffice.ERP.General.Nummernkreise.NummernkreisTyp,System.Int32)">
+ <summary>
+ Speichert die Nummer des Nummernkreis-Typs
+ </summary>
+ <param name="NKTyp">Nummernkreis-Typ</param>
+</member>
+<member name="M:blueoffice.ERP.General.Nummernkreise.SetNummer(System.String,System.Int32)">
+ <summary>
+ Speichert die Nummer des Nummernkreis Schlüssel
+ </summary>
+ <param name="NummernKey">Der Schlüssen der Nummer</param>
+</member>
+<member name="T:blueoffice.ERP.General.ObjektPreisEintrag">
+ <summary>
+ Stellt die Informationen zum einfügen der Kundenpreise dar.
+ </summary>
+</member>
+<member name="P:blueoffice.ERP.General.ObjektPreisEintrag.Preis">
+ <summary>
+ Kundenpreis
+ </summary>
+</member>
+<member name="P:blueoffice.ERP.General.ObjektPreisEintrag.Rabatt">
+ <summary>
+ Kundenrabatt
+ </summary>
+</member>
+<member name="P:blueoffice.ERP.General.ObjektPreisEintrag.Rabatt2">
+ <summary>
+ Kundenrabatt 2
+ </summary>
+</member>
+<member name="P:blueoffice.ERP.General.ObjektPreisEintrag.WIRWert">
+ <summary>
+ WIR Wert
+ </summary>
+</member>
+<member name="P:blueoffice.ERP.General.ObjektPreisEintrag.VP">
+ <summary>
+ Verkaufspreis
+ </summary>
+ <value>
+ -1 Kein Verkaufspreis hinterlegt, es wird der eingegeben Kundenpreis verwendet
+ &gt;-1 Es wird der Listenpreis, VP 1-9 oder Aktionspreis angewant
+ </value>
+</member>
+<member name="P:blueoffice.ERP.General.ObjektPreisEintrag.FW">
+ <summary>
+ Währungs ID
+ </summary>
+</member>
+<member name="P:blueoffice.ERP.General.ObjektPreisEintrag.KundenNr">
+ <summary>
+ Kunden Nr
+ </summary>
+</member>
+<member name="P:blueoffice.ERP.General.ObjektPreisEintrag.Barcode">
+ <summary>
+ Barcdoe
+ </summary>
+</member>
+<member name="P:blueoffice.ERP.General.ObjektPreisEintrag.Memo">
+ <summary>
+ Beschreibung für Kundenpreis
+ </summary>
+</member>
+<member name="P:blueoffice.ERP.General.ObjektPreisEintrag.KundenNrJN">
+ <summary>
+ Kunden Nr hinterlegt
+ </summary>
+ <value>true Kunden-Nr ist aktiv, falls nicht false</value>
+</member>
+<member name="P:blueoffice.ERP.General.ObjektPreisEintrag.KundenVPJN">
+ <summary>
+ Kundenpreis hinterlegt
+ </summary>
+ <value>true Kundenpreis ist aktiv, falls nicht false</value>
+</member>
+<member name="T:blueoffice.ERP.General.PLZ">
+ <summary>
+ Stellt den Postleizahlenstamm dar
+ </summary>
+</member>
+<member name="P:blueoffice.ERP.General.PLZ.Count">
+ <summary>
+ Anzahl
+ </summary>
+ <value>Gibt die Anzahl treffer zurück</value>
+</member>
+<member name="P:blueoffice.ERP.General.PLZ.Land">
+ <summary>
+ Land (ISO)
+ </summary>
+</member>
+<member name="P:blueoffice.ERP.General.PLZ.PLZ">
+ <summary>
+ Postleitzahl
+ </summary>
+</member>
+<member name="P:blueoffice.ERP.General.PLZ.Ort">
+ <summary>
+ Ort
+ </summary>
+</member>
+<member name="P:blueoffice.ERP.General.PLZ.BL">
+ <summary>
+ Bundesland/Kanton
+ </summary>
+</member>
+<member name="P:blueoffice.ERP.General.PLZ.TelVorwahl">
+ <summary>
+ Telefon vorwahl
+ </summary>
+</member>
+<member name="M:blueoffice.ERP.General.PLZ.FindByPostalcode(System.String,System.String)">
+ <summary>
+ Ort nach Postleitzahl suchen
+ </summary>
+ <returns>Gibt die Anzhal Treffer zurück</returns>
+</member>
+<member name="M:blueoffice.ERP.General.PLZ.FindByCity(System.String,System.String)">
+ <summary>
+ Posteleitzahl nach Ort suchen
+ </summary>
+ <returns>Gibt die Anzhal Treffer zurück</returns>
+</member>
+<member name="T:blueoffice.ERP.General.Texte">
+ <summary>
+ Stellt die Auswahltexte bereit
+ </summary>
+</member>
+<member name="M:blueoffice.ERP.General.Texte.Get_BelegTextList(System.Int32)">
+ <summary>
+ Ruft die Liste der Einträge ab
+ </summary>
+ <param name="Index">
+ 0  Für alle Codefelder
+ 1-10 Für ein bestimmtes Codefeld
+ </param>
+ <returns>Eine Auflisten der Einträge</returns>
+</member>
+<member name="M:blueoffice.ERP.General.Texte.Add_BelegTexte(System.Int32,System.String)">
+ <summary>
+ Fügt einen neuen Text, für die Codfelder im Belegkopf, in die Liste ein
+ </summary>
+ <param name="Index">
+ 0 Für alle Codefelder
+ 1-10 Für ein bestimmtes Codefeld
+ </param>
+ <param name="NewEntry">Der Text der in die Liste gespeichert werden soll</param>
+</member>
+<member name="M:blueoffice.ERP.General.Texte.Delete_BelegTexte(System.Int32,System.String)">
+ <summary>
+ Löscht einen Text, der Codfelder im Belegkopf, aus der Liste.
+ </summary>
+ <param name="Index">
+ 0  Für alle Codefelder
+ 1-10 Für ein bestimmtes Codefeld
+ </param>
+</member>
+<member name="M:blueoffice.ERP.General.Texte.Add_IhreBestellung(System.String)">
+ <summary>
+ Fügt einen neuen Text in die Tabelle R_IBTEXT (Ihre Bestellung) ein
+ </summary>
+ <param name="NewEntry">Der Text der in die Liste gespeichert werden soll</param>
+</member>
+<member name="M:blueoffice.ERP.General.Texte.Delete_IhreBestellung(System.String)">
+ <summary>
+ Löscht einen Text aus der Tabelle R_IBTEXT (Ihre Bestellung)
+ </summary>
+ <param name="Entry">Der Text der aus der Liste gelöscht werden soll</param>
+</member>
+<member name="M:blueoffice.ERP.General.Texte.Delete_Auswahltexte(System.Int32,System.String,System.String,System.String,System.String,System.Boolean)">
+ <summary>
+ Löscht einen Text aus den Auswahltexten. Tabelle: S_AUSWAHLTEXT
+ </summary>
+ <param name="Sprache">Sprachcode, falls erforderlich</param>
+ <param name="Key_01">Kriterium 1 entspricht dem Datenbankfeld SAT_Key_01, falls erforderlich</param>
+ <param name="Key_02">Kriterium 2 entspricht dem Datenbankfeld SAT_Key_02, falls erforderlich</param>
+ <param name="Key_03">Kriterium 3 entspricht dem Datenbankfeld SAT_Key_03, falls erforderlich</param>
+ <param name="LoeschText">Der zu löschende Text</param>
+ <param name="LoeschtextNichtSuchen">Das bewrikt das alle Einträge die mit dem Kriterium von Key 1-3 gelöscht werden</param>
+</member>
+<member name="M:blueoffice.ERP.General.Texte.AddUpdate_Auswahltexte(System.Int32,System.String,System.String,System.String,System.String,System.Boolean)">
+ <summary>
+ Fügt einen Text in die Auswahltexte. Tabelle: S_AUSWAHLTEXT
+ </summary>
+ <param name="Sprache">Sprachcode, falls erforderlich</param>
+ <param name="Key_01">Kriterium 1 entspricht dem Datenbankfeld SAT_Key_01, falls erforderlich</param>
+ <param name="Key_02">Kriterium 2 entspricht dem Datenbankfeld SAT_Key_02, falls erforderlich</param>
+ <param name="Key_03">Kriterium 3 entspricht dem Datenbankfeld SAT_Key_03, falls erforderlich</param>
+ <param name="NeuerText">Der einzufügende Text, wenn der Text vorhanden ist wird dieser aktualisiert. Z.B. gross/klein Schreibung</param>
+ <param name="TextNichtSuchen">True, aktualisiert den Text der Zeile mit den Kriterien von Key 1-3. Es ist so nicht möglich mehrere Zeilen mit Key 1-3 zu erstellen</param>
+</member>
+<member name="M:blueoffice.ERP.General.Texte.Get_Auswahltext(System.Int32,System.String,System.String,System.String)">
+ <summary>
+ Gibt einen Eintrag aus den Auswahltexten (Tabelle S_AUSWAHLTEXTE) zurück. 
+ </summary>
+ <param name="Sprache">Sprachcode, falls erforderlich</param>
+ <param name="Key_01">Kriterium 1 entspricht dem Datenbankfeld SAT_Key_01, falls erforderlich</param>
+ <param name="Key_02">Kriterium 2 entspricht dem Datenbankfeld SAT_Key_02, falls erforderlich</param>
+ <param name="Key_03">Kriterium 3 entspricht dem Datenbankfeld SAT_Key_03, falls erforderlich</param>
+</member>
+<member name="M:blueoffice.ERP.General.Texte.AuswahltexteList(System.Int32,System.String,System.String,System.String)">
+ <summary>
+ Füllt eine Liste (List(Of String) mit den Auswahltexten aus der Tabelle S_AUSWAHLTEXTE. Beispiel zum füllen der Beleg Bezeichnung: Auswahltexte(1, "BLG", "BEZ", "")
+ Zum direkt befüllen einer Combobox kann auch die Sub ERP.General.ComboBoxes.Auswahltexte verwendet werden.
+ </summary>
+ <param name="Sprache">Sprachcode, falls erforderlich</param>
+ <param name="Key_01">Kriterium 1 entspricht dem Datenbankfeld SAT_Key_01, falls erforderlich</param>
+ <param name="Key_02">Kriterium 2 entspricht dem Datenbankfeld SAT_Key_02, falls erforderlich</param>
+ <param name="Key_03">Kriterium 3 entspricht dem Datenbankfeld SAT_Key_03, falls erforderlich</param>
+</member>
+<member name="P:blueoffice.ERP.General.ZKD.SZK_ID">
+ <summary>
+ Zahlungskondition Schlüssel. Z.B. '10T'
+ </summary>
+</member>
+<member name="P:blueoffice.ERP.General.ZKD.SZK_Skonto1">
+ <summary>
+ Skonto 1 in Prozent
+ </summary>
+</member>
+<member name="P:blueoffice.ERP.General.ZKD.SZK_Skonto2">
+ <summary>
+ Skonto 2 in Prozent
+ </summary>
+</member>
+<member name="P:blueoffice.ERP.General.ZKD.SZK_Tage1">
+ <summary>
+ Skonto 1 zahlbar innert X Tage
+ </summary>
+</member>
+<member name="P:blueoffice.ERP.General.ZKD.SZK_Tage2">
+ <summary>
+ Skonto 2 zahlbar innert X Tage
+ </summary>
+</member>
+<member name="P:blueoffice.ERP.General.ZKD.SZK_Netto">
+ <summary>
+ Zahlung netto in Tage
+ </summary>
+</member>
+<member name="P:blueoffice.ERP.General.ZKD.SZK_Standard">
+ <summary>
+ Standard Zahlungskondition
+ </summary>
+</member>
+<member name="P:blueoffice.ERP.General.ZKD.SZK_Text">
+ <summary>
+ Zahlungskondition Text
+ </summary>
+</member>
+<member name="M:blueoffice.ERP.General.ZKD.GetDefault">
+ <summary>
+ Liest die Standard Zahlungskondition in das Objekt ein
+ </summary>
+</member>
+<member name="M:blueoffice.ERP.General.ZKD.Read(System.String)">
+ <summary>
+ Liest die angegebene Zahlungskondition in das Objekt ein
+ </summary>
+ <param name="ZKD_ID">Zahlungskondition Schlüssel. Z.B. '10T'</param>
+ <returns>true wenn die Zahlungskondition gefunden wurde, andernfalis false</returns>
+</member>
+<member name="M:blueoffice.ERP.General.ZKD.AddNew">
+ <summary>
+ Fügt eine neue Zahlungskondition hinzu
+ </summary>
+</member>
+<member name="M:blueoffice.ERP.General.ZKD.Update">
+ <summary>
+ Aktualisiert die Werte im Objekt mit der Datenbank
+ </summary>
+ <returns>true wenn der Vorgang erfolgreich war, andernfalis fals</returns>
+</member>
+<member name="T:blueoffice.ERP.Designers.dsDesign">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:blueoffice.ERP.Designers.dsDesign.HeaderDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:blueoffice.ERP.Designers.dsDesign.TabPageDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:blueoffice.ERP.Designers.dsDesign.ControlDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:blueoffice.ERP.Designers.dsDesign.ControlPropDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:blueoffice.ERP.Designers.dsDesign.HeaderRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:blueoffice.ERP.Designers.dsDesign.TabPageRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:blueoffice.ERP.Designers.dsDesign.ControlRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:blueoffice.ERP.Designers.dsDesign.ControlPropRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:blueoffice.ERP.Designers.dsDesign.HeaderRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:blueoffice.ERP.Designers.dsDesign.TabPageRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:blueoffice.ERP.Designers.dsDesign.ControlRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:blueoffice.ERP.Designers.dsDesign.ControlPropRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:blueoffice.ERP.Helpers">
+ <summary>
+ Stellt diverse Hilfsfunktionen bereit
+ </summary>
+</member>
+<member name="M:blueoffice.ERP.Helpers.Dial(System.String,System.Int32,blueoffice.ERP.General.TAPI.ObjectType,System.Nullable{System.Boolean})">
+ <summary>
+ Wählt eine Telefonnummer
+ </summary>
+ <param name="Nummer">Telefonnummer</param>
+ <param name="ID">ID des Objekts. Z.B. ADR_ID, AAS_ID usw.</param>
+ <param name="objectType">Objekt Typ</param>
+ <param name="ShowDialog">Dialog anzeigen. Bei Nothing wird die Benutzereinstellung verwendet</param>
+</member>
+<member name="M:blueoffice.ERP.Helpers.DialInputbox">
+ <summary>
+ Öffnet einen Dialog und wählt die eingegebene Telefonnummer
+ </summary>
+</member>
+<member name="M:blueoffice.ERP.Helpers.OpenEmail(System.String,System.String,System.String)">
+ <summary>
+ Öffnet eine neue E-Mail mit dem standard E-Mail programm
+ </summary>
+ <param name="EmailAddress">E-Mail Adresse</param>
+ <param name="Subject">Betreff</param>
+ <param name="Body">E-Mail Text</param>
+</member>
+<member name="M:blueoffice.ERP.Helpers.OpenEmailOutlook(System.String,System.String,System.String,System.Boolean,System.Collections.Generic.List{System.String},System.String,System.String)">
+ <summary>
+ Öffnet eine neue E-Mail mit dem Microsoft Outlook
+ </summary>
+ <param name="Mail_To">E-Mail Adresse</param>
+ <param name="Subject">Betreff</param>
+ <param name="Body">E-Mail Text</param>
+ <param name="TextFormat">True = Body ist in Textformat. False = Body ist in HTML Format</param>
+ <param name="FileList">Dateiliste der Anhänge</param>
+ <param name="Mail_Cc">Cc E-Mail Adresse</param>
+ <param name="Mail_Bcc">Bcc E-Mail Adresse</param>
+</member>
+<member name="M:blueoffice.ERP.Helpers.OpenWeb(System.String)">
+ <summary>
+ Öffnet eine Website mit dem standard Browser
+ </summary>
+ <param name="sWebAddress">URL</param>
+</member>
+<member name="M:blueoffice.ERP.Helpers.Briefanrede(System.String,System.String,System.String,System.String)">
+ <summary>
+ Stellt die Briefanrede anhand der Anrede zusammen
+ </summary>
+ <param name="sAnrede">Anrede. Z-B. 'Herr', Frau', 'Frima' usw.</param>
+ <param name="sName">Nachname</param>
+ <param name="sVorname">Vorname</param>
+ <param name="sTitel">Titel. Z-B. 'Dr.', 'Prof.' usw.</param>
+ <returns>Zusammengestellte Briefanrede</returns>
+</member>
+<member name="M:blueoffice.ERP.Helpers.Get_BelegStatus(blueoffice.ERP.Beleg.Beleg.BelegStatus)">
+ <summary>
+ Beleg Status anhand der Belegstatus Enumeration ermitteln
+ </summary>
+ <param name="BelegStausTyp">Belegstatus Enumeration</param>
+ <returns>Status als String. Bespiel "Beleg.Beleg.BelegTyp.Beleg_O" liefert Status "O" zurück</returns>
+</member>
+<member name="M:blueoffice.ERP.Helpers.Get_BelegTyp(System.String)">
+ <summary>
+ Beleg Typ, Debitor- oder Kreditor-Beleg,  anhand des Belegstatus ermitteln
+ </summary>
+ <param name="BelegStaus">BelegStaus: 'R' für Rechnung, 'O' für Offerte usw.</param>
+ <returns>'D' für Debitorbeleg oder 'K' für Kreditorbeleg.</returns>
+</member>
+<member name="M:blueoffice.ERP.Helpers.Get_BelegTableName(System.String)">
+ <summary>
+ Beleg Tabelle (ohne präfix) anhand des Belegstatus ermitteln
+ </summary>
+ <param name="BelegStaus">BelegStaus: 'R' für Rechnung, 'O' für Offerte usw.</param>
+ <returns>Tabellenname ohne präfix. Liefert den Name der Tabelle ohne R_K, R_D, R_TB, R_S.</returns>
+</member>
+<member name="M:blueoffice.ERP.Helpers.Get_BelegTableName_D(System.String)">
+ <summary>
+ Beleg Tabelle für Positionen anhand des Belegstatus ermitteln
+ </summary>
+ <param name="BelegStaus">BelegStaus: 'R' für Rechnung, 'O' für Offerte usw.</param>
+ <returns>Liefert den kompletten Tabellenname zurück</returns>
+</member>
+<member name="M:blueoffice.ERP.Helpers.Get_BelegTableName_K(System.String)">
+ <summary>
+ Beleg Tabelle für Kopfdaten anhand des Belegstatus ermitteln
+ </summary>
+ <param name="BelegStaus">BelegStaus: 'R' für Rechnung, 'O' für Offerte usw.</param>
+ <returns>Liefert den kompletten Tabellenname zurück</returns>
+</member>
+<member name="M:blueoffice.ERP.Helpers.Get_BelegTableName_TB(System.String)">
+ <summary>
+ Beleg Tabelle für Kopftexte anhand des Belegstatus ermitteln
+ </summary>
+ <param name="BelegStaus">BelegStaus: 'R' für Rechnung, 'O' für Offerte usw.</param>
+ <returns>Liefert den kompletten Tabellenname zurück</returns>
+</member>
+<member name="M:blueoffice.ERP.Helpers.Get_BelegTableName_S(System.String)">
+ <summary>
+ Beleg Tabelle für Serien-Nr anhand des Belegstatus ermitteln
+ </summary>
+ <param name="BelegStaus">Belegtyp: 'R' für Rechnung, 'O' für Offerte usw.</param>
+ <returns>Liefert den kompletten Tabellenname zurück</returns>
+</member>
+<member name="M:blueoffice.ERP.Helpers.File_RemoveSpecialChar(System.String,System.String)">
+ <summary>
+ Entfernt Sonderzeichen aus einem Dateiname
+ </summary>
+ <param name="Filename">Dateiname</param>
+ <param name="ReplaceChar">Sonderzeichen mit diesem Zeichen ersetzen. Standardmässig ist es ein Leerzeichen</param>
+ <returns>Den bereiniten Dateiname</returns>
+</member>
+<member name="M:blueoffice.ERP.Helpers.File_ReplaceExtensions(System.String,System.String,System.String)">
+ <summary>
+ Ersetzt die Dateiendung oder fügt diese an.
+ </summary>
+ <param name="Filename">Dateiname</param>
+ <param name="OldExt">Alte Dateiendung</param>
+ <param name="NewExt">Neue Dateiendung</param>
+ <returns>Den bereiniten Dateiname</returns>
+</member>
+<member name="M:blueoffice.ERP.Helpers.Log_Eintrag(System.String,System.Int64,System.String,System.String,System.Int32,System.String)">
+ <summary>
+ Erstellt einen Eintrag ins Logbuch
+ </summary>
+ <param name="sObjectTyp">AUF, ADR, MAT usw.</param>
+ <param name="lObjectID">ID des Datensatzes</param>
+ <param name="sObjectNr">Nr des Datensatzes</param>
+ <param name="sObjectText">Text/Bezeichnung/Statustext des Datensatzes</param>
+ <param name="iStatus">0 = Datensatz gelöscht, 1 = Datensatz verändert</param>
+ <param name="sStatusText">Statustext des Datensatzes</param>
+ <returns>True wenn erfolgreich, False wenn nicht erfolgreich</returns>
+</member>
+<member name="M:blueoffice.ERP.Helpers.Get_ObjectNrText(System.String,System.Int32,System.String@,System.String@)">
+ <summary>
+ Gibt die Nr (sObjectNr) und die Bezeichnung (sObjectText) des Objekts zurück
+ </summary>
+ <param name="sObjectTyp">Objekttpy: ADR=Adresse, MAT=Artikel, PRO=Projekt, SPZ=Aufgabe, TER=Termin, LDT=Lead,FWA=Währung, MGR=Gruppe, AAS=Ansprechpartner,LPE=Personal, REP=Reparatur, BLG_X = Beleg (X durch Status ersetzen) </param>
+ <param name="lObjectID">ID des Objekts</param>
+ <param name="sObjectNr">Gibt die Objekt-Nr. zurück</param>
+ <param name="sObjectText">Gibt die Objekt-Text zurück</param>
+ <returns>True wenn erfolgreich</returns>
+ <remarks></remarks>
+</member>
+<member name="M:blueoffice.ERP.Helpers.SplitFields(System.String,System.String,System.String)">
+ <summary>
+ Gib Felder eines Strings in einer Auflistung zurück die zwischen einem Start- und Endseparator liegen
+ </summary>
+ <param name="Expression">Eine Zeichenfolge. Beispiel: Die Rechnung {RKA_ExtAufNr} mit dem Betrag von {RKA_Betrag} </param>
+ <param name="StartSeparator">Starttrennzeichen des Feldes. Beispiel: {</param>
+ <param name="EndSeparator">Starttrennzeichen des Feldes. Beispiel: }</param>
+ <returns>Liefert eine List(Of String) zurück mit den Feldern aus der Zeichenfolge. Beispiel: RKA_ExtAufNr, RKA_Betrag </returns>
+ <remarks>Der StartSeparator und EndSeparator dürfen nicht leer sein und müssen unterschiedlich sein. </remarks>
+</member>
+<member name="M:blueoffice.ERP.Helpers.IsBitSet(System.Int32,System.Int32)">
+ <summary>
+ Gib Wahr oder Falsch zurück ob das bit gesetzte ist. Beispiel  Value = 12 (8 + 4) "0000 1100"  in diesem Fall wäre die BitPos 2 (Wert 4) und 3 (Wert 8) wahr
+ </summary>
+ <param name="Value">Wert des Byte  </param>
+ <param name="BitPos">Position des Bit's, beginnt mit 0, startet von rechts.</param>
+</member>
+<member name="M:blueoffice.ERP.Helpers.GetCheckDigitMod10(System.String,System.Boolean,System.String@)">
+ <summary>
+ Gibt die Prüfziffer Modulo 10 zurück
+ </summary>
+ <param name="Value">Nummer ohne Prüfziffer</param>
+ <param name="bNoMessage">Fehlermeldung nicht in Messagebox anzeigen Ja/Nein</param>
+ <param name="sMessage">Fehlermeldung</param>
+ <returns>Prüfziffer</returns>
+ <remarks></remarks>
+</member>
+<member name="M:blueoffice.ERP.Helpers.GetCheckDigitMod11(System.String,System.Boolean,System.String@)">
+ <summary>
+ Gibt die Prüfziffer Modulo 11 zurück
+ </summary>
+ <param name="Value">Nummer ohne Prüfziffer</param>
+ <param name="bNoMessage">Fehlermeldung nicht in Messagebox anzeigen Ja/Nein</param>
+ <param name="sMessage">Fehlermeldung</param>
+ <returns>Prüfziffer</returns>
+ <remarks></remarks>
+</member>
+<member name="M:blueoffice.ERP.Helpers.GetCheckDigitMod97(System.String,System.String,System.Boolean,System.String@)">
+ <summary>
+ Gibt die Prüfziffer Modulo 97 zurück
+ </summary>
+ <param name="sIdentifier">Zeichen 1 und 2 des zu Prüfenden String (IBAN: CH, LI, ... / Creditor Reference: RF)</param>
+ <param name="sReferenz">Zeichen 5 bis Ende des zu Prüfenden String</param>
+ <param name="bNoMessage">Fehlermeldung nicht in Messagebox anzeigen Ja/Nein</param>
+ <param name="sMessage">Fehlermeldung</param>
+ <returns>Prüfziffer</returns>
+ <remarks></remarks>
+</member>
+<member name="M:blueoffice.ERP.Helpers.ValidateCheckDigitMod97(System.String,System.String,System.String,System.Boolean,System.String@)">
+ <summary>
+ Validiert die Prüfziffer Modulo 97
+ </summary>
+ <param name="sIdentifier">Zeichen 1 und 2 des zu Validierenden String (IBAN: CH, LI, ... / Creditor Reference: RF)</param>
+ <param name="sCheckDigits">Zeichen 3 und 4 des zu Validierenden String (Prüfziffer) oder "00"</param>
+ <param name="sReferenz">Zeichen 5 bis Ende des zu Validierenden String</param>
+ <param name="bNoMessage">Fehlermeldung nicht in Messagebox anzeigen Ja/Nein</param>
+ <param name="sMessage">Fehlermeldung</param>
+ <returns>Gibt "01" zurück wenn erfolgreich oder Prüfziffer wenn sCheckDigits = "00"</returns>
+ <remarks></remarks>
+</member>
+</members>
+</doc>
