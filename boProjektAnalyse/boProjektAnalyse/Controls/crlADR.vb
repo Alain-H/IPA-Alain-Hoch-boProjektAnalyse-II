@@ -147,7 +147,7 @@ Public Class crlADR
                 .Name = "colSR_Nummer"
                 .Caption = "SR-Nummer"
                 .Style = SRGrid.Styles.Item("Text")
-                .Width = 65
+                .Width = 75
             End With
 
             With SRGrid.Cols.Add()
@@ -201,7 +201,7 @@ Public Class crlADR
 
             With SRGrid.Cols.Add()
                 .Name = "colPuffer"
-                .Caption = "Puffer"
+                .Caption = ""
                 .Width = 1
             End With
 
@@ -210,16 +210,16 @@ Public Class crlADR
             SRGrid.Dock = DockStyle.Fill
 
 
-            'boGrid Settings Load               
-            Dim GrundKey As String
-            Dim column As blueoffice.controls.boGrid.Column
-            GrundKey = Me.Name      'Name des Controls
-            GrundKey &= "\BoGrids\"
-            GrundKey &= SRGrid.Name 'Name des Grids
-            For col As Integer = 0 To SRGrid.Cols.Count - 1
-                column = SRGrid.Cols.Item(col)
-                column.Width = blueoffice.common.settings.DBSettings.GrundlagenGetMandantInt(GrundKey, column.Width, column.Name & "_Width")
-            Next
+            ''boGrid Settings Load               
+            'Dim GrundKey As String
+            'Dim column As blueoffice.controls.boGrid.Column
+            'GrundKey = Me.Name      'Name des Controls
+            'GrundKey &= "\BoGrids\"
+            'GrundKey &= SRGrid.Name 'Name des Grids
+            'For col As Integer = 0 To SRGrid.Cols.Count - 1
+            '    column = SRGrid.Cols.Item(col)
+            '    column.Width = blueoffice.common.settings.DBSettings.GrundlagenGetMandantInt(GrundKey, column.Width, column.Name & "_Width")
+            'Next
 
             boSL.LoadSettings("ProjektAnalyse_BoSL")
 
