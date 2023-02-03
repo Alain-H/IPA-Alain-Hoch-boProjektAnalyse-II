@@ -15,6 +15,13 @@ Public Class crlADR
 
     Dim ADR_ID As Integer
 
+    Sub New()
+
+        InitializeComponent()
+
+
+    End Sub
+
     Public Property CurrentObject As Object Implements IFrameControl.CurrentObject
         Get
             Return Nothing
@@ -28,10 +35,26 @@ Public Class crlADR
                     Else
                         ADR_ID = 0
                     End If
+                    Fill() 'Refrsh beim Wechsel zischen den Adressen
                 End If
             End If
         End Set
     End Property
+
+    Public Sub Fill()
+
+        'boSL füllen
+        AufPermFilter()
+        boSL.Fill()
+
+
+        'boGridSR füllen
+
+
+
+    End Sub
+
+
 
     Public Event ObjectChanged As IFrameControl.ObjectChangedEventHandler Implements IFrameControl.ObjectChanged
     Public Event PerformAction As IFrameControl.PerformActionEventHandler Implements IFrameControl.PerformAction
@@ -276,34 +299,51 @@ Public Class crlADR
         Return "Projektanalyse"
     End Function
 
+    Private Sub AufPermFilter()
+        If ADR_ID <> 0 Then
+            'boSL Permfilter auf ADR_ID setzen.
+            boSL.PermanentFilter = $"ADR_ID = {ADR_ID}"
+        End If
+    End Sub
+
+#Region "Events"
+    Private Sub boSL_MouseDoubleClick(sender As Object, e As MouseEventArgs) Handles boSL.MouseDoubleClick
+        If boSL.GetRowItemID > 0 Then
+            Dim t As New PU
+            t.OpenObject(boSL.GetRowItemID)
+        End If
+    End Sub
+
     Private Sub btnAddA_Click(sender As Object, e As EventArgs) Handles btnAddA.Click
         Dim tPU As New PU
-        If tPU.AddBeleg() Then
-            'Fill
+        If tPU.AddBeleg(ADR_ID) Then
+            Fill()
         End If
     End Sub
 
     Private Sub btnAddSR_Click(sender As Object, e As EventArgs) Handles btnAddSR.Click
         Dim tPU As New PU
         If tPU.AddObjSRDialog(ADR_ID) Then
-            'Fill   
+            Fill()
         End If
     End Sub
 
     Private Sub btnDeleteObj_Click(sender As Object, e As EventArgs) Handles btnDeleteObj.Click
         Dim tPU As New PU
-        If tPU.DeleteObject() Then
-            'Fill
+        If tPU.DeleteObject(boSL.GetRowItemID) Then
+            Fill()
         End If
     End Sub
 
     Private Sub btnRefresh_Click(sender As Object, e As EventArgs) Handles btnRefresh.Click
-        'Fill
+        Fill()
     End Sub
 
-    Private Sub AufPermFilter()
-        If ADR_ID <> 0 Then
-            'boSL Permfilter auf ADR_ID setzen.
-        End If
+    Private Sub btnSettings_Click(sender As Object, e As EventArgs) Handles btnSettings.Click
+
     End Sub
+
+
+#End Region
+
 End Class
