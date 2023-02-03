@@ -33,14 +33,31 @@ Public Class crlSSV
                     Dim tSSV As blueoffice.DAL.S_SERVICE = DirectCast(value, blueoffice.DAL.S_SERVICE)
                     If tSSV IsNot Nothing AndAlso tSSV.HasData Then
                         SSV_ID = tSSV.SSV_ID
+
+                        'Get ADR_ID
+                        Dim t As New PU
+                        ADR_ID = t.GetADR_IDFromSSV_ID(SSV_ID)
                     Else
                         SSV_ID = 0
                     End If
                 End If
+                Fill()
             End If
         End Set
 
     End Property
+
+    Private Sub Fill()
+        Dim t As New PUCalc(ADR_ID)
+
+        pgbSSV.Value = t.ProzProgress
+        lblProzSSV.Text = t.ProzProgress & "%"
+    End Sub
+
+
+
+
+
 
     Public Event ObjectChanged As IFrameControl.ObjectChangedEventHandler Implements IFrameControl.ObjectChanged
     Public Event PerformAction As IFrameControl.PerformActionEventHandler Implements IFrameControl.PerformAction
@@ -56,13 +73,10 @@ Public Class crlSSV
             dbC.DBCheck()
 
 
+
             pgbSSV.Maximum = 100
 
-            pgbSSV.Value = 25
-
-
-
-
+            pgbSSV.Value = 0
 
         Catch ex As Exception
 

@@ -11,6 +11,7 @@ Public Class crlADR
 
     Dim WithEvents boSL As boSearchList
     Dim boGridSR As boGrid.Grid
+    Dim prozprog As Integer
 
 
     Dim ADR_ID As Integer
@@ -46,9 +47,27 @@ Public Class crlADR
         'boSL füllen
         AufPermFilter()
         boSL.Fill()
-
+        boGridSR.Rows.Count = 1
 
         'boGridSR füllen
+        Dim puCalc As New PUCalc(ADR_ID)
+        If ADR_ID > 0 Then
+            For Each item As PUCalcItem In puCalc.Items
+                If Not item.SRNr Is Nothing Then
+                    boGridSR.AddItem({item.SRNr, item.Bezeichnung, item.Verrechnet, item.Kulanz, item.Warten, item.nichtVerrechnet, Nothing, Nothing, item.Ist})
+                End If
+            Next
+
+            boGridSR.AddItem({"Gesamt:", Nothing, Nothing, Nothing, Nothing, Nothing, puCalc.Verrechenbar, puCalc.Soll_ALL, puCalc.Ist_All})
+        End If
+
+        pgbADR.Value = puCalc.ProzProgress
+        lblProzADR.Text = puCalc.ProzProgress & "%"
+        prozprog = puCalc.ProzProgress
+
+
+
+
 
 
 
@@ -195,6 +214,13 @@ Public Class crlADR
             End With
 
             With boGridSR.Cols.Add()
+                .Name = "colWarten"
+                .Caption = "Warten"
+                .Style = boGridSR.Styles.Item("Dezimal")
+                .Width = 50
+            End With
+
+            With boGridSR.Cols.Add()
                 .Name = "colSRNicht_Verrechnet"
                 .Caption = "Nicht-Verrechnet"
                 .Style = boGridSR.Styles.Item("Dezimal")
@@ -307,12 +333,8 @@ Public Class crlADR
     End Sub
 
 #Region "Events"
-    Private Sub boSL_MouseDoubleClick(sender As Object, e As MouseEventArgs) Handles boSL.MouseDoubleClick
-        If boSL.GetRowItemID > 0 Then
-            Dim t As New PU
-            t.OpenObject(boSL.GetRowItemID)
-        End If
-    End Sub
+
+
 
     Private Sub btnAddA_Click(sender As Object, e As EventArgs) Handles btnAddA.Click
         Dim tPU As New PU
@@ -340,8 +362,18 @@ Public Class crlADR
     End Sub
 
     Private Sub btnSettings_Click(sender As Object, e As EventArgs) Handles btnSettings.Click
-
+        Dim t As New frmSettings
+        t.Show(Me)
     End Sub
+
+    Private Sub boSL_Grid_MouseDoubleClick(sender As Object, RowIndex As Integer, ColIndex As Integer, ItemID As Integer, e As MouseEventArgs) Handles boSL.Grid_MouseDoubleClick
+        If boSL.GetRowItemID > 0 Then
+            Dim t As New PU
+            t.OpenObject(boSL.GetRowItemID)
+        End If
+    End Sub
+
+
 
 
 #End Region

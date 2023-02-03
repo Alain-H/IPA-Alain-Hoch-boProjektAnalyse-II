@@ -31,6 +31,7 @@ Partial Class crlADR
         Me.pgbADR = New System.Windows.Forms.ProgressBar()
         Me.lblFortschritt = New System.Windows.Forms.Label()
         Me.btnRefresh = New System.Windows.Forms.Button()
+        Me.lblProzADR = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'pnlBoSL
@@ -111,11 +112,23 @@ Partial Class crlADR
         Me.btnRefresh.TabIndex = 9
         Me.btnRefresh.UseVisualStyleBackColor = True
         '
+        'lblProzADR
+        '
+        Me.lblProzADR.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lblProzADR.AutoSize = True
+        Me.lblProzADR.Location = New System.Drawing.Point(627, 552)
+        Me.lblProzADR.Name = "lblProzADR"
+        Me.lblProzADR.Size = New System.Drawing.Size(15, 13)
+        Me.lblProzADR.TabIndex = 0
+        Me.lblProzADR.Text = "%"
+        '
         'crlADR
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
+        Me.Controls.Add(Me.lblProzADR)
         Me.Controls.Add(Me.btnRefresh)
         Me.Controls.Add(Me.lblFortschritt)
         Me.Controls.Add(Me.pgbADR)
@@ -141,4 +154,5 @@ Partial Class crlADR
     Friend WithEvents pgbADR As Windows.Forms.ProgressBar
     Friend WithEvents lblFortschritt As Windows.Forms.Label
     Friend WithEvents btnRefresh As Windows.Forms.Button
+    Friend WithEvents lblProzADR As Windows.Forms.Label
 End Class

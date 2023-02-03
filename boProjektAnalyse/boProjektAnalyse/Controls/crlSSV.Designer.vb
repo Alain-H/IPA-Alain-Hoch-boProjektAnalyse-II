@@ -23,7 +23,7 @@ Partial Class crlSSV
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.pgbSSV = New System.Windows.Forms.ProgressBar()
-        Me.lblProzA = New System.Windows.Forms.Label()
+        Me.lblProzSSV = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'pgbSSV
@@ -34,21 +34,21 @@ Partial Class crlSSV
         Me.pgbSSV.Size = New System.Drawing.Size(215, 27)
         Me.pgbSSV.TabIndex = 0
         '
-        'lblProzA
+        'lblProzSSV
         '
-        Me.lblProzA.BackColor = System.Drawing.SystemColors.Control
-        Me.lblProzA.Location = New System.Drawing.Point(101, 6)
-        Me.lblProzA.Name = "lblProzA"
-        Me.lblProzA.Size = New System.Drawing.Size(14, 14)
-        Me.lblProzA.TabIndex = 1
-        Me.lblProzA.Text = "%"
-        Me.lblProzA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblProzSSV.BackColor = System.Drawing.SystemColors.Control
+        Me.lblProzSSV.Location = New System.Drawing.Point(99, 6)
+        Me.lblProzSSV.Name = "lblProzSSV"
+        Me.lblProzSSV.Size = New System.Drawing.Size(25, 14)
+        Me.lblProzSSV.TabIndex = 1
+        Me.lblProzSSV.Text = "%"
+        Me.lblProzSSV.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'crlSSV
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.Controls.Add(Me.lblProzA)
+        Me.Controls.Add(Me.lblProzSSV)
         Me.Controls.Add(Me.pgbSSV)
         Me.Name = "crlSSV"
         Me.Size = New System.Drawing.Size(215, 27)
@@ -57,5 +57,5 @@ Partial Class crlSSV
     End Sub
 
     Friend WithEvents pgbSSV As Windows.Forms.ProgressBar
-    Friend WithEvents lblProzA As Windows.Forms.Label
+    Friend WithEvents lblProzSSV As Windows.Forms.Label
 End Class

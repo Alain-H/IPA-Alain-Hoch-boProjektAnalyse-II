@@ -91,7 +91,7 @@ Public Class PU
             ''BelegDialog öffnen
             Dim bel As New blueoffice.ERP.Browser.Belege
             bel.PermanentFilter = $"RKA_ADR_ID = {adr_ID} AND RKA_Status <> 'A4' and RKA_Status <> 'AS'"
-            If bel.ShowDialog("As") = Windows.Forms.DialogResult.OK Then
+            If bel.ShowDialog("A") = Windows.Forms.DialogResult.OK Then
                 Dim sq As String
                 'Abfrage auf PA_ProjAn ob schon vorhandn falls nicht wirds hinzugefügt
                 sq = $"IF NOT EXISTS
@@ -170,6 +170,22 @@ Public Class PU
         Return RetVal
     End Function
 
+    Public Function GetADR_IDFromSSV_ID(ssv_ID) As Integer
+        Dim RetVal As Integer
+        Dim sq As String
+        Dim dr As DataRow
+
+        sq = $"Select        *
+              From          viewPA_ProjAN
+              where         ObjID = '{ssv_ID}' AND ObjTyp = 'SR'"
+
+        dr = blueoffice.common.db.Data.DBData.GetDataRow(sq)
+
+        RetVal = dr.Item("ADR_ID")
+
+        Return RetVal
+
+    End Function
 
 
 
