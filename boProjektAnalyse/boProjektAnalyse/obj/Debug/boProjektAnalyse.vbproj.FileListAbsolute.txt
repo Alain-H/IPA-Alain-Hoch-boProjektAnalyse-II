@@ -177,3 +177,4 @@ C:\Users\a.hoch.BOAG\OneDrive - blue office ag\IPA\boProjektAnalyse\boProjektAna
 C:\Users\a.hoch.BOAG\OneDrive - blue office ag\IPA\boProjektAnalyse\boProjektAnalyse\boProjektAnalyse\obj\Debug\boProjektAnalyse.dll
 C:\Users\a.hoch.BOAG\OneDrive - blue office ag\IPA\boProjektAnalyse\boProjektAnalyse\boProjektAnalyse\obj\Debug\boProjektAnalyse.xml
 C:\Users\a.hoch.BOAG\OneDrive - blue office ag\IPA\boProjektAnalyse\boProjektAnalyse\boProjektAnalyse\obj\Debug\boProjektAnalyse.pdb
+C:\Users\a.hoch.BOAG\OneDrive - blue office ag\IPA\boProjektAnalyse\boProjektAnalyse\boProjektAnalyse\obj\Debug\boProjektAnalyse.frmSettings.resources
