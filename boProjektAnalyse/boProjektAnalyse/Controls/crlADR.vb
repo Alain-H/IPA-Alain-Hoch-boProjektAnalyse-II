@@ -10,7 +10,7 @@ Public Class crlADR
     Implements IFrameControlMenu
 
     Dim WithEvents boSL As boSearchList
-    Dim SRGrid As boGrid.Grid
+    Dim boGridSR As boGrid.Grid
 
 
     Dim ADR_ID As Integer
@@ -99,9 +99,9 @@ Public Class crlADR
 
 
 
-            SRGrid = New boGrid.Grid
+            boGridSR = New boGrid.Grid
             'GridSR Einstellungen
-            With SRGrid
+            With boGridSR
                 .Dock = DockStyle.Fill
                 .CreateGrid()
                 .Name = "GridSR"
@@ -121,13 +121,13 @@ Public Class crlADR
 
 
             'boGrid Styles
-            With SRGrid.Styles.Add("Text")
+            With boGridSR.Styles.Add("Text")
                 .DefinedElements = blueoffice.controls.boGrid.StyleElementFlags.DataType Or blueoffice.controls.boGrid.StyleElementFlags.TextAlign
                 .DataType = GetType(String)
                 .TextAlign = blueoffice.controls.boGrid.TextAlignEnum.LeftCenter
             End With
 
-            With SRGrid.Styles.Add("Dezimal")
+            With boGridSR.Styles.Add("Dezimal")
                 .DefinedElements = blueoffice.controls.boGrid.StyleElementFlags.DataType Or blueoffice.controls.boGrid.StyleElementFlags.TextAlign Or blueoffice.controls.boGrid.StyleElementFlags.Format
                 .DataType = GetType(Decimal)
                 .TextAlign = blueoffice.controls.boGrid.TextAlignEnum.RightCenter
@@ -136,91 +136,90 @@ Public Class crlADR
 
             'Funktioniert
 
-            With SRGrid.Styles.Add("ColorIst")
+            With boGridSR.Styles.Add("ColorIst")
                 .ForeColor = Color.Red
                 .Border.Color = Color.Black
             End With
 
 
             'boGrid HeaderCoils
-            With SRGrid.Cols.Add()
+            With boGridSR.Cols.Add()
                 .Name = "colSR_Nummer"
                 .Caption = "SR-Nummer"
-                .Style = SRGrid.Styles.Item("Text")
+                .Style = boGridSR.Styles.Item("Text")
                 .Width = 75
             End With
 
-            With SRGrid.Cols.Add()
+            With boGridSR.Cols.Add()
                 .Name = "colSR_Bez"
                 .Caption = "Bezeichnung"
-                .Style = SRGrid.Styles.Item("Text")
+                .Style = boGridSR.Styles.Item("Text")
                 .Width = 85
             End With
 
-            With SRGrid.Cols.Add()
+            With boGridSR.Cols.Add()
                 .Name = "colSR_Verrechnet"
                 .Caption = "Verrechnet"
-                .Style = SRGrid.Styles.Item("Dezimal")
+                .Style = boGridSR.Styles.Item("Dezimal")
                 .Width = 65
             End With
 
-            With SRGrid.Cols.Add()
+            With boGridSR.Cols.Add()
                 .Name = "colSR_Kulanz"
                 .Caption = "Kulanz"
-                .Style = SRGrid.Styles.Item("Dezimal")
+                .Style = boGridSR.Styles.Item("Dezimal")
                 .Width = 45
             End With
 
-            With SRGrid.Cols.Add()
+            With boGridSR.Cols.Add()
                 .Name = "colSRNicht_Verrechnet"
                 .Caption = "Nicht-Verrechnet"
-                .Style = SRGrid.Styles.Item("Dezimal")
+                .Style = boGridSR.Styles.Item("Dezimal")
                 .Width = 90
             End With
 
-            With SRGrid.Cols.Add()
+            With boGridSR.Cols.Add()
                 .Name = "colSR_Verrechenbar"
                 .Caption = "Verrechenbar"
-                .Style = SRGrid.Styles.Item("Dezimal")
+                .Style = boGridSR.Styles.Item("Dezimal")
                 .Width = 80
             End With
 
-            With SRGrid.Cols.Add()
+            With boGridSR.Cols.Add()
                 .Name = "colSR_Soll"
                 .Caption = "Soll"
-                .Style = SRGrid.Styles.Item("Dezimal")
+                .Style = boGridSR.Styles.Item("Dezimal")
                 .Width = 50
             End With
 
-            With SRGrid.Cols.Add()
+            With boGridSR.Cols.Add()
                 .Name = "colSR_Ist"
                 .Caption = "IST"
-                .Style = SRGrid.Styles.Item("Dezimal")
+                .Style = boGridSR.Styles.Item("Dezimal")
                 .Width = 40
             End With
 
-            With SRGrid.Cols.Add()
+            With boGridSR.Cols.Add()
                 .Name = "colPuffer"
                 .Caption = ""
                 .Width = 1
             End With
 
 
-            pnlBoGrid.Controls.Add(SRGrid)
-            SRGrid.Dock = DockStyle.Fill
+            pnlBoGrid.Controls.Add(boGridSR)
+            boGridSR.Dock = DockStyle.Fill
 
 
-            ''boGrid Settings Load               
-            'Dim GrundKey As String
-            'Dim column As blueoffice.controls.boGrid.Column
-            'GrundKey = Me.Name      'Name des Controls
-            'GrundKey &= "\BoGrids\"
-            'GrundKey &= SRGrid.Name 'Name des Grids
-            'For col As Integer = 0 To SRGrid.Cols.Count - 1
-            '    column = SRGrid.Cols.Item(col)
-            '    column.Width = blueoffice.common.settings.DBSettings.GrundlagenGetMandantInt(GrundKey, column.Width, column.Name & "_Width")
-            'Next
-
+            'boGrid Setting Load 
+            Dim sRegKey As String
+            Dim column As blueoffice.controls.boGrid.Column
+            sRegKey = Me.Name '** Name des Formulares
+            sRegKey &= "\BoGrids\"
+            sRegKey &= boGridSR.Name '** Name des Grids
+            For col As Integer = 0 To boGridSR.Cols.Count - 1
+                column = boGridSR.Cols.Item(col)
+                column.Width = blueoffice.common.settings.Reg.GetRegForm(sRegKey, column.Name & "_Width", column.Width)
+            Next
             boSL.LoadSettings("ProjektAnalyse_BoSL")
 
 
@@ -236,15 +235,15 @@ Public Class crlADR
 
     Public Sub ControlClosing(ByRef Cancel As Boolean) Implements IFrameControl.ControlClosing
 
-        'Grid speichern auf Mandant
-        Dim GrundKey As String
-        Dim Column As blueoffice.controls.boGrid.Column
-        GrundKey = Me.Name 'Name des Controls
-        GrundKey &= "\BoGrids\"
-        GrundKey &= SRGrid.Name 'Name des Grids
-        For col As Integer = 0 To SRGrid.Cols.Count - 1
-            Column = SRGrid.Cols.Item(col)
-            blueoffice.common.settings.DBSettings.GrundlagenPutMandantInt(GrundKey, Column.Width, Column.Name & "_Width")
+        'boGrid Safe Settings
+        Dim sRegKey As String
+        Dim column As blueoffice.controls.boGrid.Column
+        sRegKey = Me.Name 'Name des Formulares
+        sRegKey &= "\BoGrids\"
+        sRegKey &= boGridSR.Name 'Name des Grids
+        For col As Integer = 0 To boGridSR.Cols.Count - 1
+            column = boGridSR.Cols.Item(col)
+            blueoffice.common.settings.Reg.SaveRegForm(sRegKey, column.Name & "_Width", column.Width)
         Next
 
         'Abspichern von boSL in Regsettings

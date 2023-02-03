@@ -37,9 +37,9 @@ Partial Class crlADR
         '
         Me.pnlBoSL.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.pnlBoSL.Location = New System.Drawing.Point(15, 61)
+        Me.pnlBoSL.Location = New System.Drawing.Point(5, 33)
         Me.pnlBoSL.Name = "pnlBoSL"
-        Me.pnlBoSL.Size = New System.Drawing.Size(280, 419)
+        Me.pnlBoSL.Size = New System.Drawing.Size(280, 541)
         Me.pnlBoSL.TabIndex = 0
         '
         'pnlBoGrid
@@ -47,14 +47,14 @@ Partial Class crlADR
         Me.pnlBoGrid.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.pnlBoGrid.Location = New System.Drawing.Point(301, 61)
+        Me.pnlBoGrid.Location = New System.Drawing.Point(291, 33)
         Me.pnlBoGrid.Name = "pnlBoGrid"
-        Me.pnlBoGrid.Size = New System.Drawing.Size(297, 327)
+        Me.pnlBoGrid.Size = New System.Drawing.Size(680, 485)
         Me.pnlBoGrid.TabIndex = 1
         '
         'btnAddA
         '
-        Me.btnAddA.Location = New System.Drawing.Point(15, 32)
+        Me.btnAddA.Location = New System.Drawing.Point(3, 4)
         Me.btnAddA.Name = "btnAddA"
         Me.btnAddA.Size = New System.Drawing.Size(24, 23)
         Me.btnAddA.TabIndex = 2
@@ -62,7 +62,7 @@ Partial Class crlADR
         '
         'btnAddSR
         '
-        Me.btnAddSR.Location = New System.Drawing.Point(45, 32)
+        Me.btnAddSR.Location = New System.Drawing.Point(33, 4)
         Me.btnAddSR.Name = "btnAddSR"
         Me.btnAddSR.Size = New System.Drawing.Size(24, 23)
         Me.btnAddSR.TabIndex = 3
@@ -70,7 +70,7 @@ Partial Class crlADR
         '
         'btnDeleteObj
         '
-        Me.btnDeleteObj.Location = New System.Drawing.Point(75, 32)
+        Me.btnDeleteObj.Location = New System.Drawing.Point(63, 4)
         Me.btnDeleteObj.Name = "btnDeleteObj"
         Me.btnDeleteObj.Size = New System.Drawing.Size(24, 23)
         Me.btnDeleteObj.TabIndex = 4
@@ -78,7 +78,7 @@ Partial Class crlADR
         '
         'btnSettings
         '
-        Me.btnSettings.Location = New System.Drawing.Point(135, 32)
+        Me.btnSettings.Location = New System.Drawing.Point(123, 4)
         Me.btnSettings.Name = "btnSettings"
         Me.btnSettings.Size = New System.Drawing.Size(24, 23)
         Me.btnSettings.TabIndex = 5
@@ -88,16 +88,16 @@ Partial Class crlADR
         '
         Me.pgbADR.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.pgbADR.Location = New System.Drawing.Point(301, 421)
+        Me.pgbADR.Location = New System.Drawing.Point(291, 542)
         Me.pgbADR.Name = "pgbADR"
-        Me.pgbADR.Size = New System.Drawing.Size(297, 31)
+        Me.pgbADR.Size = New System.Drawing.Size(680, 32)
         Me.pgbADR.TabIndex = 7
         '
         'lblFortschritt
         '
         Me.lblFortschritt.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.lblFortschritt.AutoSize = True
-        Me.lblFortschritt.Location = New System.Drawing.Point(301, 405)
+        Me.lblFortschritt.Location = New System.Drawing.Point(288, 526)
         Me.lblFortschritt.Name = "lblFortschritt"
         Me.lblFortschritt.Size = New System.Drawing.Size(56, 13)
         Me.lblFortschritt.TabIndex = 8
@@ -105,7 +105,7 @@ Partial Class crlADR
         '
         'btnRefresh
         '
-        Me.btnRefresh.Location = New System.Drawing.Point(105, 32)
+        Me.btnRefresh.Location = New System.Drawing.Point(93, 4)
         Me.btnRefresh.Name = "btnRefresh"
         Me.btnRefresh.Size = New System.Drawing.Size(24, 23)
         Me.btnRefresh.TabIndex = 9
@@ -126,7 +126,7 @@ Partial Class crlADR
         Me.Controls.Add(Me.pnlBoGrid)
         Me.Controls.Add(Me.pnlBoSL)
         Me.Name = "crlADR"
-        Me.Size = New System.Drawing.Size(611, 493)
+        Me.Size = New System.Drawing.Size(981, 582)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

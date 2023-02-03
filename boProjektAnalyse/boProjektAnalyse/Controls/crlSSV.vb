@@ -52,7 +52,7 @@ Public Class crlSSV
 
         Try
             'DB Ckecken auf Tabellen PA_ProjAn und ViewProjAn
-            Dim dbC As PU
+            Dim dbC As New PU
             dbC.DBCheck()
 
 
