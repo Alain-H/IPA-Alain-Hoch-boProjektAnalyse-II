@@ -165,9 +165,9 @@ Public Class PUCalc
         If ProzWahl <= proz Then
             RetVal = Color.Red
         Else
-            If proz < ProzWahl - 20 Then
+            If proz < ProzWahl - 10 Then
                 RetVal = Color.Green
-            ElseIf proz >= ProzWahl - 20 And Not proz >= ProzWahl Then
+            ElseIf proz >= ProzWahl - 10 And Not proz >= ProzWahl Then
                 RetVal = Color.Orange
             End If
         End If

@@ -49,7 +49,7 @@ Partial Class frmSettings
         Me.gbProzuWahl.Location = New System.Drawing.Point(75, 111)
         Me.gbProzuWahl.Name = "gbProzuWahl"
         Me.gbProzuWahl.Size = New System.Drawing.Size(101, 121)
-        Me.gbProzuWahl.TabIndex = 0
+        Me.gbProzuWahl.TabIndex = 5
         Me.gbProzuWahl.TabStop = False
         '
         'rb90
@@ -58,7 +58,7 @@ Partial Class frmSettings
         Me.rb90.Location = New System.Drawing.Point(6, 87)
         Me.rb90.Name = "rb90"
         Me.rb90.Size = New System.Drawing.Size(54, 17)
-        Me.rb90.TabIndex = 15
+        Me.rb90.TabIndex = 3
         Me.rb90.TabStop = True
         Me.rb90.Text = "> 90%"
         Me.rb90.UseVisualStyleBackColor = True
@@ -69,7 +69,7 @@ Partial Class frmSettings
         Me.rb80.Location = New System.Drawing.Point(6, 64)
         Me.rb80.Name = "rb80"
         Me.rb80.Size = New System.Drawing.Size(54, 17)
-        Me.rb80.TabIndex = 14
+        Me.rb80.TabIndex = 2
         Me.rb80.TabStop = True
         Me.rb80.Text = "> 80%"
         Me.rb80.UseVisualStyleBackColor = True
@@ -80,7 +80,7 @@ Partial Class frmSettings
         Me.rb70.Location = New System.Drawing.Point(6, 41)
         Me.rb70.Name = "rb70"
         Me.rb70.Size = New System.Drawing.Size(54, 17)
-        Me.rb70.TabIndex = 13
+        Me.rb70.TabIndex = 1
         Me.rb70.TabStop = True
         Me.rb70.Text = "> 70%"
         Me.rb70.UseVisualStyleBackColor = True
@@ -91,7 +91,7 @@ Partial Class frmSettings
         Me.rb60.Location = New System.Drawing.Point(6, 18)
         Me.rb60.Name = "rb60"
         Me.rb60.Size = New System.Drawing.Size(54, 17)
-        Me.rb60.TabIndex = 12
+        Me.rb60.TabIndex = 0
         Me.rb60.TabStop = True
         Me.rb60.Text = "> 60%"
         Me.rb60.UseVisualStyleBackColor = True
@@ -106,7 +106,7 @@ Partial Class frmSettings
         Me.pnlHead.Location = New System.Drawing.Point(0, 0)
         Me.pnlHead.Name = "pnlHead"
         Me.pnlHead.Size = New System.Drawing.Size(488, 57)
-        Me.pnlHead.TabIndex = 1
+        Me.pnlHead.TabIndex = 2
         '
         'Label1
         '
@@ -115,7 +115,7 @@ Partial Class frmSettings
         Me.Label1.Location = New System.Drawing.Point(69, 26)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(395, 13)
-        Me.Label1.TabIndex = 4
+        Me.Label1.TabIndex = 1
         Me.Label1.Text = "Hier können Sie die nötigen Einstellungen zum Projekt-Analyse Add-In vornehmen."
         '
         'PicHead
@@ -132,9 +132,9 @@ Partial Class frmSettings
         Me.lblTitelHead.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTitelHead.Location = New System.Drawing.Point(50, 13)
         Me.lblTitelHead.Name = "lblTitelHead"
-        Me.lblTitelHead.Size = New System.Drawing.Size(139, 13)
-        Me.lblTitelHead.TabIndex = 2
-        Me.lblTitelHead.Text = "Setting-Projekt Analyse"
+        Me.lblTitelHead.Size = New System.Drawing.Size(175, 13)
+        Me.lblTitelHead.TabIndex = 0
+        Me.lblTitelHead.Text = "Einstellungen Projekt-Analyse"
         '
         'lblTitelBody
         '
@@ -143,7 +143,7 @@ Partial Class frmSettings
         Me.lblTitelBody.Location = New System.Drawing.Point(53, 65)
         Me.lblTitelBody.Name = "lblTitelBody"
         Me.lblTitelBody.Size = New System.Drawing.Size(133, 13)
-        Me.lblTitelBody.TabIndex = 5
+        Me.lblTitelBody.TabIndex = 3
         Me.lblTitelBody.Text = "Farbwechel des IST-Werts"
         '
         'lblBodyText
@@ -152,7 +152,7 @@ Partial Class frmSettings
         Me.lblBodyText.Location = New System.Drawing.Point(72, 78)
         Me.lblBodyText.Name = "lblBodyText"
         Me.lblBodyText.Size = New System.Drawing.Size(390, 30)
-        Me.lblBodyText.TabIndex = 6
+        Me.lblBodyText.TabIndex = 4
         Me.lblBodyText.Text = "Ab welchem Prozentsatz soll sich der IST-Wert Rot färben, um zu erkennen, dass si" &
     "ch der IST-Wert dem gesammten Soll-Wert nähert?"
         '
@@ -162,7 +162,7 @@ Partial Class frmSettings
         Me.btnOK.Location = New System.Drawing.Point(320, 229)
         Me.btnOK.Name = "btnOK"
         Me.btnOK.Size = New System.Drawing.Size(75, 23)
-        Me.btnOK.TabIndex = 7
+        Me.btnOK.TabIndex = 0
         Me.btnOK.Text = "OK"
         Me.btnOK.UseVisualStyleBackColor = True
         '
@@ -173,7 +173,7 @@ Partial Class frmSettings
         Me.btnAbbruch.Location = New System.Drawing.Point(401, 229)
         Me.btnAbbruch.Name = "btnAbbruch"
         Me.btnAbbruch.Size = New System.Drawing.Size(75, 23)
-        Me.btnAbbruch.TabIndex = 8
+        Me.btnAbbruch.TabIndex = 1
         Me.btnAbbruch.Text = "Abbruch"
         Me.btnAbbruch.UseVisualStyleBackColor = True
         '
@@ -193,7 +193,7 @@ Partial Class frmSettings
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmSettings"
-        Me.Text = "frmSettings"
+        Me.Text = "Einstellungen"
         Me.gbProzuWahl.ResumeLayout(False)
         Me.gbProzuWahl.PerformLayout()
         Me.pnlHead.ResumeLayout(False)
