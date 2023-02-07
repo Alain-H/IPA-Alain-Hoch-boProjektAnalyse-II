@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class crlADR
     Inherits System.Windows.Forms.UserControl
 
     'UserControl überschreibt den Löschvorgang, um die Komponentenliste zu bereinigen.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,8 +20,9 @@ Partial Class crlADR
     'Hinweis: Die folgende Prozedur ist für den Windows Form-Designer erforderlich.
     'Das Bearbeiten ist mit dem Windows Form-Designer möglich.  
     'Das Bearbeiten mit dem Code-Editor ist nicht möglich.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.pnlBoSL = New System.Windows.Forms.Panel()
         Me.pnlBoGrid = New System.Windows.Forms.Panel()
         Me.btnAddA = New System.Windows.Forms.Button()
@@ -32,6 +33,12 @@ Partial Class crlADR
         Me.lblFortschritt = New System.Windows.Forms.Label()
         Me.btnRefresh = New System.Windows.Forms.Button()
         Me.lblProzADR = New System.Windows.Forms.Label()
+        Me.ContMenu = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.NeuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.BearbeitenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LöschenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AktualisierenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ContMenu.SuspendLayout()
         Me.SuspendLayout()
         '
         'pnlBoSL
@@ -121,6 +128,36 @@ Partial Class crlADR
         Me.lblProzADR.TabIndex = 0
         Me.lblProzADR.Text = "%"
         '
+        'ContMenu
+        '
+        Me.ContMenu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NeuToolStripMenuItem, Me.BearbeitenToolStripMenuItem, Me.LöschenToolStripMenuItem, Me.AktualisierenToolStripMenuItem})
+        Me.ContMenu.Name = "ContMenu"
+        Me.ContMenu.Size = New System.Drawing.Size(178, 92)
+        '
+        'NeuToolStripMenuItem
+        '
+        Me.NeuToolStripMenuItem.Name = "NeuToolStripMenuItem"
+        Me.NeuToolStripMenuItem.Size = New System.Drawing.Size(177, 22)
+        Me.NeuToolStripMenuItem.Text = "Auftrag hinzufügen"
+        '
+        'BearbeitenToolStripMenuItem
+        '
+        Me.BearbeitenToolStripMenuItem.Name = "BearbeitenToolStripMenuItem"
+        Me.BearbeitenToolStripMenuItem.Size = New System.Drawing.Size(177, 22)
+        Me.BearbeitenToolStripMenuItem.Text = "SR-Hinzufügen"
+        '
+        'LöschenToolStripMenuItem
+        '
+        Me.LöschenToolStripMenuItem.Name = "LöschenToolStripMenuItem"
+        Me.LöschenToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.LöschenToolStripMenuItem.Text = "Entfernen"
+        '
+        'AktualisierenToolStripMenuItem
+        '
+        Me.AktualisierenToolStripMenuItem.Name = "AktualisierenToolStripMenuItem"
+        Me.AktualisierenToolStripMenuItem.Size = New System.Drawing.Size(177, 22)
+        Me.AktualisierenToolStripMenuItem.Text = "Aktualisieren"
+        '
         'crlADR
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -138,6 +175,7 @@ Partial Class crlADR
         Me.Controls.Add(Me.pnlBoSL)
         Me.Name = "crlADR"
         Me.Size = New System.Drawing.Size(981, 582)
+        Me.ContMenu.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -153,4 +191,9 @@ Partial Class crlADR
     Friend WithEvents lblFortschritt As Windows.Forms.Label
     Friend WithEvents btnRefresh As Windows.Forms.Button
     Friend WithEvents lblProzADR As Windows.Forms.Label
+    Friend WithEvents ContMenu As Windows.Forms.ContextMenuStrip
+    Friend WithEvents NeuToolStripMenuItem As Windows.Forms.ToolStripMenuItem
+    Friend WithEvents BearbeitenToolStripMenuItem As Windows.Forms.ToolStripMenuItem
+    Friend WithEvents LöschenToolStripMenuItem As Windows.Forms.ToolStripMenuItem
+    Friend WithEvents AktualisierenToolStripMenuItem As Windows.Forms.ToolStripMenuItem
 End Class

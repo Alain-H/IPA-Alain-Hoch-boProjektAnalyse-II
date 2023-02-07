@@ -4,6 +4,7 @@ Imports blueoffice.common.AddIn
 Imports blueoffice.controls
 Imports blueoffice.controls.boGrid
 Imports blueoffice.menu
+Imports Microsoft.VisualBasic.Devices
 
 Public Class crlADR
     Implements IAddInControl
@@ -54,11 +55,11 @@ Public Class crlADR
             If ADR_ID > 0 Then
                 For Each item As PUCalcItem In puCalc.Items
                     If Not item.SRNr Is Nothing Then
-                        boGridSR.AddItem({item.SRNr, item.Bezeichnung, item.Verrechnet, item.Kulanz, item.Garentie, item.Warten, item.nichtVerrechnet, Nothing, Nothing, item.Ist})
+                        boGridSR.AddItem({item.SRNr, item.Bezeichnung, item.Verrechnet, item.Warten, item.Kulanz, item.Garentie, item.nichtVerrechnet, Nothing, Nothing, item.Ist})
                     End If
                 Next
 
-                boGridSR.AddItem({"Gesamt:", Nothing, puCalc.totalVerrechnet, puCalc.totalKulanz, puCalc.totalGarantie, puCalc.totalWarten, puCalc.totalNichtVerrechnet, puCalc.Verrechenbar, puCalc.Soll_ALL, puCalc.Ist_All})
+                boGridSR.AddItem({"Gesamt:", Nothing, puCalc.totalVerrechnet, puCalc.totalWarten, puCalc.totalKulanz, puCalc.totalGarantie, puCalc.totalNichtVerrechnet, puCalc.Verrechenbar, puCalc.Soll_ALL, puCalc.Ist_All})
             End If
 
             pgbADR.Value = puCalc.ProzProgress
@@ -120,6 +121,7 @@ Public Class crlADR
                 .ViewStyle = boSearchList.ViewStyleType.Tile
                 .TileStyleIndex = 3
                 .SearchTextboxVisible = False
+                .ContextMenuStrip = ContMenu
             End With
 
             'boSearchListUserOptions mit SQL From um Daten abzufragen und Laden
@@ -207,6 +209,13 @@ Public Class crlADR
             End With
 
             With boGridSR.Cols.Add()
+                .Name = "colWarten"
+                .Caption = "Warten"
+                .Style = boGridSR.Styles.Item("Dezimal")
+                .Width = 85
+            End With
+
+            With boGridSR.Cols.Add()
                 .Name = "colSR_Kulanz"
                 .Caption = "Kulanz"
                 .Style = boGridSR.Styles.Item("Dezimal")
@@ -220,12 +229,7 @@ Public Class crlADR
                 .Width = 85
             End With
 
-            With boGridSR.Cols.Add()
-                .Name = "colWarten"
-                .Caption = "Warten"
-                .Style = boGridSR.Styles.Item("Dezimal")
-                .Width = 85
-            End With
+
 
             With boGridSR.Cols.Add()
                 .Name = "colSRNicht_Verrechnet"
@@ -357,28 +361,28 @@ Public Class crlADR
 
 
 
-    Private Sub btnAddA_Click(sender As Object, e As EventArgs) Handles btnAddA.Click
+    Private Sub btnAddA_Click(sender As Object, e As EventArgs) Handles btnAddA.Click, NeuToolStripMenuItem.Click
         Dim tPU As New PU
         If tPU.AddBeleg(ADR_ID) Then
             Fill()
         End If
     End Sub
 
-    Private Sub btnAddSR_Click(sender As Object, e As EventArgs) Handles btnAddSR.Click
+    Private Sub btnAddSR_Click(sender As Object, e As EventArgs) Handles btnAddSR.Click, BearbeitenToolStripMenuItem.Click
         Dim tPU As New PU
         If tPU.AddObjSRDialog(ADR_ID) Then
             Fill()
         End If
     End Sub
 
-    Private Sub btnDeleteObj_Click(sender As Object, e As EventArgs) Handles btnDeleteObj.Click
+    Private Sub btnDeleteObj_Click(sender As Object, e As EventArgs) Handles btnDeleteObj.Click, LöschenToolStripMenuItem.Click
         Dim tPU As New PU
         If tPU.DeleteObject(boSL.GetRowItemID) Then
             Fill()
         End If
     End Sub
 
-    Private Sub btnRefresh_Click(sender As Object, e As EventArgs) Handles btnRefresh.Click
+    Private Sub btnRefresh_Click(sender As Object, e As EventArgs) Handles btnRefresh.Click, AktualisierenToolStripMenuItem.Click
         Fill()
     End Sub
 
@@ -393,6 +397,16 @@ Public Class crlADR
             t.OpenObject(boSL.GetRowItemID)
         End If
     End Sub
+
+    'Private Sub boSL_Grid_MouseClick(sender As Object, RowIndex As Integer, ColIndex As Integer, ItemID As Integer, e As MouseEventArgs) Handles boSL.Grid_MouseClick
+    '    If e.Button = MouseButtons.Right Then
+    '        If boSL.GetRowItemID <> 0 Then
+    '            ContMenu.Show(PointToScreen(e.Location))
+    '        End If
+    '    End If
+    'End Sub
+
+
 
     'Mouse double click um SR direkt im Grid öffnen zu können.
     'Private Sub pnlBoGrid_MouseDoubleClick(sender As Object, e As MouseEventArgs) Handles pnlBoGrid.MouseDoubleClick
