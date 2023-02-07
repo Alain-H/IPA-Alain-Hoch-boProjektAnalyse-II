@@ -175,16 +175,21 @@ Public Class PU
         Dim sq As String
         Dim dr As DataRow
 
-        sq = $"Select        *
+        If Not ssv_ID = 0 Then
+            sq = $"Select        *
               From          viewPA_ProjAN
               where         ObjID = '{ssv_ID}' AND ObjTyp = 'SR'"
 
-        dr = blueoffice.common.db.Data.DBData.GetDataRow(sq)
+            dr = blueoffice.common.db.Data.DBData.GetDataRow(sq)
 
-        RetVal = dr.Item("ADR_ID")
+
+            If dr IsNot Nothing AndAlso Not dr.IsNull("ADR_ID") Then
+                RetVal = dr.Item("ADR_ID")
+            End If
+
+        End If
 
         Return RetVal
-
     End Function
 
 

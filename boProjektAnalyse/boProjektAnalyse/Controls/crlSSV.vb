@@ -111,6 +111,6 @@ Public Class crlSSV
     End Function
 
     'Private Sub lblProzA_Click(sender As Object, e As EventArgs) Handles lblProzA.Click
-    'um ctlADR in Form aufzurufen. m   (Optional)
+    'um ctlADR in Form aufzurufen.   (Optional)
     'End Sub
 End Class
