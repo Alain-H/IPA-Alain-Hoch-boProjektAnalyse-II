@@ -2,14 +2,18 @@
 
 Public Class PUCalc
     Dim _ADR_ID As Integer
-    Dim _Soll_ALL As Decimal
-    Dim _Ist_All As Decimal
+    Dim _totalSoll As Decimal
+    Dim _totalIst As Decimal
     Dim _Verrechenbar As Decimal
     Dim _ProzProgress As Integer
+    Dim _totalVerrechnet As Decimal
+    Dim _totalWarten As Decimal
+    Dim _totalKulanz As Decimal
+    Dim _totalGarantie As Decimal
+    Dim _totalNichtVerrechnet As Decimal
+
 
     Dim _Items As List(Of PUCalcItem)
-    'TODO Gesamt noch von jedem einzelnen hinzufügen um sie gesammthaft auf letzter spalte darzustellen können 
-    'Progress IST (ProgBar) evtl auch hier ausrechnen lassen anstelle in ctlADR ? 
 
     Public ReadOnly Property ADR_ID As Integer
         Get
@@ -19,13 +23,13 @@ Public Class PUCalc
 
     Public ReadOnly Property Soll_ALL As Decimal
         Get
-            Return _Soll_ALL
+            Return _totalSoll
         End Get
     End Property
 
     Public ReadOnly Property Ist_All As Decimal
         Get
-            Return _Ist_All
+            Return _totalIst
         End Get
     End Property
 
@@ -47,6 +51,38 @@ Public Class PUCalc
             Return _Items
         End Get
     End Property
+
+    Public ReadOnly Property totalVerrechnet As Decimal
+        Get
+            Return _totalVerrechnet
+        End Get
+    End Property
+
+    Public ReadOnly Property totalWarten As Decimal
+        Get
+            Return _totalWarten
+        End Get
+    End Property
+
+    Public ReadOnly Property totalKulanz As Decimal
+        Get
+            Return _totalKulanz
+        End Get
+    End Property
+
+    Public ReadOnly Property totalGarantie As Decimal
+        Get
+            Return _totalGarantie
+        End Get
+    End Property
+
+    Public ReadOnly Property totalNichtVerrechnet As Decimal
+        Get
+            Return _totalNichtVerrechnet
+        End Get
+    End Property
+
+
     'Leerer Konstruktor für Farb-Gebung
     Sub New()
 
@@ -57,7 +93,7 @@ Public Class PUCalc
         _ADR_ID = adr_ID
         _Items = New List(Of PUCalcItem)
         Calculate()
-        CalcIST_Verrechenbar()
+        Calc()
         PBarProgress()
     End Sub
 
@@ -78,7 +114,7 @@ Public Class PUCalc
         dr = blueoffice.common.db.Data.DBData.GetDataRow(sq)
 
         If dr IsNot Nothing Then
-            _Soll_ALL = dr.Item("Summe")
+            _totalSoll = dr.Item("Summe")
         End If
 
         _Items.Clear()
@@ -96,16 +132,25 @@ Public Class PUCalc
 
     End Sub
 
-    Private Sub CalcIST_Verrechenbar()
+    Private Sub Calc()
         For Each item As PUCalcItem In Items
-            _Ist_All += item.Ist
+            _totalVerrechnet += item.Verrechnet
+            _totalWarten += item.Warten
+            _totalKulanz += item.Kulanz
+            _totalGarantie += item.Garentie
+            _totalNichtVerrechnet += item.nichtVerrechnet
+
+            _totalIst += item.Ist
             _Verrechenbar += item.IstVerrechenbar
         Next
     End Sub
 
     Private Sub PBarProgress()
-        If Not _Soll_ALL = 0 Then
-            _ProzProgress = _Ist_All * 100 / _Soll_ALL
+        If Not _totalSoll = 0 Then
+            _ProzProgress = _totalIst * 100 / _totalSoll
+            If _ProzProgress > 100 Then
+                _ProzProgress = 100
+            End If
         Else
             _ProzProgress = 0
         End If
@@ -115,6 +160,19 @@ Public Class PUCalc
         Dim RetVal As Color
         Dim ProzWahl As Integer
 
+        ProzWahl = blueoffice.common.settings.DBSettings.GrundlagenGetMandantInt("PA_ProzentWahl", 80)
+
+        If ProzWahl <= proz Then
+            RetVal = Color.Red
+        Else
+            If proz < ProzWahl - 20 Then
+                RetVal = Color.Green
+            ElseIf proz >= ProzWahl - 20 And Not proz >= ProzWahl Then
+                RetVal = Color.Orange
+            End If
+        End If
+
+        Return RetVal
     End Function
 
 

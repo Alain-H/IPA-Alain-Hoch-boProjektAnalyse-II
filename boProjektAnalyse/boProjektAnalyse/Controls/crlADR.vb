@@ -43,33 +43,33 @@ Public Class crlADR
     End Property
 
     Public Sub Fill()
+        Try
+            'boSL füllen
+            AufPermFilter()
+            boSL.Fill()
+            boGridSR.Rows.Count = 1
 
-        'boSL füllen
-        AufPermFilter()
-        boSL.Fill()
-        boGridSR.Rows.Count = 1
+            'boGridSR füllen
+            Dim puCalc As New PUCalc(ADR_ID)
+            If ADR_ID > 0 Then
+                For Each item As PUCalcItem In puCalc.Items
+                    If Not item.SRNr Is Nothing Then
+                        boGridSR.AddItem({item.SRNr, item.Bezeichnung, item.Verrechnet, item.Kulanz, item.Garentie, item.Warten, item.nichtVerrechnet, Nothing, Nothing, item.Ist})
+                    End If
+                Next
 
-        'boGridSR füllen
-        Dim puCalc As New PUCalc(ADR_ID)
-        If ADR_ID > 0 Then
-            For Each item As PUCalcItem In puCalc.Items
-                If Not item.SRNr Is Nothing Then
-                    boGridSR.AddItem({item.SRNr, item.Bezeichnung, item.Verrechnet, item.Kulanz, item.Warten, item.nichtVerrechnet, Nothing, Nothing, item.Ist})
-                End If
-            Next
+                boGridSR.AddItem({"Gesamt:", Nothing, puCalc.totalVerrechnet, puCalc.totalKulanz, puCalc.totalGarantie, puCalc.totalWarten, puCalc.totalNichtVerrechnet, puCalc.Verrechenbar, puCalc.Soll_ALL, puCalc.Ist_All})
+            End If
 
-            boGridSR.AddItem({"Gesamt:", Nothing, Nothing, Nothing, Nothing, Nothing, puCalc.Verrechenbar, puCalc.Soll_ALL, puCalc.Ist_All})
-        End If
+            pgbADR.Value = puCalc.ProzProgress
+            lblProzADR.Text = puCalc.ProzProgress & "%"
+            prozprog = puCalc.ProzProgress
 
-        pgbADR.Value = puCalc.ProzProgress
-        lblProzADR.Text = puCalc.ProzProgress & "%"
-        prozprog = puCalc.ProzProgress
+            ChangeColorISt()
 
-
-
-
-
-
+        Catch ex As Exception
+            Debug.Print(ex.Message)
+        End Try
 
     End Sub
 
@@ -189,7 +189,7 @@ Public Class crlADR
                 .Name = "colSR_Nummer"
                 .Caption = "SR-Nummer"
                 .Style = boGridSR.Styles.Item("Text")
-                .Width = 75
+                .Width = 85
             End With
 
             With boGridSR.Cols.Add()
@@ -203,21 +203,28 @@ Public Class crlADR
                 .Name = "colSR_Verrechnet"
                 .Caption = "Verrechnet"
                 .Style = boGridSR.Styles.Item("Dezimal")
-                .Width = 65
+                .Width = 85
             End With
 
             With boGridSR.Cols.Add()
                 .Name = "colSR_Kulanz"
                 .Caption = "Kulanz"
                 .Style = boGridSR.Styles.Item("Dezimal")
-                .Width = 45
+                .Width = 85
+            End With
+
+            With boGridSR.Cols.Add()
+                .Name = "colSR_Garantie"
+                .Caption = "Garantie"
+                .Style = boGridSR.Styles.Item("Dezimal")
+                .Width = 85
             End With
 
             With boGridSR.Cols.Add()
                 .Name = "colWarten"
                 .Caption = "Warten"
                 .Style = boGridSR.Styles.Item("Dezimal")
-                .Width = 50
+                .Width = 85
             End With
 
             With boGridSR.Cols.Add()
@@ -231,21 +238,21 @@ Public Class crlADR
                 .Name = "colSR_Verrechenbar"
                 .Caption = "Verrechenbar"
                 .Style = boGridSR.Styles.Item("Dezimal")
-                .Width = 80
+                .Width = 85
             End With
 
             With boGridSR.Cols.Add()
                 .Name = "colSR_Soll"
                 .Caption = "Soll"
                 .Style = boGridSR.Styles.Item("Dezimal")
-                .Width = 50
+                .Width = 85
             End With
 
             With boGridSR.Cols.Add()
                 .Name = "colSR_Ist"
                 .Caption = "IST"
                 .Style = boGridSR.Styles.Item("Dezimal")
-                .Width = 40
+                .Width = 85
             End With
 
             With boGridSR.Cols.Add()
@@ -273,9 +280,7 @@ Public Class crlADR
 
 
         Catch ex As Exception
-
-            MsgBox(ex.Message, MsgBoxStyle.Information, blueoffice.common.db.Info.PTitel)
-
+            Debug.Print(ex.Message)
         End Try
 
 
@@ -283,20 +288,25 @@ Public Class crlADR
     End Sub
 
     Public Sub ControlClosing(ByRef Cancel As Boolean) Implements IFrameControl.ControlClosing
+        Try
+            'boGrid Safe Settings
+            Dim sRegKey As String
+            Dim column As blueoffice.controls.boGrid.Column
+            sRegKey = Me.Name 'Name des Formulares
+            sRegKey &= "\BoGrids\"
+            sRegKey &= boGridSR.Name 'Name des Grids
+            For col As Integer = 0 To boGridSR.Cols.Count - 1
+                column = boGridSR.Cols.Item(col)
+                blueoffice.common.settings.Reg.SaveRegForm(sRegKey, column.Name & "_Width", column.Width)
+            Next
 
-        'boGrid Safe Settings
-        Dim sRegKey As String
-        Dim column As blueoffice.controls.boGrid.Column
-        sRegKey = Me.Name 'Name des Formulares
-        sRegKey &= "\BoGrids\"
-        sRegKey &= boGridSR.Name 'Name des Grids
-        For col As Integer = 0 To boGridSR.Cols.Count - 1
-            column = boGridSR.Cols.Item(col)
-            blueoffice.common.settings.Reg.SaveRegForm(sRegKey, column.Name & "_Width", column.Width)
-        Next
+            'Abspichern von boSL in Regsettings
+            boSL.SaveSettings("ProjektAnalyse_BoSL")
 
-        'Abspichern von boSL in Regsettings
-        boSL.SaveSettings("ProjektAnalyse_BoSL")
+        Catch ex As Exception
+            Debug.Print(ex.Message)
+        End Try
+
 
     End Sub
 
@@ -331,6 +341,17 @@ Public Class crlADR
             boSL.PermanentFilter = $"ADR_ID = {ADR_ID}"
         End If
     End Sub
+
+    Private Sub ChangeColorISt()
+        Dim color As New PUCalc
+        If boGridSR.Cols.Count <> 0 And boGridSR.Rows.Count <> 0 Then
+            boGridSR.Styles.Item("ColorIst").ForeColor = color.GetISTColor(prozprog)
+            boGridSR.SetCellStyle(boGridSR.Rows.Count - 1, boGridSR.Cols.Count - 2, boGridSR.Styles.Item("ColorIst"))
+        End If
+    End Sub
+
+
+
 
 #Region "Events"
 
@@ -372,6 +393,18 @@ Public Class crlADR
             t.OpenObject(boSL.GetRowItemID)
         End If
     End Sub
+
+    'Mouse double click um SR direkt im Grid öffnen zu können.
+    'Private Sub pnlBoGrid_MouseDoubleClick(sender As Object, e As MouseEventArgs) Handles pnlBoGrid.MouseDoubleClick
+
+    'End Sub
+
+    'CentextualMenu
+    'Private Sub crlADR_MouseClick(sender As Object, e As MouseEventArgs) Handles Me.MouseClick
+    '    If e.Button.Right = True Then
+    '        Dim t As New blueoffice.menu.Contextual
+    '    End If
+    'End Sub
 
 
 

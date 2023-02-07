@@ -37,9 +37,9 @@ Partial Class crlSSV
         'lblProzSSV
         '
         Me.lblProzSSV.BackColor = System.Drawing.SystemColors.Control
-        Me.lblProzSSV.Location = New System.Drawing.Point(99, 6)
+        Me.lblProzSSV.Location = New System.Drawing.Point(94, 5)
         Me.lblProzSSV.Name = "lblProzSSV"
-        Me.lblProzSSV.Size = New System.Drawing.Size(25, 14)
+        Me.lblProzSSV.Size = New System.Drawing.Size(28, 16)
         Me.lblProzSSV.TabIndex = 1
         Me.lblProzSSV.Text = "%"
         Me.lblProzSSV.TextAlign = System.Drawing.ContentAlignment.MiddleCenter

@@ -98,15 +98,15 @@ Public Class PUCalcItem
             If Not dr.IsNull("ZER_Verrechnen") Then
                 Select Case dr.Item("ZER_Verrechnen")
                     Case "V"
-                        _Verrechnet = dr.Item("ZER_Std100")
+                        _Verrechnet += dr.Item("ZER_Std100")
                     Case "W"
-                        _Warten = dr.Item("ZER_Std100")
+                        _Warten += dr.Item("ZER_Std100")
                     Case "K"
-                        _Kulanz = dr.Item("ZER_Std100")
+                        _Kulanz += dr.Item("ZER_Std100")
                     Case "N"
-                        _nichtVerrechnet = dr.Item("Zer_Std100")
+                        _nichtVerrechnet += dr.Item("Zer_Std100")
                     Case "G"
-                        _Garantie = dr.Item("ZER_Std100")
+                        _Garantie += dr.Item("ZER_Std100")
                 End Select
             End If
 

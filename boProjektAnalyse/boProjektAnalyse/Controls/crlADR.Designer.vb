@@ -87,11 +87,10 @@ Partial Class crlADR
         '
         'pgbADR
         '
-        Me.pgbADR.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.pgbADR.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.pgbADR.Location = New System.Drawing.Point(291, 542)
         Me.pgbADR.Name = "pgbADR"
-        Me.pgbADR.Size = New System.Drawing.Size(680, 32)
+        Me.pgbADR.Size = New System.Drawing.Size(400, 32)
         Me.pgbADR.TabIndex = 7
         '
         'lblFortschritt
@@ -114,10 +113,9 @@ Partial Class crlADR
         '
         'lblProzADR
         '
-        Me.lblProzADR.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lblProzADR.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.lblProzADR.AutoSize = True
-        Me.lblProzADR.Location = New System.Drawing.Point(627, 552)
+        Me.lblProzADR.Location = New System.Drawing.Point(350, 526)
         Me.lblProzADR.Name = "lblProzADR"
         Me.lblProzADR.Size = New System.Drawing.Size(15, 13)
         Me.lblProzADR.TabIndex = 0
