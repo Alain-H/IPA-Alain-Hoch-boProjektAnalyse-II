@@ -156,7 +156,7 @@ Public Class PUCalc
         End If
     End Sub
 
-    Public Function GetISTColor(proz As Integer) As Color
+    Public Function GetColColor(proz As Integer) As Color
         Dim RetVal As Color
         Dim ProzWahl As Integer
 

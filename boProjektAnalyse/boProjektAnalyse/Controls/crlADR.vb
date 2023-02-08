@@ -59,7 +59,7 @@ Public Class crlADR
                     End If
                 Next
 
-                boGridSR.AddItem({"Gesamt:", Nothing, puCalc.totalVerrechnet, puCalc.totalWarten, puCalc.totalKulanz, puCalc.totalGarantie, puCalc.totalNichtVerrechnet, puCalc.Verrechenbar, puCalc.Soll_ALL, puCalc.Ist_All})
+                boGridSR.AddItem({"Gesamt:", Nothing, puCalc.totalVerrechnet, puCalc.totalWarten, puCalc.totalKulanz, puCalc.totalGarantie, puCalc.totalNichtVerrechnet, puCalc.Soll_ALL, puCalc.Verrechenbar, puCalc.Ist_All})
             End If
 
             pgbADR.Value = puCalc.ProzProgress
@@ -67,6 +67,7 @@ Public Class crlADR
             prozprog = puCalc.ProzProgress
 
             ChangeColorISt()
+            ChangeColorKundenView()
 
         Catch ex As Exception
             Debug.Print(ex.Message)
@@ -239,15 +240,15 @@ Public Class crlADR
             End With
 
             With boGridSR.Cols.Add()
-                .Name = "colSR_Verrechenbar"
-                .Caption = "Verrechenbar"
+                .Name = "colSR_Soll"
+                .Caption = "Soll"
                 .Style = boGridSR.Styles.Item("Dezimal")
                 .Width = 85
             End With
 
             With boGridSR.Cols.Add()
-                .Name = "colSR_Soll"
-                .Caption = "Soll"
+                .Name = "colSR_Verrechenbar"
+                .Caption = "Kundensicht"
                 .Style = boGridSR.Styles.Item("Dezimal")
                 .Width = 85
             End With
@@ -349,8 +350,19 @@ Public Class crlADR
     Private Sub ChangeColorISt()
         Dim color As New PUCalc
         If boGridSR.Cols.Count <> 0 And boGridSR.Rows.Count <> 0 Then
-            boGridSR.Styles.Item("ColorIst").ForeColor = color.GetISTColor(prozprog)
+            'Ist
+            boGridSR.Styles.Item("ColorIst").ForeColor = color.GetColColor(prozprog)
             boGridSR.SetCellStyle(boGridSR.Rows.Count - 1, boGridSR.Cols.Count - 2, boGridSR.Styles.Item("ColorIst"))
+            'Kundensicht
+            boGridSR.Styles.Item("ColorIst").ForeColor = color.GetColColor(prozprog)
+            boGridSR.SetCellStyle(boGridSR.Rows.Count - 1, boGridSR.Cols.Count - 3, boGridSR.Styles.Item("ColorIst"))
+        End If
+    End Sub
+
+    Private Sub ChangeColorKundenView()
+        Dim color As New PUCalc
+        If boGridSR.Cols.Count <> 0 And boGridSR.Rows.Count <> 0 Then
+
         End If
     End Sub
 

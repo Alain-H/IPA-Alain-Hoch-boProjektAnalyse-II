@@ -105,7 +105,7 @@ Public Class PU
         Try
             ''BelegDialog öffnen
             Dim bel As New blueoffice.ERP.Browser.Belege
-            bel.PermanentFilter = $"RKA_ADR_ID = {adr_ID} AND RKA_Status <> 'A4' and RKA_Status <> 'AS'"
+            bel.PermanentFilter = $"RKA_ADR_ID = {adr_ID}"
             If bel.ShowDialog("A") = Windows.Forms.DialogResult.OK Then
                 Dim sq As String
                 'Abfrage auf PA_ProjAn ob schon vorhandn falls nicht wirds hinzugefügt
