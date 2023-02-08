@@ -132,18 +132,18 @@ Partial Class crlADR
         '
         Me.ContMenu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NeuToolStripMenuItem, Me.BearbeitenToolStripMenuItem, Me.LöschenToolStripMenuItem, Me.AktualisierenToolStripMenuItem})
         Me.ContMenu.Name = "ContMenu"
-        Me.ContMenu.Size = New System.Drawing.Size(178, 92)
+        Me.ContMenu.Size = New System.Drawing.Size(181, 114)
         '
         'NeuToolStripMenuItem
         '
         Me.NeuToolStripMenuItem.Name = "NeuToolStripMenuItem"
-        Me.NeuToolStripMenuItem.Size = New System.Drawing.Size(177, 22)
-        Me.NeuToolStripMenuItem.Text = "Auftrag hinzufügen"
+        Me.NeuToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.NeuToolStripMenuItem.Text = "Beleg hinzufügen"
         '
         'BearbeitenToolStripMenuItem
         '
         Me.BearbeitenToolStripMenuItem.Name = "BearbeitenToolStripMenuItem"
-        Me.BearbeitenToolStripMenuItem.Size = New System.Drawing.Size(177, 22)
+        Me.BearbeitenToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.BearbeitenToolStripMenuItem.Text = "SR-Hinzufügen"
         '
         'LöschenToolStripMenuItem
@@ -155,7 +155,7 @@ Partial Class crlADR
         'AktualisierenToolStripMenuItem
         '
         Me.AktualisierenToolStripMenuItem.Name = "AktualisierenToolStripMenuItem"
-        Me.AktualisierenToolStripMenuItem.Size = New System.Drawing.Size(177, 22)
+        Me.AktualisierenToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.AktualisierenToolStripMenuItem.Text = "Aktualisieren"
         '
         'crlADR

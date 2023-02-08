@@ -1,6 +1,5 @@
-
 CREATE TABLE [dbo].[PA_ProjAn](
-	[ID] [int] NOT NULL,
+	[ID] [int] IDENTITY(1,1) NOT NULL,
 	[ADR_ID] [int] NOT NULL,
 	[BelegID] [int] NOT NULL,
 	[BelegTyp] [varchar](2) NOT NULL,

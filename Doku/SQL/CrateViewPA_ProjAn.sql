@@ -1,28 +1,24 @@
-Create View viewPA_ProjAn
+CREATE OR ALTER VIEW [dbo].[viewPA_ProjAn]
 AS
-SELECT         PA_ProjAn.ID
-			 , PA_ProjAn.ADR_ID
-			 , S_SERVICE.SSV_Nr as Nr
-			 , S_SERVICE.SSV_Titel as Bez
-			 , S_SERVICE.SSV_ERFDAT as Datum
-			 , S_SERVICE.SSV_ID as ObjID 
-			 , 'SR' as ObjTyp
-
-FROM          PA_ProjAn INNER JOIN
-                                  S_SERVICE ON PA_ProjAn.SSV_ID = S_SERVICE.SSV_ID
-              WHERE         (PA_ProjAn.SSV_ID > 0) 
-
-			  UNION ALL
-
-Select			PA_ProjAn.ID
-			 ,  PA_ProjAn.ADR_ID
-			 ,  bo_BelegK.RKA_ExtAufNr as Nr
-			 ,  bo_BelegK.RKA_Bezeichnung as Bez
-			 ,  bo_BelegK.RKA_Datum1 as Datum
-			 ,  PA_ProjAn.BelegID as ObjID
-			 ,  bo_BelegK.Typ as ObjTyp
-
-FROM		PA_ProjAn inner Join bo_BelegK on PA_ProjAn.BelegID = bo_BelegK.RKA_ID And PA_ProjAn.BelegTyp = bo_BelegK.Typ
-			
-			WHERE PA_ProjAn.BelegID > 0
+SELECT        dbo.PA_ProjAn.ID, 
+		     dbo.PA_ProjAn.ADR_ID, 
+			 dbo.bo_BelegK.RKA_ExtAufNr AS Nr, 
+			 dbo.bo_BelegK.RKA_Bezeichnung As Bez,
+			 dbo.bo_BelegK.RKA_Datum1 As Datum,
+			 dbo.PA_ProjAn.BelegID AS ObjID,
+			 dbo.bo_BelegK.Typ AS ObjTyp
+FROM            dbo.PA_ProjAn INNER JOIN
+                         dbo.bo_BelegK ON dbo.PA_ProjAn.BelegID = dbo.bo_BelegK.RKA_ID AND dbo.PA_ProjAn.BelegTyp = dbo.bo_BelegK.Typ
+WHERE        (dbo.PA_ProjAn.BelegID > 0)
+UNION ALL
+SELECT        dbo.PA_ProjAn.ID, 
+			  dbo.PA_ProjAn.ADR_ID, 
+			  dbo.S_SERVICE.SSV_Nr AS Nr, 
+			  dbo.S_SERVICE.SSV_Titel AS Bez, 
+			  dbo.S_SERVICE.SSV_ERFDAT AS Datum,
+			  dbo.PA_ProjAn.SSV_ID AS ObjID,
+			  'SR' AS ObjTyp
+FROM            dbo.PA_ProjAn INNER JOIN
+                         dbo.S_SERVICE ON dbo.PA_ProjAn.SSV_ID = dbo.S_SERVICE.SSV_ID
+WHERE        (dbo.PA_ProjAn.SSV_ID > 0)
 			 

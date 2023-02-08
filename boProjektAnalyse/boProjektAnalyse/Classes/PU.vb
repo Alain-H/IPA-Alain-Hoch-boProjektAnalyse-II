@@ -11,43 +11,58 @@ Public Class PU
 
             'Table: PA_ProjAn
             sq = "CREATE TABLE [dbo].[PA_ProjAn](
-	             [ID] [int] NOT NULL,
-	             [ADR_ID] [int] NOT NULL,
-	             [BelegID] [int] NOT NULL,
-	             [BelegTyp] [varchar](2) NOT NULL,
-	             [SSV_ID] [int] NOT NULL
-)                ON [PRIMARY]"
+                  [ID] [int] IDENTITY(1,1) NOT NULL,
+                  [ADR_ID] [int] NOT NULL,
+                  [BelegID] [int] NOT NULL,
+                  [BelegTyp] [varchar](2) NOT NULL,
+                  [SSV_ID] [int] NOT NULL,
+                  CONSTRAINT [PK_PA_ProjAn] PRIMARY KEY CLUSTERED 
+                  (
+                  	[ID] ASC
+                  )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+                  ) ON [PRIMARY]
+                  ;
+                  
+                  ALTER TABLE [dbo].[PA_ProjAn] ADD  CONSTRAINT [DF_PA_ProjAn_ADR_ID]  DEFAULT ((0)) FOR [ADR_ID]
+                  ;
+                  
+                  ALTER TABLE [dbo].[PA_ProjAn] ADD  CONSTRAINT [DF_PA_ProjAn_BelegID]  DEFAULT ((0)) FOR [BelegID]
+                  ;
+                  
+                  ALTER TABLE [dbo].[PA_ProjAn] ADD  CONSTRAINT [DF_PA_ProjAn_BelegTyp]  DEFAULT ('') FOR [BelegTyp]
+                  ;
+                  
+                  ALTER TABLE [dbo].[PA_ProjAn] ADD  CONSTRAINT [DF_PA_ProjAn_SSV_ID]  DEFAULT ((0)) FOR [SSV_ID]
+                  ;
+                  "
 
             blueoffice.common.db.Data.DBData.ExecuteNonQuery(sq)
 
 
             'View viewPA_ProjAn
-            sq = "Create View viewPA_ProjAn
-            AS
-            Select      PA_ProjAn.ID
-            			PA_ProjAn.ADR_ID
-            			S_SERVICE.SSV_Nr as Nr
-            			S_SERVICE.SSV_Titel as Bez
-            			S_SERVICE.SSV_ERFDAT as Datum
-            			S_SERVICE.SSV_ID as ObjID 
-            			'SR' as ObjTyp
-
-            From PA_ProjAn INNER Join S_SERVICE On PA_ProjAn.SSV_ID = S_SERVICE.SSV_ID
-                          WHERE (PA_ProjAn.SSV_ID > 0)
-
-                UNION ALL
-
-            Select      PA_ProjAn.ID
-                        PA_ProjAn.ADR_ID
-                        bo_BelegK.RKA_ExtAufNr as Nr
-                        bo_BelegK.RKA_Bezeichnung as Bez
-                        bo_BelegK.RKA_Datum1 as Datum
-                        PA_ProjAn.BelegID as ObjID
-                        bo_BelegK.Typ as ObjTyp
-
-            From PA_ProjAn INNER Join bo_BelegK On PA_ProjAn.BelegID = bo_BelegK.RKA_ID And PA_ProjAn.BelegTyp = bo_BelegK.Typ
-
-            			WHERE PA_ProjAn.BelegID > 0"
+            sq = "CREATE OR ALTER VIEW [dbo].[viewPA_ProjAn]
+                  AS
+                  SELECT        dbo.PA_ProjAn.ID, 
+                  		     dbo.PA_ProjAn.ADR_ID, 
+                  			 dbo.bo_BelegK.RKA_ExtAufNr AS Nr, 
+                  			 dbo.bo_BelegK.RKA_Bezeichnung As Bez,
+                  			 dbo.bo_BelegK.RKA_Datum1 As Datum,
+                  			 dbo.PA_ProjAn.BelegID AS ObjID,
+                  			 dbo.bo_BelegK.Typ AS ObjTyp
+                  FROM            dbo.PA_ProjAn INNER JOIN
+                                           dbo.bo_BelegK ON dbo.PA_ProjAn.BelegID = dbo.bo_BelegK.RKA_ID AND dbo.PA_ProjAn.BelegTyp = dbo.bo_BelegK.Typ
+                  WHERE        (dbo.PA_ProjAn.BelegID > 0)
+                  UNION ALL
+                  SELECT        dbo.PA_ProjAn.ID, 
+                  			  dbo.PA_ProjAn.ADR_ID, 
+                  			  dbo.S_SERVICE.SSV_Nr AS Nr, 
+                  			  dbo.S_SERVICE.SSV_Titel AS Bez, 
+                  			  dbo.S_SERVICE.SSV_ERFDAT AS Datum,
+                  			  dbo.PA_ProjAn.SSV_ID AS ObjID,
+                  			  'SR' AS ObjTyp
+                  FROM            dbo.PA_ProjAn INNER JOIN
+                                           dbo.S_SERVICE ON dbo.PA_ProjAn.SSV_ID = dbo.S_SERVICE.SSV_ID
+                  WHERE        (dbo.PA_ProjAn.SSV_ID > 0)"
 
             blueoffice.common.db.Data.DBData.ExecuteNonQuery(sq)
 

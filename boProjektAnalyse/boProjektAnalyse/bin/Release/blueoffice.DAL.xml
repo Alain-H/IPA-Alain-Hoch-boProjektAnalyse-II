@@ -1,0 +1,75 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+blueoffice.DAL
+</name>
+</assembly>
+<members>
+<member name="T:blueoffice.DAL.My.Resources.Resources">
+<summary>
+  Eine stark typisierte Ressourcenklasse zum Suchen von lokalisierten Zeichenfolgen usw.
+</summary>
+</member>
+<member name="P:blueoffice.DAL.My.Resources.Resources.ResourceManager">
+<summary>
+  Gibt die zwischengespeicherte ResourceManager-Instanz zurück, die von dieser Klasse verwendet wird.
+</summary>
+</member>
+<member name="P:blueoffice.DAL.My.Resources.Resources.Culture">
+<summary>
+  Überschreibt die CurrentUICulture-Eigenschaft des aktuellen Threads für alle
+  Ressourcenzuordnungen, die diese stark typisierte Ressourcenklasse verwenden.
+</summary>
+</member>
+<member name="P:blueoffice.DAL.My.Resources.Resources.bodb">
+<summary>
+  Sucht eine lokalisierte Zeichenfolge, die &lt;boDBSkript DB=&quot;bodb&quot; Version=&quot;4.00.079&quot;&gt;
+  &lt;Tabellen&gt;
+    &lt;A_AAS_ABTEILUNG&gt;
+      &lt;CodeText Datentyp=&quot;varchar&quot; Länge=&quot;30&quot; Standardwert=&quot;(&apos;&apos;)&quot; Standardwert_CONSTRAINT=&quot;DF_A_AAS_ABTEILUNG_CodeText&quot; NULL-Werte_zulassen=&quot;NOT NULL&quot; Ist_Idendity=&quot;&quot; Primary_Key=&quot;PRIMARY KEY&quot; Key_Is_Unique=&quot;UNIQUE&quot; Key_Is_Descending=&quot;&quot; Key_Name=&quot;A_AAS_ABTEILUNG_CodeText&quot; Key_Clustered=&quot;NONCLUSTERED&quot; Index=&quot;&quot; Index_Is_Unique=&quot;&quot; Index_Is_Descending=&quot;&quot; Index_Name=&quot;&quot; Index_Clustered=&quot;&quot; /&gt;
+    &lt;/A_AAS_ABTEILUNG&gt;
+    &lt;A_AAS_CODE0&gt;
+ [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+</summary>
+</member>
+<member name="P:blueoffice.DAL.My.Resources.Resources.bosys">
+<summary>
+  Sucht eine lokalisierte Zeichenfolge, die &lt;boDBSkript DB=&quot;bosys&quot; Version=&quot;4.00.008&quot;&gt;
+	&lt;Tabellen&gt;
+		&lt;A_ANREDEN&gt;
+			&lt;AAN_Anrede Datentyp=&quot;varchar&quot; Länge=&quot;30&quot; Standardwert=&quot;&quot; Standardwert_CONSTRAINT=&quot;&quot; NULL-Werte_zulassen=&quot;NOT NULL&quot; Ist_Idendity=&quot;&quot; Primary_Key=&quot;PRIMARY KEY&quot; Key_Is_Unique=&quot;UNIQUE&quot; Key_Is_Descending=&quot;&quot; Key_Name=&quot;A_ANREDEN_AAN_Anrede&quot; Key_Clustered=&quot;NONCLUSTERED&quot; Index=&quot;&quot; Index_Is_Unique=&quot;&quot; Index_Is_Descending=&quot;&quot; Index_Name=&quot;&quot; Index_Clustered=&quot;&quot; /&gt;
+			&lt;AAN_Briefanrede Datentyp=&quot;varchar&quot; Länge=&quot;50&quot; Standardwert=&quot;(&apos;&apos;)&quot; Standardwert_CON [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+</summary>
+</member>
+<member name="M:blueoffice.DAL.DataFactory.TableExists(System.String)">
+ <summary>
+ Prüft ob die Tabelle oder Sicht im SQL existiert
+ </summary>
+ <param name="TableName">Name der Tabelle oder Sicht</param>
+ <returns>Wahr, wenn die Tabelle oder Sicht existiert</returns>
+</member>
+<member name="M:blueoffice.DAL.DataFactory.FieldExists(System.String,System.String)">
+ <summary>
+ Prüft ob das Feld in der Tabelle existiert
+ </summary>
+ <param name="TableName">Name der Tabelle </param>
+ <param name="FieldName">Name des Feldes </param>
+ <returns>Wahr, wenn die Tabelle oder Sicht existiert</returns>
+</member>
+<member name="M:blueoffice.DAL.DataFactory.ProcedureExist(System.String)">
+ <summary>
+ Prüft ob die Prozedur im SQL existiert
+ </summary>
+ <param name="ProcedureName">Name der Prozedur</param>
+ <returns>Wahr, wenn die Prozedur existiert</returns>
+</member>
+<member name="M:blueoffice.DAL.DataFactory.FunctionExist(System.String)">
+ <summary>
+ Prüft ob die Funktion im SQL existiert
+ </summary>
+ <param name="FunctionName">Name der Funktion</param>
+ <returns>Wahr, wenn die Funktion existiert</returns>
+</member>
+</members>
+</doc>
