@@ -2,10 +2,12 @@
 
 Public Class PUCalc
     Dim _ADR_ID As Integer
+    Dim _Datum As Date
     Dim _totalSoll As Decimal
     Dim _totalIst As Decimal
     Dim _Verrechenbar As Decimal
-    Dim _ProzProgress As Integer
+    Dim _ProzProgressADR As Integer
+    Dim _ProzProgressSSV As Integer
     Dim _totalVerrechnet As Decimal
     Dim _totalWarten As Decimal
     Dim _totalKulanz As Decimal
@@ -18,6 +20,12 @@ Public Class PUCalc
     Public ReadOnly Property ADR_ID As Integer
         Get
             Return _ADR_ID
+        End Get
+    End Property
+
+    Public ReadOnly Property Datum As Date
+        Get
+            Return _Datum
         End Get
     End Property
 
@@ -39,9 +47,9 @@ Public Class PUCalc
         End Get
     End Property
 
-    Public ReadOnly Property ProzProgress As Integer
+    Public ReadOnly Property ProzProgressADR As Integer
         Get
-            Return _ProzProgress
+            Return _ProzProgressADR
         End Get
     End Property
 
@@ -82,6 +90,12 @@ Public Class PUCalc
         End Get
     End Property
 
+    Public ReadOnly Property ProzProgressSSV As Integer
+        Get
+            Return _ProzProgressSSV
+        End Get
+    End Property
+
 
     'Leerer Konstruktor für Farb-Gebung
     Sub New()
@@ -94,7 +108,8 @@ Public Class PUCalc
         _Items = New List(Of PUCalcItem)
         Calculate()
         Calc()
-        PBarProgress()
+        PBarProgressADR()
+        PBarProgressSSV()
     End Sub
 
     Private Sub Calculate()
@@ -145,14 +160,27 @@ Public Class PUCalc
         Next
     End Sub
 
-    Private Sub PBarProgress()
-        If Not _totalSoll = 0 Then
-            _ProzProgress = _totalIst * 100 / _totalSoll
-            If _ProzProgress > 100 Then
-                _ProzProgress = 100
+    Private Sub PBarProgressADR()
+
+        If Not _totalSoll <= 0 Then
+            _ProzProgressADR = _totalIst * 100 / _totalSoll
+            If _ProzProgressADR > 100 Then
+                _ProzProgressADR = 100
             End If
         Else
-            _ProzProgress = 0
+            _ProzProgressADR = 0
+        End If
+
+    End Sub
+
+    Private Sub PBarProgressSSV()
+        If Not _totalSoll <= 0 Then
+            _ProzProgressSSV = Verrechenbar * 100 / _totalSoll
+            If _ProzProgressSSV > 100 Then
+                _ProzProgressSSV = 100
+            End If
+        Else
+            _ProzProgressSSV = 0
         End If
     End Sub
 

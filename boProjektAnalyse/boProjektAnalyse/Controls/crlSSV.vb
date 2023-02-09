@@ -2,6 +2,7 @@
 Imports System.Runtime.InteropServices.WindowsRuntime
 Imports System.Windows.Forms
 Imports blueoffice.common.AddIn
+Imports blueoffice.controls
 Imports blueoffice.menu
 
 Public Class crlSSV
@@ -10,6 +11,7 @@ Public Class crlSSV
 
     Dim SSV_ID As Integer
     Dim ADR_ID As Integer
+    Dim prozprog As Integer
 
 
 
@@ -50,8 +52,11 @@ Public Class crlSSV
     Private Sub Fill()
         Dim t As New PUCalc(ADR_ID)
 
-        pgbSSV.Value = t.ProzProgress
-        lblProzSSV.Text = t.ProzProgress & "%"
+        pgbSSV.Value = t.ProzProgressSSV
+        lblProzSSV.Text = t.ProzProgressSSV & "%"
+        prozprog = t.ProzProgressSSV
+
+        ChangeColor()
     End Sub
 
 
@@ -109,6 +114,18 @@ Public Class crlSSV
     Private Function IAddInControl_Name() As String Implements IAddInControl.Name
         Return "Projektanalyse"
     End Function
+
+    Private Sub ChangeColor()
+        Dim color As New PUCalc
+
+        'Ist
+        lblProzSSV.ForeColor = color.GetColColor(prozprog)
+
+    End Sub
+
+
+
+
 
     'Private Sub lblProzA_Click(sender As Object, e As EventArgs) Handles lblProzA.Click
     'um ctlADR in Form aufzurufen.   (Optional)

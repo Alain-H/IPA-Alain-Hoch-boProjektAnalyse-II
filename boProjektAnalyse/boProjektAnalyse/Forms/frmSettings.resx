@@ -117,4 +117,8 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="lblBodyText.Text" xml:space="preserve">
+    <value>Ab welchem Prozentsatz soll sich der IST-Wert Rot färben, um zu erkennen, dass sich der IST-Wert dem gesammten Soll-Wert nähert?
+(Der Ist-Wert verfärbt sich beim erreichen des angegebenen Richtwertes - 10%, orange.) </value>
+  </data>
 </root>

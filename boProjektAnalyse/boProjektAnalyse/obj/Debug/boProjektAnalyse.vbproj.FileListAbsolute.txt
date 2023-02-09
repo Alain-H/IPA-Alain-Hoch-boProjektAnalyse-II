@@ -170,6 +170,7 @@ C:\Users\a.hoch.BOAG\OneDrive - blue office ag\IPA\boProjektAnalyse\boProjektAna
 C:\Users\a.hoch.BOAG\OneDrive - blue office ag\IPA\boProjektAnalyse\boProjektAnalyse\boProjektAnalyse\obj\Debug\boProjektAnalyse.vbproj.AssemblyReference.cache
 C:\Users\a.hoch.BOAG\OneDrive - blue office ag\IPA\boProjektAnalyse\boProjektAnalyse\boProjektAnalyse\obj\Debug\boProjektAnalyse.crlADR.resources
 C:\Users\a.hoch.BOAG\OneDrive - blue office ag\IPA\boProjektAnalyse\boProjektAnalyse\boProjektAnalyse\obj\Debug\boProjektAnalyse.crlSSV.resources
+C:\Users\a.hoch.BOAG\OneDrive - blue office ag\IPA\boProjektAnalyse\boProjektAnalyse\boProjektAnalyse\obj\Debug\boProjektAnalyse.frmSettings.resources
 C:\Users\a.hoch.BOAG\OneDrive - blue office ag\IPA\boProjektAnalyse\boProjektAnalyse\boProjektAnalyse\obj\Debug\boProjektAnalyse.Resources.resources
 C:\Users\a.hoch.BOAG\OneDrive - blue office ag\IPA\boProjektAnalyse\boProjektAnalyse\boProjektAnalyse\obj\Debug\boProjektAnalyse.vbproj.GenerateResource.cache
 C:\Users\a.hoch.BOAG\OneDrive - blue office ag\IPA\boProjektAnalyse\boProjektAnalyse\boProjektAnalyse\obj\Debug\boProjektAnalyse.vbproj.CoreCompileInputs.cache
@@ -177,4 +178,3 @@ C:\Users\a.hoch.BOAG\OneDrive - blue office ag\IPA\boProjektAnalyse\boProjektAna
 C:\Users\a.hoch.BOAG\OneDrive - blue office ag\IPA\boProjektAnalyse\boProjektAnalyse\boProjektAnalyse\obj\Debug\boProjektAnalyse.dll
 C:\Users\a.hoch.BOAG\OneDrive - blue office ag\IPA\boProjektAnalyse\boProjektAnalyse\boProjektAnalyse\obj\Debug\boProjektAnalyse.xml
 C:\Users\a.hoch.BOAG\OneDrive - blue office ag\IPA\boProjektAnalyse\boProjektAnalyse\boProjektAnalyse\obj\Debug\boProjektAnalyse.pdb
-C:\Users\a.hoch.BOAG\OneDrive - blue office ag\IPA\boProjektAnalyse\boProjektAnalyse\boProjektAnalyse\obj\Debug\boProjektAnalyse.frmSettings.resources

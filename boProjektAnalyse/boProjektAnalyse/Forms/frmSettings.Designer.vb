@@ -22,6 +22,7 @@ Partial Class frmSettings
     'Das Bearbeiten mit dem Code-Editor ist nicht möglich.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmSettings))
         Me.gbProzuWahl = New System.Windows.Forms.GroupBox()
         Me.rb90 = New System.Windows.Forms.RadioButton()
         Me.rb80 = New System.Windows.Forms.RadioButton()
@@ -46,7 +47,7 @@ Partial Class frmSettings
         Me.gbProzuWahl.Controls.Add(Me.rb80)
         Me.gbProzuWahl.Controls.Add(Me.rb70)
         Me.gbProzuWahl.Controls.Add(Me.rb60)
-        Me.gbProzuWahl.Location = New System.Drawing.Point(75, 111)
+        Me.gbProzuWahl.Location = New System.Drawing.Point(75, 131)
         Me.gbProzuWahl.Name = "gbProzuWahl"
         Me.gbProzuWahl.Size = New System.Drawing.Size(101, 121)
         Me.gbProzuWahl.TabIndex = 5
@@ -57,10 +58,10 @@ Partial Class frmSettings
         Me.rb90.AutoSize = True
         Me.rb90.Location = New System.Drawing.Point(6, 87)
         Me.rb90.Name = "rb90"
-        Me.rb90.Size = New System.Drawing.Size(54, 17)
+        Me.rb90.Size = New System.Drawing.Size(60, 17)
         Me.rb90.TabIndex = 3
         Me.rb90.TabStop = True
-        Me.rb90.Text = "> 90%"
+        Me.rb90.Text = ">= 90%"
         Me.rb90.UseVisualStyleBackColor = True
         '
         'rb80
@@ -68,10 +69,10 @@ Partial Class frmSettings
         Me.rb80.AutoSize = True
         Me.rb80.Location = New System.Drawing.Point(6, 64)
         Me.rb80.Name = "rb80"
-        Me.rb80.Size = New System.Drawing.Size(54, 17)
+        Me.rb80.Size = New System.Drawing.Size(60, 17)
         Me.rb80.TabIndex = 2
         Me.rb80.TabStop = True
-        Me.rb80.Text = "> 80%"
+        Me.rb80.Text = ">= 80%"
         Me.rb80.UseVisualStyleBackColor = True
         '
         'rb70
@@ -79,10 +80,10 @@ Partial Class frmSettings
         Me.rb70.AutoSize = True
         Me.rb70.Location = New System.Drawing.Point(6, 41)
         Me.rb70.Name = "rb70"
-        Me.rb70.Size = New System.Drawing.Size(54, 17)
+        Me.rb70.Size = New System.Drawing.Size(60, 17)
         Me.rb70.TabIndex = 1
         Me.rb70.TabStop = True
-        Me.rb70.Text = "> 70%"
+        Me.rb70.Text = ">= 70%"
         Me.rb70.UseVisualStyleBackColor = True
         '
         'rb60
@@ -90,10 +91,10 @@ Partial Class frmSettings
         Me.rb60.AutoSize = True
         Me.rb60.Location = New System.Drawing.Point(6, 18)
         Me.rb60.Name = "rb60"
-        Me.rb60.Size = New System.Drawing.Size(54, 17)
+        Me.rb60.Size = New System.Drawing.Size(60, 17)
         Me.rb60.TabIndex = 0
         Me.rb60.TabStop = True
-        Me.rb60.Text = "> 60%"
+        Me.rb60.Text = ">= 60%"
         Me.rb60.UseVisualStyleBackColor = True
         '
         'pnlHead
@@ -151,15 +152,14 @@ Partial Class frmSettings
         Me.lblBodyText.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblBodyText.Location = New System.Drawing.Point(72, 78)
         Me.lblBodyText.Name = "lblBodyText"
-        Me.lblBodyText.Size = New System.Drawing.Size(390, 30)
+        Me.lblBodyText.Size = New System.Drawing.Size(390, 58)
         Me.lblBodyText.TabIndex = 4
-        Me.lblBodyText.Text = "Ab welchem Prozentsatz soll sich der IST-Wert Rot färben, um zu erkennen, dass si" &
-    "ch der IST-Wert dem gesammten Soll-Wert nähert?"
+        Me.lblBodyText.Text = resources.GetString("lblBodyText.Text")
         '
         'btnOK
         '
         Me.btnOK.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnOK.Location = New System.Drawing.Point(320, 229)
+        Me.btnOK.Location = New System.Drawing.Point(320, 261)
         Me.btnOK.Name = "btnOK"
         Me.btnOK.Size = New System.Drawing.Size(75, 23)
         Me.btnOK.TabIndex = 0
@@ -170,7 +170,7 @@ Partial Class frmSettings
         '
         Me.btnAbbruch.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnAbbruch.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.btnAbbruch.Location = New System.Drawing.Point(401, 229)
+        Me.btnAbbruch.Location = New System.Drawing.Point(401, 261)
         Me.btnAbbruch.Name = "btnAbbruch"
         Me.btnAbbruch.Size = New System.Drawing.Size(75, 23)
         Me.btnAbbruch.TabIndex = 1
@@ -183,7 +183,7 @@ Partial Class frmSettings
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.btnAbbruch
-        Me.ClientSize = New System.Drawing.Size(488, 264)
+        Me.ClientSize = New System.Drawing.Size(488, 296)
         Me.Controls.Add(Me.btnAbbruch)
         Me.Controls.Add(Me.btnOK)
         Me.Controls.Add(Me.lblBodyText)

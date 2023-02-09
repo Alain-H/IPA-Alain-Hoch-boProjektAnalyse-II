@@ -2,7 +2,8 @@
 
 Public Class PUCalcItem
     Dim _SRNr As String
-    Dim _SSV_ID As Integer
+    Dim SSV_ID As Integer
+    Dim _Datum As Date
     Dim _Verrechnet As Decimal
     Dim _Warten As Decimal
     Dim _Kulanz As Decimal
@@ -15,6 +16,12 @@ Public Class PUCalcItem
     Public ReadOnly Property SRNr As String
         Get
             Return _SRNr
+        End Get
+    End Property
+
+    Public ReadOnly Property Datum As Date
+        Get
+            Return _Datum
         End Get
     End Property
 
@@ -68,7 +75,7 @@ Public Class PUCalcItem
     End Property
 
     Sub New(ssvID As Integer)
-        _SSV_ID = ssvID
+        SSV_ID = ssvID
         FillValues()
     End Sub
 
@@ -79,11 +86,11 @@ Public Class PUCalcItem
         Dim drc As DataRowCollection
 
 
-        sq = $"SELECT     S_SERVICE.SSV_Nr, S_SERVICE.SSV_Titel, Z_ERFASSUNG.ZER_Std100, Z_ERFASSUNG.ZER_Verrechnen
-               FROM       S_SERVICE_POS INNER JOIN
-                          S_SERVICE ON S_SERVICE_POS.SSP_SSV_GUID = S_SERVICE.SSV_GUID INNER JOIN
-                          Z_ERFASSUNG ON S_SERVICE_POS.SSP_ID = Z_ERFASSUNG.ZER_SSP_ID
-               WHERE      (S_SERVICE.SSV_ID = {_SSV_ID})"
+        sq = $"SELECT        S_SERVICE.SSV_Nr, S_SERVICE.SSV_Titel, S_SERVICE.SSV_ERFDAT, Z_ERFASSUNG.ZER_Std100, Z_ERFASSUNG.ZER_Verrechnen, S_SERVICE.SSV_ID
+               FROM          S_SERVICE INNER JOIN
+                             S_SERVICE_POS ON S_SERVICE.SSV_GUID = S_SERVICE_POS.SSP_SSV_GUID INNER JOIN
+                             Z_ERFASSUNG ON S_SERVICE_POS.SSP_ID = Z_ERFASSUNG.ZER_SSP_ID
+               WHERE        (S_SERVICE.SSV_ID = {SSV_ID})"
 
 
         drc = blueoffice.common.db.Data.DBData.GetDataRows(sq)
@@ -91,6 +98,9 @@ Public Class PUCalcItem
         For Each dr In drc
             If Not dr.IsNull("SSV_Nr") Then
                 _SRNr = dr.Item("SSV_Nr").ToString
+            End If
+            If Not dr.IsNull("SSV_ERFDAT") Then
+                _Datum = dr.Item("SSV_ERFDAT")
             End If
             If Not dr.IsNull("SSV_Titel") Then
                 _Bezeichnung = dr.Item("SSV_Titel")

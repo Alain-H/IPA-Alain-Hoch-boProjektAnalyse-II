@@ -55,19 +55,18 @@ Public Class crlADR
             If ADR_ID > 0 Then
                 For Each item As PUCalcItem In puCalc.Items
                     If Not item.SRNr Is Nothing Then
-                        boGridSR.AddItem({item.SRNr, item.Bezeichnung, item.Verrechnet, item.Warten, item.Kulanz, item.Garentie, item.nichtVerrechnet, Nothing, Nothing, item.Ist})
+                        boGridSR.AddItem({item.SRNr, item.Datum, item.Bezeichnung, item.Verrechnet, item.Warten, item.Kulanz, item.Garentie, item.nichtVerrechnet, Nothing, Nothing, item.Ist})
                     End If
                 Next
 
-                boGridSR.AddItem({"Gesamt:", Nothing, puCalc.totalVerrechnet, puCalc.totalWarten, puCalc.totalKulanz, puCalc.totalGarantie, puCalc.totalNichtVerrechnet, puCalc.Soll_ALL, puCalc.Verrechenbar, puCalc.Ist_All})
+                boGridSR.AddItem({"Gesamt:", Nothing, Nothing, puCalc.totalVerrechnet, puCalc.totalWarten, puCalc.totalKulanz, puCalc.totalGarantie, puCalc.totalNichtVerrechnet, puCalc.Soll_ALL, puCalc.Verrechenbar, puCalc.Ist_All})
             End If
 
-            pgbADR.Value = puCalc.ProzProgress
-            lblProzADR.Text = puCalc.ProzProgress & "%"
-            prozprog = puCalc.ProzProgress
+            pgbADR.Value = puCalc.ProzProgressADR
+            lblProzADR.Text = puCalc.ProzProgressADR & "%"
+            prozprog = puCalc.ProzProgressADR
 
             ChangeColorISt()
-            ChangeColorKundenView()
 
         Catch ex As Exception
             Debug.Print(ex.Message)
@@ -161,7 +160,7 @@ Public Class crlADR
                 .AllowResizing = blueoffice.controls.boGrid.AllowResizingEnum.Columns
                 .AllowEditing = False
                 .AllowMerging = blueoffice.controls.boGrid.AllowMergingEnum.FixedOnly
-                '.Rows.Item(0).AllowMerging = False
+                .AllowSorting = False
             End With
 
 
@@ -179,11 +178,17 @@ Public Class crlADR
                 .Format = "#,##0.00"
             End With
 
+            With boGridSR.Styles.Add("Date")
+                .DefinedElements = blueoffice.controls.boGrid.StyleElementFlags.DataType Or blueoffice.controls.boGrid.StyleElementFlags.TextAlign Or blueoffice.controls.boGrid.StyleElementFlags.Format
+                .DataType = GetType(Date)
+                .TextAlign = blueoffice.controls.boGrid.TextAlignEnum.LeftCenter
+                .Format = "dd.MM.yyyy"
+            End With
+
             'Funktioniert
 
             With boGridSR.Styles.Add("ColorIst")
                 .ForeColor = Color.Red
-                .Border.Color = Color.Black
             End With
 
 
@@ -194,6 +199,14 @@ Public Class crlADR
                 .Style = boGridSR.Styles.Item("Text")
                 .Width = 85
             End With
+
+            With boGridSR.Cols.Add()
+                .Name = "colSR_Datum"
+                .Caption = "Datum"
+                .Style = boGridSR.Styles.Item("Date")
+                .Width = 85
+            End With
+
 
             With boGridSR.Cols.Add()
                 .Name = "colSR_Bez"
@@ -241,7 +254,7 @@ Public Class crlADR
 
             With boGridSR.Cols.Add()
                 .Name = "colSR_Soll"
-                .Caption = "Soll"
+                .Caption = "SOLL"
                 .Style = boGridSR.Styles.Item("Dezimal")
                 .Width = 85
             End With
@@ -356,13 +369,6 @@ Public Class crlADR
             'Kundensicht
             boGridSR.Styles.Item("ColorIst").ForeColor = color.GetColColor(prozprog)
             boGridSR.SetCellStyle(boGridSR.Rows.Count - 1, boGridSR.Cols.Count - 3, boGridSR.Styles.Item("ColorIst"))
-        End If
-    End Sub
-
-    Private Sub ChangeColorKundenView()
-        Dim color As New PUCalc
-        If boGridSR.Cols.Count <> 0 And boGridSR.Rows.Count <> 0 Then
-
         End If
     End Sub
 
