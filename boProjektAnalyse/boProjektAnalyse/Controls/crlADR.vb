@@ -37,7 +37,7 @@ Public Class crlADR
                     Else
                         ADR_ID = 0
                     End If
-                    Fill() 'Refrsh beim Wechsel zischen den Adressen
+                    Fill() 'Refresh beim Wechsel zischen den Adressen
                 End If
             End If
         End Set
@@ -146,7 +146,6 @@ Public Class crlADR
             boGridSR = New boGrid.Grid
             'GridSR Einstellungen
             With boGridSR
-                .Dock = DockStyle.Fill
                 .CreateGrid()
                 .Name = "GridSR"
                 .Cols.Count = 0
@@ -184,8 +183,6 @@ Public Class crlADR
                 .TextAlign = blueoffice.controls.boGrid.TextAlignEnum.LeftCenter
                 .Format = "dd.MM.yyyy"
             End With
-
-            'Funktioniert
 
             With boGridSR.Styles.Add("ColorIst")
                 .ForeColor = Color.Red
@@ -281,7 +278,7 @@ Public Class crlADR
 
 
             pnlBoGrid.Controls.Add(boGridSR)
-            boGridSR.Dock = DockStyle.Fill
+            pnlBoGrid.Dock = DockStyle.Fill
 
 
             'boGrid Setting Load 
