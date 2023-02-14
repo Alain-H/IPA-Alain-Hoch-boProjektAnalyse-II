@@ -85,48 +85,52 @@ Public Class PUCalcItem
         Dim dr As DataRow
         Dim drc As DataRowCollection
 
-
-        sq = $"SELECT        S_SERVICE.SSV_Nr, S_SERVICE.SSV_Titel, S_SERVICE.SSV_ERFDAT, Z_ERFASSUNG.ZER_Std100, Z_ERFASSUNG.ZER_Verrechnen, S_SERVICE.SSV_ID
+        Try
+            sq = $"SELECT        S_SERVICE.SSV_Nr, S_SERVICE.SSV_Titel, S_SERVICE.SSV_ERFDAT, Z_ERFASSUNG.ZER_Std100, Z_ERFASSUNG.ZER_Verrechnen, S_SERVICE.SSV_ID
                FROM          S_SERVICE INNER JOIN
                              S_SERVICE_POS ON S_SERVICE.SSV_GUID = S_SERVICE_POS.SSP_SSV_GUID INNER JOIN
                              Z_ERFASSUNG ON S_SERVICE_POS.SSP_ID = Z_ERFASSUNG.ZER_SSP_ID
                WHERE        (S_SERVICE.SSV_ID = {SSV_ID})"
 
 
-        drc = blueoffice.common.db.Data.DBData.GetDataRows(sq)
+            drc = blueoffice.common.db.Data.DBData.GetDataRows(sq)
 
-        For Each dr In drc
-            If Not dr.IsNull("SSV_Nr") Then
-                _SRNr = dr.Item("SSV_Nr").ToString
-            End If
-            If Not dr.IsNull("SSV_ERFDAT") Then
-                _Datum = dr.Item("SSV_ERFDAT")
-            End If
-            If Not dr.IsNull("SSV_Titel") Then
-                _Bezeichnung = dr.Item("SSV_Titel")
-            End If
-            If Not dr.IsNull("ZER_Verrechnen") Then
-                Select Case dr.Item("ZER_Verrechnen")
-                    Case "V"
-                        _Verrechnet += dr.Item("ZER_Std100")
-                    Case "W"
-                        _Warten += dr.Item("ZER_Std100")
-                    Case "K"
-                        _Kulanz += dr.Item("ZER_Std100")
-                    Case "N"
-                        _nichtVerrechnet += dr.Item("Zer_Std100")
-                    Case "G"
-                        _Garantie += dr.Item("ZER_Std100")
-                End Select
-            End If
+            For Each dr In drc
+                If Not dr.IsNull("SSV_Nr") Then
+                    _SRNr = dr.Item("SSV_Nr").ToString
+                End If
+                If Not dr.IsNull("SSV_ERFDAT") Then
+                    _Datum = dr.Item("SSV_ERFDAT")
+                End If
+                If Not dr.IsNull("SSV_Titel") Then
+                    _Bezeichnung = dr.Item("SSV_Titel")
+                End If
+                If Not dr.IsNull("ZER_Verrechnen") Then
+                    Select Case dr.Item("ZER_Verrechnen")
+                        Case "V"
+                            _Verrechnet += dr.Item("ZER_Std100")
+                        Case "W"
+                            _Warten += dr.Item("ZER_Std100")
+                        Case "K"
+                            _Kulanz += dr.Item("ZER_Std100")
+                        Case "N"
+                            _nichtVerrechnet += dr.Item("Zer_Std100")
+                        Case "G"
+                            _Garantie += dr.Item("ZER_Std100")
+                    End Select
+                End If
 
 
-            _ist = 0
-            _IstVerrechenbar = 0
+                _ist = 0
+                _IstVerrechenbar = 0
 
-            _IstVerrechenbar += (_Verrechnet + _Warten)
-            _ist += (_Verrechnet + _Warten + _nichtVerrechnet + _Kulanz + _Garantie)
-        Next
+                _IstVerrechenbar += (_Verrechnet + _Warten)
+                _ist += (_Verrechnet + _Warten + _nichtVerrechnet + _Kulanz + _Garantie)
+            Next
+        Catch ex As Exception
+            Debug.Print(ex.Message)
+        End Try
+
     End Sub
 
 

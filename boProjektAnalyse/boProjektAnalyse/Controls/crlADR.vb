@@ -55,18 +55,20 @@ Public Class crlADR
             If ADR_ID > 0 Then
                 For Each item As PUCalcItem In puCalc.Items
                     If Not item.SRNr Is Nothing Then
-                        boGridSR.AddItem({item.SRNr, item.Datum, item.Bezeichnung, item.Verrechnet, item.Warten, item.Kulanz, item.Garentie, item.nichtVerrechnet, Nothing, Nothing, item.Ist})
+                        boGridSR.AddItem({item.SRNr, item.Datum, item.Bezeichnung, item.Verrechnet, item.Warten,
+                                         item.Kulanz, item.Garentie, item.nichtVerrechnet, Nothing, Nothing, item.Ist})
                     End If
                 Next
 
-                boGridSR.AddItem({"Gesamt:", Nothing, Nothing, puCalc.totalVerrechnet, puCalc.totalWarten, puCalc.totalKulanz, puCalc.totalGarantie, puCalc.totalNichtVerrechnet, puCalc.Soll_ALL, puCalc.Verrechenbar, puCalc.Ist_All})
+                boGridSR.AddItem({"Gesamt:", Nothing, Nothing, puCalc.totalVerrechnet, puCalc.totalWarten, puCalc.totalKulanz,
+                                 puCalc.totalGarantie, puCalc.totalNichtVerrechnet, puCalc.Soll_ALL, puCalc.Verrechenbar, puCalc.Ist_All})
             End If
 
             pgbADR.Value = puCalc.ProzProgressADR
             lblProzADR.Text = puCalc.ProzProgressADR & "%"
             prozprog = puCalc.ProzProgressADR
 
-            ChangeColorISt()
+            ChangeColorValues()
 
         Catch ex As Exception
             Debug.Print(ex.Message)
@@ -89,7 +91,6 @@ Public Class crlADR
     End Sub
 
     Public Sub InitializeControl() Implements IFrameControl.InitializeControl
-
 
         Try
 
@@ -160,6 +161,7 @@ Public Class crlADR
                 .AllowEditing = False
                 .AllowMerging = blueoffice.controls.boGrid.AllowMergingEnum.FixedOnly
                 .AllowSorting = False
+
             End With
 
 
@@ -278,7 +280,7 @@ Public Class crlADR
 
 
             pnlBoGrid.Controls.Add(boGridSR)
-            pnlBoGrid.Dock = DockStyle.Fill
+            boGridSR.Dock = DockStyle.Fill
 
 
             'boGrid Setting Load 
@@ -357,7 +359,7 @@ Public Class crlADR
         End If
     End Sub
 
-    Private Sub ChangeColorISt()
+    Private Sub ChangeColorValues()
         Dim color As New PUCalc
         If boGridSR.Cols.Count <> 0 And boGridSR.Rows.Count <> 0 Then
             'Ist

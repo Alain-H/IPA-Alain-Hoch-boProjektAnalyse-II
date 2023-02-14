@@ -102,14 +102,14 @@ Public Class PUCalc
 
     End Sub
 
-    'HauptKonstruktor um alle Daten zu brechnen
+    'Konstruktor
     Sub New(adr_ID As Integer)
         _ADR_ID = adr_ID
         _Items = New List(Of PUCalcItem)
         Calculate()
-        Calc()
-        PBarProgressADR()
-        PBarProgressSSV()
+        CalcTotal()
+        PBarProgressADRIST()
+        PBarProgressSSV_KS()
     End Sub
 
     Private Sub Calculate()
@@ -147,7 +147,7 @@ Public Class PUCalc
 
     End Sub
 
-    Private Sub Calc()
+    Private Sub CalcTotal()
         For Each item As PUCalcItem In Items
             _totalVerrechnet += item.Verrechnet
             _totalWarten += item.Warten
@@ -160,7 +160,7 @@ Public Class PUCalc
         Next
     End Sub
 
-    Private Sub PBarProgressADR()
+    Private Sub PBarProgressADRIST()
 
         If Not _totalSoll <= 0 Then
             _ProzProgressADR = _totalIst * 100 / _totalSoll
@@ -173,7 +173,7 @@ Public Class PUCalc
 
     End Sub
 
-    Private Sub PBarProgressSSV()
+    Private Sub PBarProgressSSV_KS()
         If Not _totalSoll <= 0 Then
             _ProzProgressSSV = Verrechenbar * 100 / _totalSoll
             If _ProzProgressSSV > 100 Then
