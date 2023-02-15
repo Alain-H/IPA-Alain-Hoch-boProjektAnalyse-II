@@ -158,7 +158,6 @@ C:\Users\a.hoch.BOAG\OneDrive - blue office ag\IPA\boProjektAnalyse\boProjektAna
 C:\Users\a.hoch.BOAG\OneDrive - blue office ag\IPA\boProjektAnalyse\boProjektAnalyse\boProjektAnalyse\bin\Release\C1.Win.FlexChart.4.xml
 C:\Users\a.hoch.BOAG\OneDrive - blue office ag\IPA\boProjektAnalyse\boProjektAnalyse\boProjektAnalyse\bin\Release\C1.Win.C1Input.4.xml
 C:\Users\a.hoch.BOAG\OneDrive - blue office ag\IPA\boProjektAnalyse\boProjektAnalyse\boProjektAnalyse\bin\Release\blueoffice.Liveupdate.xml
-C:\Users\a.hoch.BOAG\OneDrive - blue office ag\IPA\boProjektAnalyse\boProjektAnalyse\boProjektAnalyse\bin\Release\Newtonsoft.Json.xml
 C:\Users\a.hoch.BOAG\OneDrive - blue office ag\IPA\boProjektAnalyse\boProjektAnalyse\boProjektAnalyse\bin\Release\C1.C1Excel.4.xml
 C:\Users\a.hoch.BOAG\OneDrive - blue office ag\IPA\boProjektAnalyse\boProjektAnalyse\boProjektAnalyse\bin\Release\blueoffice.ReWe.Classic.pdb
 C:\Users\a.hoch.BOAG\OneDrive - blue office ag\IPA\boProjektAnalyse\boProjektAnalyse\boProjektAnalyse\bin\Release\C1.Win.BarCode.4.xml

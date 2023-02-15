@@ -166,6 +166,8 @@ Public Class PUCalc
             _ProzProgressADR = _totalIst * 100 / _totalSoll
             If _ProzProgressADR > 100 Then
                 _ProzProgressADR = 100
+            ElseIf _ProzProgressADR < 0 Then
+                _ProzProgressADR = 0
             End If
         Else
             _ProzProgressADR = 0
@@ -178,6 +180,8 @@ Public Class PUCalc
             _ProzProgressSSV = Verrechenbar * 100 / _totalSoll
             If _ProzProgressSSV > 100 Then
                 _ProzProgressSSV = 100
+            ElseIf _ProzProgressSSV < 0 Then
+                _ProzProgressSSV = 0
             End If
         Else
             _ProzProgressSSV = 0
