@@ -119,14 +119,14 @@ Public Class PUCalcItem
                             _Garantie += dr.Item("ZER_Std100")
                     End Select
                 End If
-
-
-                _ist = 0
-                _IstVerrechenbar = 0
-
-                _IstVerrechenbar += (_Verrechnet + _Warten)
-                _ist += (_Verrechnet + _Warten + _nichtVerrechnet + _Kulanz + _Garantie)
             Next
+
+            _ist = 0
+            _IstVerrechenbar = 0
+
+            _IstVerrechenbar += (_Verrechnet + _Warten)
+            _ist += (_Verrechnet + _Warten + _nichtVerrechnet + _Kulanz + _Garantie)
+
         Catch ex As Exception
             Debug.Print(ex.Message)
         End Try

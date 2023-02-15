@@ -193,6 +193,7 @@ Partial Class frmSettings
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmSettings"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Einstellungen"
         Me.gbProzuWahl.ResumeLayout(False)
         Me.gbProzuWahl.PerformLayout()
